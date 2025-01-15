@@ -1,9 +1,12 @@
 .topnav {
     background-color: #dfd5b9;
-    font-color: 
-    display:flex;
-    justify-content: space around;
+    display: flex;
+    justify-content: space-around;
     position: sticky;
+    top: 0;
+    height: 60px;
+    padding 0 20px;
+    z-index: 1000;
     overflow: hidden;
 }
 
@@ -17,11 +20,11 @@
 }
 
 .topnav a:hover {
-    background-color: #465891
+    background-color: #465891;
     color: #000000;
 }
 
 .topnav a.active {
-    background-color:04AA6D;
-color: white;
+    background-color: #465891;
+    color: white;
 }
