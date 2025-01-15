@@ -51,11 +51,13 @@ h2 {
 
 .carousel {
     max-width: 1000px;
+    max-height: 1000px;
     position: relative;
     margin: auto;
 }
 
 .main-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    justify-self: center;
+    grid-template-columns: auto;
 }
