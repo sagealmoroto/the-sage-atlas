@@ -49,15 +49,10 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }   
 
-.carousel {
-    max-width: 1000px;
-    max-height: 1000px;
-    position: relative;
-    margin: auto;
-}
-
 .main-container {
     display: grid;
     justify-self: center;
-    grid-template-columns: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
 }
