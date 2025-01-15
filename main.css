@@ -94,7 +94,7 @@ h2 {
 .main-container div {
     text-align: center;
     border-radius: 15px;
-    box-shadow: 7px 7px 10px 0px;
+    box-shadow: 7px 7px 10px 0px #C9CCD1;
 }
 
 .main-container p {
@@ -109,6 +109,7 @@ h2 {
     grid-template-columns: auto auto;
     max-width: 1200px;
     width: 100%;
+    font-size: 16px;
     column-gap: 40px;
     text-align: justify;
     justify-self: center;
@@ -132,6 +133,7 @@ footer {
     height: 80px;
     padding: 0 20px;
     z-index: 1000;
+    text-align: center;
 }
 
 footer a {
@@ -143,10 +145,9 @@ footer a {
     font-size: 14px;
     padding: 10px 0 ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
 }
 
-footer img {
+.footer img {
     width: 32px;
     height: 32px;
     object-fit: cover;
