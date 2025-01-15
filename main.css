@@ -91,12 +91,12 @@ h2 {
     width: 100%;
     column-gap: 40px;
     text-align: justify;
+    justify-self: center;
 }
 
 .intro-container img {
     width: 100%;
     object-fit: cover;
-    height: auto;
     max-width: 1440px;
 }
 
