@@ -49,3 +49,14 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }   
 
+.carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.main-container {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 50px;
+}
