@@ -70,7 +70,8 @@ h2 {
 
 .main-section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #a0a4ad;
+    color: #595D67;
+    padding-top: 20px;
 }
 .main-container {
     display: grid;
@@ -92,6 +93,8 @@ h2 {
 
 .main-container div {
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px 0px;
 }
 
 .main-container p {
@@ -99,7 +102,6 @@ h2 {
     color: #595D67;
     font-size: 18px;
     font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro-container {
@@ -117,6 +119,8 @@ h2 {
     width: 100%;
     object-fit: cover;
     max-width: 1440px;
+    border-radius: 15px;
+    
 }
 
 footer {
