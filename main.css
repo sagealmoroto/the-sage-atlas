@@ -88,8 +88,8 @@ footer {
     background-color: #eeebe2;
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    top: 0;
+    position: relative;
+    bottom: 0;
     height: 60px;
     padding: 0 20px;
     z-index: 1000;
@@ -97,20 +97,19 @@ footer {
 
 footer a {
     color: #a0a4ad;
-    display: flex;
+    display: inline-block;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    text-decoration: none;
     font-size: 14px;
+    padding: 10px 0 ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer a:hover {
-    color: #7280AC;
-}
-
-
 footer img {
-    object-fit: cover
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 8px;
+
 }
