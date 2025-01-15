@@ -5,13 +5,12 @@
     position: sticky;
     top: 0;
     height: 60px;
-    padding: 0 0px;
+    padding: 0 20px;
     z-index: 1000;
     overflow: hidden;
 }
 
 .topnav a {
-    float: left;
     color: #D1D7E6;
     text-align: center;
     padding: 16px 16px;
