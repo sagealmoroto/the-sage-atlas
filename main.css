@@ -16,10 +16,11 @@
     padding: 16px 16px;
     text-decoration: none;
     font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .topnav a:hover {
-    color: #E0E1E4;
+    color: #7280AC;
 }
 
 .topnav a.active {
@@ -31,7 +32,7 @@ h1 {
     color: #a0a4ad;
     text-align: center;
     font-style: italic;
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 100;
     font-family:'Times New Roman', Times, serif
 }
@@ -39,7 +40,7 @@ h1 {
 h2 {
     color: #a0a4ad;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }   
 
