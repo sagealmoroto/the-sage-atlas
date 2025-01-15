@@ -87,6 +87,7 @@ h2 {
     width: 100%;
     height: 400px;
     max-width: 1440px;
+    border-radius: 15px;
 }
 
 .main-container div {
@@ -97,9 +98,10 @@ h2 {
     margin-top: 8px;
     color: #595D67;
     font-size: 18px;
+    font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-}
+
 .intro-container {
     display: grid;
     grid-template-columns: auto auto;
