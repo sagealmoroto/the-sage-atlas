@@ -57,8 +57,7 @@ h2 {
 
 /* .carousel {
     max-width: 1440px;
-    position: relative;
-    margin: auto;
+    
 } */
 
 /*  */
@@ -67,12 +66,13 @@ h2 {
     max-width: 1440px;
     height: 600px;
     overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 
 .slide {
     max-width: 1440px;
     height: 600px;
-    float: left; 
 }
 
 .slide img {
