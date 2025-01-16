@@ -287,7 +287,7 @@ body {
     position: absolute;
     width: 40px; /* Adjust the size */
     height: 40px;
-    background: url('path-to-plane-image.png') no-repeat center center / contain;
+    background: url('assets/path-to-plane-image.png') no-repeat center center / contain;
     pointer-events: none; /* Ensures it doesn't block interaction */
     z-index: 10000; /* Always on top */
 }
@@ -297,7 +297,7 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: gray;
+    background: radial-gradient(circle, lightgray 50%, gray 100%);
     border-radius: 50%;
     opacity: 0.7;
     animation: fade 0.8s linear forwards;
