@@ -10,10 +10,17 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #7280AC;
+    text-decoration: underline;
+}
+
 img {
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+    height: 400px;
+    max-width: 1440px;
 }
 
 /* Section Divider */
@@ -48,10 +55,10 @@ hr.solid {
     color: #3A486B;
 }
 
-.topnav a:hover {
+/* .topnav a:hover {
     color: #7280AC;
     text-decoration: underline;
-}
+} */
 
 .topnav a.active {
     background-color: white;
@@ -99,7 +106,10 @@ h2 {
 }
 
 .main-container div {
-    text-align: center; 
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px 0px #C9CCD1; 
+    background-color: white;
 }
 
 .main-container a {
