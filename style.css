@@ -131,7 +131,6 @@ h2 {
 .carousel-start-exploring:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
-    transform: scale(1.1);
     border-style: solid;
     border-color: white;
     border-radius: 12px;
