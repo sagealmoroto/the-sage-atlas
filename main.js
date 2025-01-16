@@ -9,7 +9,7 @@ function showSlide(n) {
 
 // Next/previous controls
 function changeSlides(n) {
-    index +=n;
+    index += n;
     if (index >=slides.length) index = 0;
     if (index < 0) index = slides.length - 1;
     showSlide(index);
