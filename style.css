@@ -109,7 +109,6 @@ h2 {
     color: #595D67;
     font-size: 18px;
     font-weight: 500;
-    text-decoration: none;
 }
 
 .intro-container {
@@ -122,6 +121,7 @@ h2 {
     text-align: justify;
     justify-self: center;
     padding: 80px 0;
+    text-decoration: none;
 }
 
 .intro-container img {
