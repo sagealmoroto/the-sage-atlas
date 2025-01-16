@@ -276,3 +276,42 @@ footer a:hover {
         padding: 6px 12px; /* Smaller buttons */
     }
 }
+
+/* Hide the default cursor */
+body {
+    cursor: none; /* Hides the default cursor */
+}
+
+/* Plane cursor */
+.custom-cursor {
+    position: absolute;
+    width: 40px; /* Adjust the size */
+    height: 40px;
+    background: url('path-to-plane-image.png') no-repeat center center / contain;
+    pointer-events: none; /* Ensures it doesn't block interaction */
+    z-index: 10000; /* Always on top */
+}
+
+/* Smoke trail */
+.smoke {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fade 0.8s linear forwards;
+    pointer-events: none; /* Ensures smoke doesn't block interaction */
+}
+
+/* Fade-out animation for the smoke */
+@keyframes fade {
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
