@@ -1,6 +1,7 @@
 let index = 0; // Current slide
 const slides = document.querySelectorAll(".slide");
 
+//Function to display the current slide
 function showSlide(n) {
     slides.forEach((slide, i) => {
         slide.style.display = i === n ? "block" : "none";
@@ -17,3 +18,17 @@ function changeSlides(n) {
 
 // Initial display
 showSlide(index);
+
+// Timer for automatic cycling
+let slideTimer = setInterval(() => {
+    changeSlides(1); // Automatically move to the next slide
+}, 3000);
+
+// Pause/resume timer on user interaction
+const carousel = document.querySelector(".carousel");
+carousel.addEventListener("mouseenter", () => clearInterval(slideTimer));
+carousel.addEventListener("mouseleave", () => {
+    slideTimer = setInterval(() => {
+        changeSlides(1);
+    }, 3000);
+});
