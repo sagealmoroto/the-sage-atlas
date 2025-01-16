@@ -109,7 +109,7 @@ h2 {
 }
 
 .carousel-start-exploring {
-    position:absolute;
+    position: absolute;
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
@@ -148,6 +148,7 @@ h2 {
     column-gap: 20px;
     row-gap: 20px;
     grid-template-columns: auto auto auto;
+    padding: 40px 0;
 }
 
 .main-container img {
