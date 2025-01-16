@@ -118,11 +118,14 @@ h2 {
     color: white;
     outline-color: black;
     padding: 12px 24px;
-    font-size: 22px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    font-weight: 900;
     border-style: solid;
     border-color: black;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
+    
 }
 
 .carousel-start-exploring:hover {
@@ -131,7 +134,7 @@ h2 {
     outline-color: white;
     border-style: solid;
     border-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .main-section {
