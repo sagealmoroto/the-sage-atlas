@@ -28,6 +28,7 @@ hr.solid {
     background-color: #eeebe2;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: sticky;
     top: 0;
     height: 60px;
@@ -36,11 +37,11 @@ hr.solid {
 }
 
 .topnav a {
-    color: #858A95;
-    text-align: center;
+    display: inline-flex;
     justify-content: center;
-    flex-direction: column;
+    text-decoration: none;
     font-size: 14px;
+    color: #858A95;
 }
 
 .topnav a:visited {
@@ -97,6 +98,24 @@ h2 {
     text-align: justify;
 }
 
+.main-container div {
+    text-align: center; 
+}
+
+.main-container a {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none;
+}
+
+.main-container p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #595D67;
+    text-align: center; 
+}
+
 /* Carousel */
 .carousel {
     max-width: 1440px;
@@ -133,6 +152,15 @@ h2 {
 
 .carousel-button-prev {
     left: 20px;
+}
+
+.carousel-button-next:hover,
+.carousel-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: black;
+    border: 2px solid white;
+    transform: translateY(-50%) scale(1.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
 }
 
 .carousel-start-exploring {
