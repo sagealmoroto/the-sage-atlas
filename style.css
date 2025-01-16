@@ -16,6 +16,13 @@ img {
     border-radius: 15px;
 }
 
+/* Section Divider */
+hr.solid {
+    border: none;
+    border-top: 2px solid #C9CCD1;
+    margin: 40px 0;
+}
+
 /* Top Navigation */
 .topnav {
     background-color: #eeebe2;
