@@ -107,6 +107,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.7); /* Lighter background on hover */
     color: black; /* Change text color on hover */
     transform: translateY(-50%) scale(1.1); /* Slightly enlarge on hover */
+}
 
 .carousel-start-exploring {
     position:absolute;
