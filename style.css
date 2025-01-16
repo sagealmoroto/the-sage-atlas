@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #595D67;
+    color: #4a4e57;
 }
 
 a {
@@ -228,4 +228,48 @@ footer a:visited {
 footer a:hover {
     color: #7280AC;
     text-decoration: underline;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .topnav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel {
+        height: 400px;
+    }
+
+    .slide img {
+        height: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .carousel-start-exploring {
+        font-size: 18px; /* Smaller button text */
+        padding: 8px 16px;
+    }
+
+    .carousel-button-next,
+    .carousel-button-prev {
+        padding: 6px 12px; /* Smaller buttons */
+    }
 }
