@@ -75,10 +75,38 @@ h2 {
     max-width: 1440px;
 }
 
+.carousel-button-next {
+
+}
+.carousel-button-prev {
+
+}
+
+.carousel-start-exploring {
+    background-color: transparent;
+    color: white;
+    outline-color: black;
+    padding: 12px 24px;
+    font-size: 22px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carousel-start-exploring:hover {
+    background-color: transparent;
+    color: black;
+    outline-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+}
+
 .main-section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #595D67;
-    padding-top: 20px;
+    padding: 40px 0;
 }
 .main-container {
     display: grid;
@@ -122,7 +150,7 @@ h2 {
     column-gap: 40px;
     text-align: justify;
     justify-self: center;
-    padding: 80px 0;
+    padding: 40px 0;
     text-decoration: none;
 }
 
@@ -131,7 +159,6 @@ h2 {
     object-fit: cover;
     max-width: 1440px;
     border-radius: 15px;
-    
 }
 
 footer {
