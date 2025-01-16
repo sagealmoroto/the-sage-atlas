@@ -1,5 +1,5 @@
 let index = 0; // Current slide
-const slides = document.querySelectorAll(".carousel");
+const slides = document.querySelectorAll(".slide");
 
 function showSlide(n) {
     slides.forEach((slide, i) => {
