@@ -75,8 +75,7 @@ h2 {
     max-width: 1440px;
 }
 
-.carousel-button-next,
-.carousel-button-prev {
+.carousel-button-next, .carousel-button-prev {
     position: absolute; /* Overlay the buttons on the carousel */
     top: 50%; /* Vertically center */
     transform: translateY(-50%); /* Adjust for the button's height */
@@ -89,7 +88,6 @@ h2 {
     padding: 10px 20px; /* Adjust button size */
     cursor: pointer; /* Add pointer on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    
 }
 
 /* Position the Next button on the right */
