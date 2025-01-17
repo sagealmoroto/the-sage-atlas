@@ -1,7 +1,7 @@
 /* Global */
 body {
     margin: 0;
-    background-color: #eeeeee;
+    background-color: #ebebf0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4a4e57;
 }
@@ -22,13 +22,13 @@ img {
 /* Section Divider */
 hr.solid {
     border: none;
-    border-top: 2px solid #C9CCD1;
+    border-top: 2px solid #a0a7b2;
     margin: 40px 0;
 }
 
 /* Top Navigation */
 .topnav {
-    background-color: #eeebe2;
+    background-color: #CECDDB;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,27 +44,27 @@ hr.solid {
     justify-content: center;
     text-decoration: none;
     font-size: 14px;
-    color: #858A95;
+    color: #2e110d;
 }
 
 .topnav a:visited {
-    color: #3A486B;
+    color: #453737;
 }
 
 .topnav a:hover {
-    color: #7280AC;
+    color: #a0a7b2;
     text-decoration: underline;
 } 
 
 .topnav a.active {
     background-color: white;
-    color: #7280AC;
+    color: #2e110d;
     text-decoration: underline;
 }
 
 /* Headers */
 h1 {
-    color: #a0a4ad;
+    color: #230d0a;
     text-align: center;
     font-style: italic;
     font-size: 64px;
@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-    color: #a0a4ad;
+    color: #230d0a;
     text-align: center;
     font-size: 22px;
     max-width: ;
@@ -103,7 +103,7 @@ h2 {
 }
 
 .main-section a:hover{
-     color: #7280AC;
+     color: #a0a7b2;
     text-decoration: underline;
 }
 
@@ -124,7 +124,7 @@ h2 {
 .main-container p {
     margin-top: 8px;
     font-size: 18px;
-    color: #595D67;
+    color: #453737;
     text-align: center; 
 }
 
@@ -200,7 +200,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #eeebe2;
+    background-color: #CECDDB;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -210,7 +210,7 @@ footer {
 }
 
 footer a {
-    color: #a0a4ad;
+    color: #2e110d;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -224,11 +224,11 @@ footer img {
 }
 
 footer a:visited {
-    color: #3A486B;
+    color: #453737;
 }
 
 footer a:hover {
-    color: #7280AC;
+    color: #a0a7b2;
     text-decoration: underline;
 }
 
@@ -313,58 +313,19 @@ footer a:hover {
     }
 }
 
-
 /* index file css */
 
 .index-body {
     cursor: none;
 }
 
-/* destination card css*/
+.card-section {
+    padding: 20px 0;
+}
 
-.flip-card {
-    background-color: transparent;
+.card-container {
+    border: 3px solid black;
+    border-radius: 5px;
     width: 300px;
     height: 400px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-    box-shadow: 7px 7px 10px 0px #C9CCD1; 
-    background-color: white;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
+}
