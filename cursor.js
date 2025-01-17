@@ -15,8 +15,8 @@ document.addEventListener('mousemove', (e) => {
     // Create a smoke trail
     const smoke = document.createElement('div');
     smoke.classList.add('smoke');
-    smoke.style.left = `${e.pageX + 20}px`;
-    smoke.style.top = `${e.pageY + 30}px`;
+    smoke.style.left = `${e.pageX + 23}px`;
+    smoke.style.top = `${e.pageY + 28}px`;
 
     // Add the smoke trail to the body
     body.appendChild(smoke);
