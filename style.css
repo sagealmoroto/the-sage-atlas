@@ -278,11 +278,6 @@ footer a:hover {
     }
 }
 
-/* Hide the default cursor */
-body {
-    cursor: none; /* Hides the default cursor */
-}
-
 /* Plane cursor */
 .custom-cursor {
     position: absolute;
@@ -316,4 +311,11 @@ body {
         opacity: 0;
         transform: scale(0.5);
     }
+}
+
+
+/* index file css */
+
+.index-body {
+    cursor: none;
 }

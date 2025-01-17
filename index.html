@@ -7,146 +7,148 @@
     <title>Travel Project</title>
 </head>
 <body>
-    <header>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="calendar.html">Calendar</a>
-            <a href="resources.html">Travel Resources</a>
-            <a href="about.html">About</a>
+    <div class="index-body">
+        <header>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="resources.html">Travel Resources</a>
+                <a href="about.html">About</a>
 
-        </div>
-        
-        <h1>Siren's Odyssey</h1>
-        <h2>A personal coding journey in progress — Siren's Odyssey is an evolving travel planner designed to showcase travel destinations</h2>
-    </header>
+            </div>
+            
+            <h1>Siren's Odyssey</h1>
+            <h2>A personal coding journey in progress — Siren's Odyssey is an evolving travel planner designed to showcase travel destinations</h2>
+        </header>
 
-    <section class="hero-section">
-        <div class="carousel">
-            <div class="slide">
-                <img src="assets/picturesque_iceland_.jpg" alt="Vatnajökull, Iceland">
+        <section class="hero-section">
+            <div class="carousel">
+                <div class="slide">
+                    <img src="assets/picturesque_iceland_.jpg" alt="Vatnajökull, Iceland">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque-bali.jpg" alt="Bali, Indonesia"></div>
+                <div class="slide"><img src="assets/picturesque-china-hike.jpg" alt="Zhangjiajie, China">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque_dubai_.jpg" alt="Dubai, UAE">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque_japan_.jpeg" alt="Mt. Fuji, Japan"></div>
+                <div class="slide"><img src="assets/picturesque_france_.jpg" alt="Paris, France">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque-spain-hike.jpg" alt="Caminito Del Ray, Spain">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque_usa_.jpg" alt="San Fransisco, USA">
+                </div>
+                <div class="slide">
+                    <img src="assets/picturesque-england.jpg" alt="York, England">
+                </div>
+                <button 
+                    class="carousel-start-exploring" 
+                    aria-label="Start Exploring Destinations Page">
+                    Start Exploring
+                </button> 
+            <button
+                onclick="changeSlides(1)"
+                class="carousel-button-next"
+                aria-label="Next Slide">
+                Next
+            </button>
+            <button
+                onclick="changeSlides(-1)"
+                class="carousel-button-prev"
+                aria-label="Previous Slide">
+                Back
+            </button>
             </div>
-            <div class="slide">
-                <img src="assets/picturesque-bali.jpg" alt="Bali, Indonesia"></div>
-            <div class="slide"><img src="assets/picturesque-china-hike.jpg" alt="Zhangjiajie, China">
-            </div>
-            <div class="slide">
-                <img src="assets/picturesque_dubai_.jpg" alt="Dubai, UAE">
-            </div>
-            <div class="slide">
-                <img src="assets/picturesque_japan_.jpeg" alt="Mt. Fuji, Japan"></div>
-            <div class="slide"><img src="assets/picturesque_france_.jpg" alt="Paris, France">
-            </div>
-            <div class="slide">
-                <img src="assets/picturesque-spain-hike.jpg" alt="Caminito Del Ray, Spain">
-            </div>
-            <div class="slide">
-                <img src="assets/picturesque_usa_.jpg" alt="San Fransisco, USA">
-            </div>
-            <div class="slide">
-                <img src="assets/picturesque-england.jpg" alt="York, England">
-            </div>
-            <button 
-                class="carousel-start-exploring" 
-                aria-label="Start Exploring Destinations Page">
-                Start Exploring
-            </button> 
-        <button
-            onclick="changeSlides(1)"
-            class="carousel-button-next"
-            aria-label="Next Slide">
-            Next
-        </button>
-        <button
-            onclick="changeSlides(-1)"
-            class="carousel-button-prev"
-            aria-label="Previous Slide">
-            Back
-        </button>
-        </div>
-        <!-- // <div onclick="changeSlides(1)" class="carousel-button-next" aria-label="Next Slide">Next</div>
-        <div onclick="changeSlides(-1)" class="carousel-button-prev" aria-label="Previous Slide">Previous</div>
-        <div class="carousel-start-exploring" aria-label="Start Exploring Destinations Page">Start Exploring</div>// -->
-    </section>
-
-    <hr class="solid">
-
-    <section class="main-section">
-        <div class="grid-container main-container">
-            <div>
-                <a href="destinations.html" target="_blank">
-                    <img src="assets/where_icon.jpg" alt="Christ the Redeemer Statue">
-                    <p>Where?</p>
-                </a>
-                
-            </div>
-            <div>
-                <a href="calendar.html" target="_blank">
-                    <img src="assets/when_icon_.jpg" alt="Water Lantern Festival">
-                    <p>When?</p>
-                </a>
-            </div>
-            <div>
-                <a href="experiences.html" target="_blank">
-                    <img src="assets/what_icon.png" alt="Croatia Yacht Week">
-                    <p>What?</p>
-                </a>
-            </div>
-            <div>
-                <a href="resources.html" target="_blank">
-                    <img src="assets/how_icon.jpg" alt="Safari Jeep Driving Through African Terrain">
-                    <p>How?</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.nationalgeographic.com/travel/article/why-travel-should-be-considered-an-essential-human-activity" target="_blank">
-                    <img src="assets/why_icon_.jpeg" alt="Aurora Borealis">
-                    <p>Why?</p>
-                </a>
-            </div>
-            <div>
-                <a href="about.html" target="_blank">
-                    <img src="assets/who_icon.jpg" alt="Camel Caravan Crossing the Desert">
-                    <p>Who?</p>
-                </a>
-            </div>
-        </div>
+            <!-- // <div onclick="changeSlides(1)" class="carousel-button-next" aria-label="Next Slide">Next</div>
+            <div onclick="changeSlides(-1)" class="carousel-button-prev" aria-label="Previous Slide">Previous</div>
+            <div class="carousel-start-exploring" aria-label="Start Exploring Destinations Page">Start Exploring</div>// -->
+        </section>
 
         <hr class="solid">
 
-        <div class="grid-container intro-container">
+        <section class="main-section">
+            <div class="grid-container main-container">
+                <div>
+                    <a href="destinations.html" target="_blank">
+                        <img src="assets/where_icon.jpg" alt="Christ the Redeemer Statue">
+                        <p>Where?</p>
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="calendar.html" target="_blank">
+                        <img src="assets/when_icon_.jpg" alt="Water Lantern Festival">
+                        <p>When?</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="experiences.html" target="_blank">
+                        <img src="assets/what_icon.png" alt="Croatia Yacht Week">
+                        <p>What?</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="resources.html" target="_blank">
+                        <img src="assets/how_icon.jpg" alt="Safari Jeep Driving Through African Terrain">
+                        <p>How?</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.nationalgeographic.com/travel/article/why-travel-should-be-considered-an-essential-human-activity" target="_blank">
+                        <img src="assets/why_icon_.jpeg" alt="Aurora Borealis">
+                        <p>Why?</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="about.html" target="_blank">
+                        <img src="assets/who_icon.jpg" alt="Camel Caravan Crossing the Desert">
+                        <p>Who?</p>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="solid">
+
+            <div class="grid-container intro-container">
+                <div>
+                    <img src="assets/winter-wonderland.jpeg" alt="December in Alaska">
+                </div>
+                <div>
+                    <p>Welcome to Siren’s Odyssey—your gateway to unforgettable adventures and awe-inspiring journeys! Whether you dream of chasing the aurora beneath Alaska's winter skies, sailing across turquoise seas, or wandering vibrant city streets, this is where every adventure begins. With curated travel guides, tips, and breathtaking stories, you’ll find everything you need to turn your travel dreams into reality. Let’s start exploring and make memories worth chasing!</p>            
+                </div>
+            </div>
+        </section>
+        <footer>
             <div>
-                <img src="assets/winter-wonderland.jpeg" alt="December in Alaska">
+                <a href="https://www.facebook.com/people/Riley-Paige/pfbid02dEogV88pMnmmNyxeJP16GVAhaDogrG5Q69hbLVm9kkHNiBoQ4eZPMt2HUPWvVy1el/">
+                        <img src="assets/facebook_logo.png" alt="Facebook Logo">Facebook
+                </a>
             </div>
             <div>
-                <p>Welcome to Siren’s Odyssey—your gateway to unforgettable adventures and awe-inspiring journeys! Whether you dream of chasing the aurora beneath Alaska's winter skies, sailing across turquoise seas, or wandering vibrant city streets, this is where every adventure begins. With curated travel guides, tips, and breathtaking stories, you’ll find everything you need to turn your travel dreams into reality. Let’s start exploring and make memories worth chasing!</p>            
+                <a href="https://www.instagram.com/sirentragedy/?hl=en">
+                    <img src="assets/instagram_logo.png" alt="Instagram Logo">Instagram
+                </a>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div>
-            <a href="https://www.facebook.com/people/Riley-Paige/pfbid02dEogV88pMnmmNyxeJP16GVAhaDogrG5Q69hbLVm9kkHNiBoQ4eZPMt2HUPWvVy1el/">
-                    <img src="assets/facebook_logo.png" alt="Facebook Logo">Facebook
-            </a>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/sirentragedy/?hl=en">
-                <img src="assets/instagram_logo.png" alt="Instagram Logo">Instagram
-            </a>
-        </div>
-        <div>
-             <a href="https://bsky.app/profile/sirentragedy.bsky.social">
-                 <img src="assets/bluesky_logo.png" alt="Bluesky Logo">Bluesky
-             </a>
-        </div>
-        <div>
-             <a href="https://sirentragedy.com/">
-                <img src="assets/sirentragedy_logo.jpg" alt="Siren Tragedy Logo">sirentragedy.com
-            </a>
-        </div>
-    </footer>
-    <script src="main.js"></script>
-    <script src="cursor.js"></script>
+            <div>
+                <a href="https://bsky.app/profile/sirentragedy.bsky.social">
+                    <img src="assets/bluesky_logo.png" alt="Bluesky Logo">Bluesky
+                </a>
+            </div>
+            <div>
+                <a href="https://sirentragedy.com/">
+                    <img src="assets/sirentragedy_logo.jpg" alt="Siren Tragedy Logo">sirentragedy.com
+                </a>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="cursor.js"></script>
+    </div>
 </body>
 </html>
