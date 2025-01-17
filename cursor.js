@@ -1,5 +1,5 @@
 // Select the body
-{const body = document.body;
+const body = document.body;
 
 // Create the plane cursor
 const planeCursor = document.createElement('div');
