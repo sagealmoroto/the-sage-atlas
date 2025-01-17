@@ -352,6 +352,8 @@ footer a:hover {
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    box-shadow: 7px 7px 10px 0px #C9CCD1; 
+    background-color: white;
   }
   
   /* Style the front side (fallback if image is missing) */
