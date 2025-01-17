@@ -1,5 +1,5 @@
 // Select the body
-const body = document.body;
+if (window.location.pathname === '/index.html') {const body = document.body;
 
 // Create the plane cursor
 const planeCursor = document.createElement('div');
@@ -26,3 +26,4 @@ document.addEventListener('mousemove', (e) => {
         smoke.remove();
     }, 800); // Match the animation duration in CSS
 });
+}
