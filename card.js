@@ -15,7 +15,7 @@ const cardData = [
 
 const touristCards = [
     {
-        id: usa,
+        id: 'usa',
         country: 'US',
         lang: 'en',
         currency: 'usd',
@@ -24,7 +24,7 @@ const touristCards = [
         imgSrc: 'assets/statueofliberty.jpg'
     },
     {
-        id: japan,
+        id: 'japan',
         country: 'JAPAND',
         lang: 'shouldbeen',
         currency: 'bad',
@@ -33,7 +33,7 @@ const touristCards = [
         imgSrc: 'assets/toriigates.jpg'
     },
     {
-        id: sweden,
+        id: 'sweden',
         country: 'sweden',
         lang: 'swedish',
         currency: 'good',
