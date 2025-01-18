@@ -45,7 +45,7 @@ const touristCards = [
 
 
 touristCards.forEach((currCard) => {
-    const cardContainer = document.querySelectorAll(".card-container");
+    const cardContainer = document.querySelector(".card-container");
 
     // create a new div element
     const newDiv = document.createElement("div");
@@ -67,5 +67,5 @@ touristCards.forEach((currCard) => {
     newDiv.appendChild(newCountry);
 
     // add the newly created card to card container hopefully fingers crossed
-    cardContainer.append(newDiv);
+    cardContainer.appendChild(newDiv);
 });
