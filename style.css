@@ -319,13 +319,70 @@ footer a:hover {
     cursor: none;
 }
 
-.card-section {
-    padding: 20px 0;
+.card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    margin: 20px 0;
+    scroll-behavior: smooth; /* Smooth scrolling for mouse wheel */
 }
 
-.card-container {
-    border: 3px solid black;
-    border-radius: 5px;
-    width: 300px;
-    height: 400px;
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px; /* Perspective for 3D effect */
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.theCultured {
+    background-color: #E6AE6B;
+    color: black;
+}
+
+.theFoodie {
+    background-color: #4A2D29
+}
+
+.thePartier {
+    background-color: #2C0731;
+}
+
+.theExplorer {
+    background-color: #310807;
+}
+
+.theAdventurer {
+    background-color: #070F31;
+}
+
+.theRelaxer {
+    background-color: #5DA7CB;
+}
+
+.theWell {
+    background-color: #9294A1;
+}
+
+.theNatured {
+    background-color: #3A6034;
+}
+
+.thePhotographer {
+    background-color: #3F4655;
 }
