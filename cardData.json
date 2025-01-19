@@ -1,0 +1,129 @@
+{
+    "The Tourist": [
+      {
+        "country": "USA",
+        "primary_language": "English",
+        "currency": "USD",
+        "most_popular_cities": ["New York City", "Los Angeles", "San Francisco", "Chicago"],
+        "tipping_etiquette": "Expected (15–20% in restaurants)",
+        "top_attractions": ["Grand Canyon", "Statue of Liberty", "Times Square", "Disney World"],
+        "recommended_duration": "1–2 weeks",
+        "image": "cards/usa-tourist.jpg"
+      },
+      {
+        "country": "Germany",
+        "primary_language": "German",
+        "currency": "EUR",
+        "most_popular_cities": ["Berlin", "Munich", "Frankfurt", "Hamburg"],
+        "tipping_etiquette": "Rounding up the bill or 5–10% in restaurants",
+        "top_attractions": ["Brandenburg Gate", "Neuschwanstein Castle", "Cologne Cathedral", "Berlin Wall Memorial"],
+        "recommended_duration": "1–2 weeks",
+        "image": "cards/germany-tourist.jpg"
+      },
+      {
+        "country": "Japan",
+        "primary_language": "Japanese",
+        "currency": "JPY",
+        "most_popular_cities": ["Tokyo", "Kyoto", "Osaka", "Hiroshima"],
+        "tipping_etiquette": "Not customary and often considered rude",
+        "top_attractions": ["Mount Fuji", "Tokyo Tower", "Fushimi Inari Shrine", "Hiroshima Peace Memorial Park"],
+        "recommended_duration": "2 weeks",
+        "image": "cards/japan-tourist.jpg"
+      }
+    ],
+    "The Foodie": [
+      {
+        "country": "USA",
+        "primary_language": "English",
+        "currency": "USD",
+        "signature_dishes": ["BBQ", "Deep-Dish Pizza", "Lobster Rolls"],
+        "food_experiences": ["Southern food tours in New Orleans", "NYC street food", "Wine tasting in Napa Valley"],
+        "beverages": ["Craft beer", "Bourbon"],
+        "image": "cards/usa-foodie.jpg"
+      },
+      {
+        "country": "Germany",
+        "primary_language": "German",
+        "currency": "EUR",
+        "signature_dishes": ["Bratwurst", "Schnitzel", "Sauerbraten", "Pretzels"],
+        "food_experiences": ["Oktoberfest in Munich", "Christmas markets", "Sausage tours in Nuremberg"],
+        "beverages": ["German beer", "Riesling wine"],
+        "image": "cards/germany-foodie.jpg"
+      },
+      {
+        "country": "Japan",
+        "primary_language": "Japanese",
+        "currency": "JPY",
+        "signature_dishes": ["Sushi", "Ramen", "Okonomiyaki", "Tempura", "Wagashi"],
+        "food_experiences": ["Sushi-making classes in Tokyo", "Osaka street food tour", "Omakase Dining"],
+        "beverages": ["Matcha tea", "Sake", "Japanese whisky"],
+        "image": "cards/japan-foodie.jpg"
+      }
+    ],
+    "The Culture-Seeker": [
+      {
+        "country": "USA",
+        "primary_language": "English",
+        "currency": "USD",
+        "historical_landmarks": ["Smithsonian Museums", "Freedom Trail", "Liberty Bell"],
+        "local_traditions": ["Powwows in the Southwest", "Mardi Gras in New Orleans"],
+        "museums_and_arts": ["Metropolitan Museum of Art", "Country Music Hall of Fame"],
+        "image": "cards/usa-culture.jpg"
+      },
+      {
+        "country": "Germany",
+        "primary_language": "German",
+        "currency": "EUR",
+        "historical_landmarks": ["Dachau Memorial", "Heidelberg Castle", "Reichstag Building"],
+        "local_traditions": ["Christmas markets", "Fasching"],
+        "museums_and_arts": ["Museum Island", "Bavarian State Opera", "Bauhaus Dessau"],
+        "image": "cards/germany-culture.jpg"
+      },
+      {
+        "country": "Japan",
+        "primary_language": "Japanese",
+        "currency": "JPY",
+        "historical_landmarks": ["Himeji Castle", "Nijo Castle", "Kinkaku-ji"],
+        "local_traditions": ["Tea ceremonies", "Hanami", "Gion Matsuri"],
+        "museums_and_arts": ["Edo-Tokyo Museum", "Studio Ghibli Museum", "National Museum of Kyoto"],
+        "image": "cards/japan-culture.jpg"
+      }
+    ],
+    "The Relaxer": [
+      {
+        "country": "USA",
+        "primary_language": "English",
+        "currency": "USD",
+        "top_relaxation_spots": ["Hawaiian beaches", "Sedona", "Carmel-by-the-Sea"],
+        "activities": ["Lounging by the beach", "Scenic drives on Big Sur", "Hot air ballooning in Napa Valley"],
+        "image": "cards/usa-relaxer.jpg"
+      },
+      {
+        "country": "Japan",
+        "primary_language": "Japanese",
+        "currency": "JPY",
+        "top_relaxation_spots": ["Hakone", "Okinawa Islands", "Arashiyama Bamboo Grove"],
+        "activities": ["Soaking in onsen", "Strolling in Zen gardens", "Island hopping in Okinawa"],
+        "image": "cards/japan-culture.jpg"
+      }
+    ],
+    "The Adventurer": [
+      {
+        "country": "USA",
+        "primary_language": "English",
+        "currency": "USD",
+        "popular_destinations": ["Yosemite National Park", "Pacific Crest Trail", "Alaska"],
+        "activities": ["Skydiving", "White-water rafting", "Sandboarding"],
+        "image": "cards/usa-adventurer.jpg"
+      },
+      {
+        "country": "Japan",
+        "primary_language": "Japanese",
+        "currency": "JPY",
+        "popular_destinations": ["Mount Fuji", "Hokkaido", "Shikoku’s 88 Temple Pilgrimage"],
+        "activities": ["Scuba diving in Okinawa", "Kayaking through the Seto Inland Sea", "Paragliding over the Japanese Alps"],
+        "image": "cards/japan-adventurer.jpg"
+      }
+    ]
+  }
+  

@@ -1,71 +1,62 @@
-// import { touristCards } from './cardData'; 
+fetch('cardData.json')
+  .then(response => response.json())
+  .then(cardData => {
+    // Map each category to its container
+    const categoryContainers = {
+      "The Tourist": ".tourist-container",
+      "The Foodie": ".foodie-container",
+      "The Culture-Seeker": ".culture-container",
+      "The Partier": ".partier-container",
+      "The Adventurer": ".adventurer-container",
+      "The Explorer": ".explorer-container",
+      "The Relaxer": ".relaxer-container",
+      "The Wellness Devotee": ".wellness-container",
+      "The Photographer": ".photographer-container",
+      "The Naturalist": ".naturalist-container"
+    };
 
-const cardData = [
-    { className: "theTourist", title: "The Tourist" },
-    // { className: "theFoodie", title: "The Foodie" },
-    // { className: "theCultured", title: "The Cultured" },
-    // { className: "thePartier", title: "The Partier" },
-    // { className: "theAdventurer", title: "The Adventurer" },
-    // { className: "theExplorer", title: "The Explorer" },
-    // { className: "theRelaxer", title: "The Relaxer" },
-    // { className: "theWell", title: "The Wellness Devotee" },
-    // { className: "thePhotographer", title: "The Photographer" },
-    // { className: "theNaturalist", title: "The Naturalist" },
-  ];
+    // Loop through each category in the JSON
+    Object.keys(cardData).forEach(category => {
+      const cards = cardData[category]; // Array of cards for this category
+      const containerSelector = categoryContainers[category];
+      const container = document.querySelector(containerSelector);
 
-const touristCards = [
-    {
-        id: 'usa',
-        country: 'US',
-        lang: 'en',
-        currency: 'usd',
-        tipping: '15-20%',
-        popularCities: 'blahg',
-        imgSrc: 'assets/statueofliberty.jpg'
-    },
-    {
-        id: 'japan',
-        country: 'JAPAND',
-        lang: 'shouldbeen',
-        currency: 'bad',
-        tipping: '0',
-        popularCities: 'blahg',
-        imgSrc: 'assets/toriigates.jpg'
-    },
-    {
-        id: 'sweden',
-        country: 'sweden',
-        lang: 'swedish',
-        currency: 'good',
-        tipping: 'appreciated',
-        popularCities: 'idk',
-        imgSrc: 'assets/picturesque_iceland_.jpg'
-    },
-]
+      if (container) {
+        cards.forEach(card => {
+          const cardDiv = document.createElement("div");
+          cardDiv.className = "card";
+          cardDiv.innerHTML = `
+            <img src="${card.image}" alt="${card.country} - ${category}">
+            <h4>${card.country}</h4>
+            ${category === "The Tourist" ? `<p>Recommended Duration: ${card.recommended_duration}</p>` : ""}
+            <p>${category === "The Tourist" ? "Top Attractions: " + card.top_attractions.join(", ") : ""}</p>
+          `;
+          container.appendChild(cardDiv);
+        });
+      }
+    });
+  })
+  .catch(error => console.error("Error loading JSON:", error));
 
 
-touristCards.forEach((currCard) => {
-    const cardContainer = document.querySelector(".card-container");
 
-    // create a new div element
-    const newDiv = document.createElement("div");
+//     // and give it some content
+//     const newImg = document.createElement("img");
+//     newImg.setAttribute('src', currCard.imgSrc);
+//     newImg.setAttribute('alt', 'oops');
+//     newImg.style.width = '300px';
+//     newImg.style.height = '400px';
 
-    // and give it some content
-    const newImg = document.createElement("img");
-    newImg.setAttribute('src', currCard.imgSrc);
-    newImg.setAttribute('alt', 'oops');
-    newImg.style.width = '300px';
-    newImg.style.height = '400px';
+//     // add the img node to the newly created div
+//     cardDiv.appendChild(newImg);
 
-    // add the img node to the newly created div
-    newDiv.appendChild(newImg);
+//     // and give it some more content
+//     const newCountry = document.createElement("h4");
+//     newCountry.textContent = currCard.country;
+//     cardDiv.appendChild(newCountry);
+
+//     // add the newly created card to card container
+//     cardContainer.appendChild(cardDiv);
+// });
 
 
-    // repeat for other shit
-    const newCountry = document.createElement("h4");
-    newCountry.textContent = currCard.country;
-    newDiv.appendChild(newCountry);
-
-    // add the newly created card to card container hopefully fingers crossed
-    cardContainer.appendChild(newDiv);
-});
