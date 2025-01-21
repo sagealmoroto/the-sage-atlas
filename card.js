@@ -38,7 +38,12 @@ fetch('cardData.json')
   })
   .catch(error => console.error("Error loading JSON:", error));
 
-
+  document.querySelector('.card-container').addEventListener('click', (e) => {
+    const card = e.target.closest('.card');
+    if (card) {
+      card.classList.toggle('flip');
+    }
+  });
 
 //     // and give it some content
 //     const newImg = document.createElement("img");

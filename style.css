@@ -338,55 +338,92 @@ footer a:hover {
     color: white
 }
 
-.card img {
+.card-front, .card-back {
+    position: absolute;
     width: 100%;
-    height: 70%;
-    object-fit: cover;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
     border-radius: 10px;
-}
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
-.card h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #fff;
-}
+  .card-front img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
 
-.theCultured-container {
+  .card-front h4, .card-front p, .card-back h4, .card-back ul {
+    margin: 5px 10px;
+    text-align: center;
+  }
+
+  .card-front h4, .card-front p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .card-front h4 {
+    margin-top: auto;
+  }
+  .card-front p {
+    margin-bottom: 10px;
+  }
+  
+  .card-back {
+    background-color: #f8f8f8;
+    transform: rotateY(180deg);
+  }
+
+  .card.flip .card-front {
+    transform: rotateY(180deg);
+  }
+
+  .card.flip .card-back {
+    transform: rotateY(0);
+  }
+
+
+.card.theCultured {
     background-color: #E6AE6B;
     color: black;
 }
 
-.theFoodie-container {
+.card.theFoodie {
     background-color: #4A2D29
 }
 
-.thePartier-container {
+.card.thePartier {
     background-color: #2C0731;
 }
 
-.theExplorer-container {
+.card.theExplorer {
     background-color: #310807;
 }
 
-.theAdventurer-container {
+.card.theAdventurer {
     background-color: #070F31;
 }
 
-.theRelaxer-container {
+.card.theRelaxer {
     background-color: #5DA7CB;
     color: black;
 }
 
-.theWell-container {
+.card.theWell {
     background-color: #9294A1;
     color: black;
 }
 
-.theNatured-container {
+.card.theNaturalist {
     background-color: #3A6034;
 }
 
-.thePhotographer-container {
+.card.thePhotographer {
     background-color: #3F4655;
 }
 
