@@ -1,6 +1,7 @@
 {
     "The Tourist": [
       {
+        "category": "The Tourist",
         "country": "USA",
         "primary_language": "English",
         "currency": "USD",
@@ -11,6 +12,7 @@
         "image": "cards/usa-tourist.jpg"
       },
       {
+        "category": "The Tourist",
         "country": "Germany",
         "primary_language": "German",
         "currency": "EUR",
@@ -21,6 +23,7 @@
         "image": "cards/germany-tourist.jpg"
       },
       {
+        "category": "The Tourist",
         "country": "Japan",
         "primary_language": "Japanese",
         "currency": "JPY",
@@ -33,6 +36,7 @@
     ],
     "The Foodie": [
       {
+        "category": "The Foodie",
         "country": "USA",
         "primary_language": "English",
         "currency": "USD",
@@ -42,6 +46,7 @@
         "image": "cards/usa-foodie.jpg"
       },
       {
+        "category": "The Foodie",
         "country": "Germany",
         "primary_language": "German",
         "currency": "EUR",
@@ -51,6 +56,7 @@
         "image": "cards/germany-foodie.jpg"
       },
       {
+        "category": "The Foodie",
         "country": "Japan",
         "primary_language": "Japanese",
         "currency": "JPY",
@@ -62,6 +68,7 @@
     ],
     "The Culture-Seeker": [
       {
+        "category": "The Culture-Seeker",
         "country": "USA",
         "primary_language": "English",
         "currency": "USD",
@@ -71,6 +78,7 @@
         "image": "cards/usa-culture.jpg"
       },
       {
+        "category": "The Culture-Seeker",
         "country": "Germany",
         "primary_language": "German",
         "currency": "EUR",
@@ -80,6 +88,7 @@
         "image": "cards/germany-culture.jpg"
       },
       {
+        "category": "The Culture-Seeker",
         "country": "Japan",
         "primary_language": "Japanese",
         "currency": "JPY",
@@ -91,6 +100,7 @@
     ],
     "The Relaxer": [
       {
+        "category": "The Relaxer",
         "country": "USA",
         "primary_language": "English",
         "currency": "USD",
@@ -99,6 +109,7 @@
         "image": "cards/usa-relaxer.jpg"
       },
       {
+        "category": "The Relaxer",
         "country": "Japan",
         "primary_language": "Japanese",
         "currency": "JPY",
@@ -109,6 +120,7 @@
     ],
     "The Adventurer": [
       {
+        "category": "The Adventurer",
         "country": "USA",
         "primary_language": "English",
         "currency": "USD",
@@ -117,6 +129,7 @@
         "image": "cards/usa-adventurer.jpg"
       },
       {
+        "category": "The Adventurer",
         "country": "Japan",
         "primary_language": "Japanese",
         "currency": "JPY",
