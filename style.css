@@ -330,11 +330,7 @@ footer a:hover {
   
   /* Body Styling */
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
     line-height: 1.6;
-    padding: 20px;
   }
   
   /* Container for Rows of Cards */
@@ -365,7 +361,7 @@ footer a:hover {
     cursor: pointer;
     flex-shrink: 0; /* Prevents cards from shrinking in flex layout */
     border: 1px solid #452f2f;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     background-color: #ffffff; /* Default background for cards */
   }
@@ -419,6 +415,8 @@ footer a:hover {
     color: #ffffff;
     margin: 0;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: var(--card-color, #333); /* Unique color based on category */
   }
@@ -445,47 +443,47 @@ footer a:hover {
   }
   
   /* Unique Category Colors */
-  .card.theTourist h4 {
+  .card.theTourist .card-front {
     background-color: #F8E6B2;
   }
   
-  .card.theFoodie h4 {
+  .card.theFoodie .card-front  {
     background-color: #4A2D29;
   }
   
-  .card.theCultureSeeker h4 {
+  .card.theCultureSeeker h.card-front  {
     background-color: #E6AE6B;
   }
   
-  .card.thePartier h4 {
+  .card.thePartier .card-front  {
     background-color: #2C0731;
   }
   
-  .card.theAdventurer h4 {
+  .card.theAdventurer .card-front  {
     background-color: #070F31;
   }
   
-  .card.theExplorer h4 {
+  .card.theExplorer .card-front  {
     background-color: #310807;
   }
   
-  .card.theRelaxer h4 {
+  .card.theRelaxer .card-front {
     background-color: #5DA7CB;
   }
   
-  .card.theWellnessDevotee h4 {
+  .card.theWellnessDevotee .card-front  {
     background-color: #9294A1;
   }
   
-  .card.thePhotographer h4 {
+  .card.thePhotographer .card-front  {
     background-color: #3F4655;
   }
   
-  .card.theNaturalist h4 {
+  .card.theNaturalist .card-front  {
     background-color: #3A6034;
   }
   
   /* Focus Styles for Accessibility */
   .card:focus {
-    outline: 3px solid #3498db; /* Highlight the focused card */
+    outline: 3px solid #e0c3ff; /* Highlight the focused card */
   }
