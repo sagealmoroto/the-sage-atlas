@@ -351,42 +351,42 @@ footer a:hover {
     color: #fff;
 }
 
-.theCultured {
+.theCultured-container {
     background-color: #E6AE6B;
     color: black;
 }
 
-.theFoodie {
+.theFoodie-container {
     background-color: #4A2D29
 }
 
-.thePartier {
+.thePartier-container {
     background-color: #2C0731;
 }
 
-.theExplorer {
+.theExplorer-container {
     background-color: #310807;
 }
 
-.theAdventurer {
+.theAdventurer-container {
     background-color: #070F31;
 }
 
-.theRelaxer {
+.theRelaxer-container {
     background-color: #5DA7CB;
     color: black;
 }
 
-.theWell {
+.theWell-container {
     background-color: #9294A1;
     color: black;
 }
 
-.theNatured {
+.theNatured-container {
     background-color: #3A6034;
 }
 
-.thePhotographer {
+.thePhotographer-container {
     background-color: #3F4655;
 }
 
