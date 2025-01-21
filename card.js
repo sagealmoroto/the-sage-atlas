@@ -1,67 +1,50 @@
+// Fetch and load card data from the JSON file
 fetch('cardData.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then(cardData => {
+    console.log("Card data loaded:", cardData); // Debugging
+
     // Map each category to its container
-    const categoryContainers = {
-      "The Tourist": ".tourist-container",
-      "The Foodie": ".foodie-container",
-      "The Culture-Seeker": ".culture-container",
-      "The Partier": ".partier-container",
-      "The Adventurer": ".adventurer-container",
-      "The Explorer": ".explorer-container",
-      "The Relaxer": ".relaxer-container",
-      "The Wellness Devotee": ".wellness-container",
-      "The Photographer": ".photographer-container",
-      "The Naturalist": ".naturalist-container"
-    };
+    const cardContainer = document.querySelector('.card-container');
 
     // Loop through each category in the JSON
     Object.keys(cardData).forEach(category => {
       const cards = cardData[category]; // Array of cards for this category
-      const containerSelector = categoryContainers[category];
-      const container = document.querySelector(containerSelector);
 
-      if (container) {
-        cards.forEach(card => {
-          const cardDiv = document.createElement("div");
-          cardDiv.className = "card";
-          cardDiv.innerHTML = `
+      cards.forEach(card => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = `card ${category.replace(/\s+/g, '-').toLowerCase()}`; // Add category class
+        cardDiv.innerHTML = `
+          <div class="card-front">
             <img src="${card.image}" alt="${card.country} - ${category}">
             <h4>${card.country}</h4>
-            ${category === "The Tourist" ? `<p>Recommended Duration: ${card.recommended_duration}</p>` : ""}
-            <p>${category === "The Tourist" ? "Top Attractions: " + card.top_attractions.join(", ") : ""}</p>
-          `;
-          container.appendChild(cardDiv);
-        });
+            <p>${category}</p>
+          </div>
+          <div class="card-back">
+            <h4>${card.country}</h4>
+            ${Object.keys(card).map(key => {
+              if (key !== 'country' && key !== 'image') {
+                return `<p><strong>${key.replace(/_/g, ' ')}:</strong> ${Array.isArray(card[key]) ? card[key].join(', ') : card[key]}</p>`;
+              }
+              return '';
+            }).join('')}
+          </div>
+        `;
+        cardContainer.appendChild(cardDiv);
+      });
+    });
+
+    // Add click event listener for card flip
+    cardContainer.addEventListener('click', (e) => {
+      const card = e.target.closest('.card');
+      if (card) {
+        card.classList.toggle('flip');
       }
     });
   })
   .catch(error => console.error("Error loading JSON:", error));
-
-  document.querySelector('.card-container').addEventListener('click', (e) => {
-    const card = e.target.closest('.card');
-    if (card) {
-      card.classList.toggle('flip');
-    }
-  });
-
-//     // and give it some content
-//     const newImg = document.createElement("img");
-//     newImg.setAttribute('src', currCard.imgSrc);
-//     newImg.setAttribute('alt', 'oops');
-//     newImg.style.width = '300px';
-//     newImg.style.height = '400px';
-
-//     // add the img node to the newly created div
-//     cardDiv.appendChild(newImg);
-
-//     // and give it some more content
-//     const newCountry = document.createElement("h4");
-//     newCountry.textContent = currCard.country;
-//     cardDiv.appendChild(newCountry);
-
-//     // add the newly created card to card container
-//     cardContainer.appendChild(cardDiv);
-// });
-
-

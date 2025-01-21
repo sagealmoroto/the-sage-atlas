@@ -326,6 +326,7 @@ footer a:hover {
     gap: 20px;
     margin: 20px 0;
     scroll-behavior: smooth; /* Smooth scrolling for mouse wheel */
+    padding: 0 20px;
 }
 
 .card {
