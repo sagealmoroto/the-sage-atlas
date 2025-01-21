@@ -30,6 +30,19 @@ fetch('cardData.json')
             <h4>${card.country}</h4>
             <h4>${card.category}</h4>
           `;
+
+          cardDiv.addEventListener('click', () => {
+            cardDiv.classList.toggle('flipped');
+          });
+
+          // Add keyboard accessibility for flipping the card
+          cardDiv.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault(); // Prevent scrolling when Space is pressed
+              cardDiv.classList.toggle('flipped');
+            }
+          });
+          
           container.appendChild(cardDiv);
         });
       }
