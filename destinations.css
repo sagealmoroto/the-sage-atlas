@@ -1,0 +1,284 @@
+/* Global */
+body {
+    margin: 0;
+    background-color: #ebebf0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4e57;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 300px;
+    max-width: 1440px;
+}
+
+/* Section Divider */
+hr.solid {
+    border: none;
+    border-top: 2px solid #a0a7b2;
+    margin: 40px 0;
+}
+
+/* Top Navigation */
+.topnav {
+    background-color: #CECDDB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.topnav a {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2e110d;
+}
+
+.topnav a:visited {
+    color: #453737;
+}
+
+.topnav a:hover {
+    color: #a0a7b2;
+    text-decoration: underline;
+} 
+
+.topnav a.active {
+    background-color: white;
+    color: #2e110d;
+    text-decoration: underline;
+}
+
+/* Headers */
+h1 {
+    color: #230d0a;
+    text-align: center;
+    font-style: italic;
+    font-size: 64px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #230d0a;
+    text-align: center;
+    font-size: 22px;
+    max-width: ;
+}
+
+/* Footer */
+footer {
+    background-color: #CECDDB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+}
+
+footer a {
+    color: #2e110d;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+footer a:visited {
+    color: #453737;
+}
+
+footer a:hover {
+    color: #a0a7b2;
+    text-decoration: underline;
+}
+
+/* card stylization */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Container for Rows of Cards */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Horizontal Scrolling Rows */
+  .card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling for mouse interactions */
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc; /* Row divider */
+  }
+  
+  /* Individual Card Styling */
+  .card {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px; /* Required for 3D flip */
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents cards from shrinking in flex layout */
+    border: 1px solid #452f2f;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff; /* Default background for cards */
+  }
+  
+  /* Flip Effect for Cards */
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out; /* Smooth flipping animation */
+  }
+  
+  .card-front {
+    transform: rotateY(0deg); /* Default state */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg); /* Hidden by default */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    text-align: left; /* Backside text alignment */
+    background-color: #f8f8f8; /* Backside background */
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(180deg); /* Front flips out of view */
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0deg); /* Back becomes visible */
+  }
+  
+  /* Card Images */
+  .card-front img {
+    width: 100%;
+    height: 75%; /* Image occupies top 75% of card */
+    object-fit: cover; /* Ensure image fits properly */
+  }
+  
+  /* Front Card Text */
+  .card-front h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--card-color, #333); /* Unique color based on category */
+  }
+  
+  /* Back Card Content */
+  .card-back p {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Scrollbar Customization (Optional) */
+  .card-row::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .card-row::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .card-row::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* Unique Category Colors */
+  .card.theTourist .card-front {
+    background-color: #F8E6B2;
+  }
+  
+  .card.theFoodie .card-front  {
+    background-color: #4A2D29;
+  }
+  
+  .card.theCultureSeeker h.card-front  {
+    background-color: #E6AE6B;
+  }
+  
+  .card.thePartier .card-front  {
+    background-color: #2C0731;
+  }
+  
+  .card.theAdventurer .card-front  {
+    background-color: #070F31;
+  }
+  
+  .card.theExplorer .card-front  {
+    background-color: #310807;
+  }
+  
+  .card.theRelaxer .card-front {
+    background-color: #5DA7CB;
+  }
+  
+  .card.theWellnessDevotee .card-front  {
+    background-color: #9294A1;
+  }
+  
+  .card.thePhotographer .card-front  {
+    background-color: #3F4655;
+  }
+  
+  .card.theNaturalist .card-front  {
+    background-color: #3A6034;
+  }
+  
+  /* Focus Styles for Accessibility */
+  .card:focus {
+    outline: 3px solid #e0c3ff; /* Highlight the focused card */
+  }
