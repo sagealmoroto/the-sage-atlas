@@ -32,7 +32,7 @@
         "top_attractions": ["Mount Fuji", "Tokyo Tower", "Fushimi Inari Shrine", "Hiroshima Peace Memorial Park"],
         "recommended_duration": "2 weeks",
         "image": "cards/japan-tourist.jpg"
-      }
+      },
       {
         "category": "The Tourist",
         "country": "France",
