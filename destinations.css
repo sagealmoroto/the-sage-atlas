@@ -246,7 +246,7 @@ footer a:hover {
     background-color: #4A2D29;
   }
   
-  .card.theCultureSeeker h.card-front  {
+  .card.theCultureSeeker .card-front {
     background-color: #E6AE6B;
   }
   
@@ -254,11 +254,11 @@ footer a:hover {
     background-color: #2C0731;
   }
   
-  .card.theAdventurer .card-front  {
+  .card.theAdventurer .card-front {
     background-color: #070F31;
   }
   
-  .card.theExplorer .card-front  {
+  .card.theExplorer .card-front {
     background-color: #310807;
   }
   
@@ -266,15 +266,15 @@ footer a:hover {
     background-color: #5DA7CB;
   }
   
-  .card.theWellnessDevotee .card-front  {
+  .card.theWellnessDevotee .card-front {
     background-color: #9294A1;
   }
   
-  .card.thePhotographer .card-front  {
+  .card.thePhotographer .card-front {
     background-color: #3F4655;
   }
   
-  .card.theNaturalist .card-front  {
+  .card.theNaturalist .card-front {
     background-color: #3A6034;
   }
   
