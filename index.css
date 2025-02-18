@@ -67,16 +67,17 @@ h1 {
     color: #230d0a;
     text-align: center;
     font-style: italic;
-    font-size: 64px;
+    font-size: 84px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 40px 0px 20px 0px;
 }
 
 h2 {
     color: #230d0a;
     text-align: center;
-    font-size: 22px;
-    max-width: ;
+    font-size: 36px;
+    padding: 20px 20px 0px 20px;
 }
 
 /* Grid Containers */
@@ -140,6 +141,8 @@ h2 {
 .slide img {
     height: 600px;
     max-width: 1440px;
+    padding: 40px 0px;
+    border-radius: 0px;
 }
 
 .carousel-button-next,
@@ -148,12 +151,13 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 18px;
-    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    color: black; /* Black text for visibility */
+    border: 2px solid black; /* Black outline */
+    border-radius: 50%; /* Circular button shape */
+    font-size: 28px; /* Larger font size for visibility */
+    font-weight: bold; /* Make the arrows stand out */
+    padding: 12px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -168,12 +172,9 @@ h2 {
 
 .carousel-button-next:hover,
 .carousel-button-prev:hover {
-    background-color: rgba(255, 255, 255, 0.7); 
-    color: black;
-    border: 2px solid white;
-    transform: translateY(-50%) scale(1.1); 
-    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
-}
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    color: white; /* White arrows on hover */
+    transform: translateY(-50%) scale(1.2); /* Slight enlargement on hover */
 
 .carousel-start-exploring {
     position: absolute;
@@ -251,6 +252,7 @@ footer a:hover {
 
     .slide img {
         height: 400px;
+        border-radius: 0px;
     }
 
     footer {

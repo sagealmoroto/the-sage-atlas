@@ -67,24 +67,16 @@ h1 {
     color: #230d0a;
     text-align: center;
     font-style: italic;
-    font-size: 82px;
+    font-size: 64px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 40px;
 }
 
 h2 {
     color: #230d0a;
     text-align: center;
-    font-size: 30px;
-    padding-bottom: 40px;
-}
-
-.slide img {
-  height: 600px;
-  max-width: 1440px;
-  border-radius: 0px;
-  padding-top: 40px;
+    font-size: 22px;
+    max-width: ;
 }
 
 /* Footer */
@@ -143,7 +135,7 @@ footer a:hover {
     gap: 20px;
     padding: 20px 0;
   }
-
+  
   /* Horizontal Scrolling Rows */
   .card-row {
     display: flex;

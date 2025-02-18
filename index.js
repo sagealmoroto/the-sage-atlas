@@ -22,7 +22,7 @@ showSlide(index);
 // Timer for automatic cycling
 let slideTimer = setInterval(() => {
     changeSlides(1); // Automatically move to the next slide
-}, 4000);
+}, 10000);
 
 // Pause/resume timer on user interaction
 const carousel = document.querySelector(".carousel");
@@ -30,5 +30,5 @@ carousel.addEventListener("mouseenter", () => clearInterval(slideTimer));
 carousel.addEventListener("mouseleave", () => {
     slideTimer = setInterval(() => {
         changeSlides(1);
-    }, 4000);
+    }, 10000);
 });
