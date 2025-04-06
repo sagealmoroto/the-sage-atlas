@@ -64,7 +64,6 @@
       "image": "cards/japan-tourist.jpg"
     }
   ],
-
   "The Foodie": [
     {
       "category": "The Foodie",
@@ -110,7 +109,6 @@
       "image": "cards/germany-foodie.jpg"
     }
   ],
-
   "The Culture-Seeker": [
     {
       "category": "The Culture-Seeker",
@@ -176,7 +174,6 @@
       "image": "cards/japan-culture.jpg"
     }
   ],
-
   "The Relaxer": [
     {
       "category": "The Relaxer",
@@ -213,7 +210,6 @@
       "image": "cards/japan-relaxer.jpg"
     }
   ],
-
   "The Adventurer": [
     {
       "category": "The Adventurer",
