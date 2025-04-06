@@ -152,18 +152,26 @@ footer a:hover {
   background-color: white; /* Default background for all cards */
 }
 
-.label-list {
-  margin-bottom: 10px;
-}
-
 .label-list ul {
-  margin: 5px 0 0 20px;
+  margin: 5px 0 0 20px;  /* Left indent */
   padding: 0;
-  list-style-type: disc;
+  list-style: none;      /* Remove default bullets */
 }
 
 .label-list li {
+  position: relative;
+  padding-left: 1.2em;   /* Space for custom bullet */
   margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.label-list li::before {
+  content: "•";                  /* Use custom bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4a4e57;                /* Match your site's text color */
+  font-size: 1em;
   line-height: 1.4;
 }
 
