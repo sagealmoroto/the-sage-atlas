@@ -1,51 +1,68 @@
 fetch('cardData.json')
   .then(response => response.json())
   .then(cardData => {
-    // Map each category to its container
-    const categoryContainers = {
-      "The Tourist": ".tourist-container",
-      "The Foodie": ".foodie-container",
-      "The Culture-Seeker": ".culture-container",
-      "The Partier": ".partier-container",
-      "The Adventurer": ".adventurer-container",
-      "The Explorer": ".explorer-container",
-      "The Relaxer": ".relaxer-container",
-      "The Wellness Devotee": ".wellness-container",
-      "The Photographer": ".photographer-container",
-      "The Naturalist": ".naturalist-container"
+    const broadCategories = {
+      "The Classics": ["The Tourist", "The Foodie", "The Culture-Seeker"],
+      "The Bold": ["The Adventurer", "The Explorer", "The Partier"],
+      "The Rechargers": ["The Relaxer", "The Wellness Devotee"],
+      "The Viewfinders": ["The Naturalist", "The Photographer"]
     };
 
-    // Loop through each category in the JSON
-    Object.keys(cardData).forEach(category => {
-      const cards = cardData[category]; // Array of cards for this category
-      const containerSelector = categoryContainers[category];
-      const container = document.querySelector(containerSelector);
+    const cardContainer = document.querySelector(".card-container");
 
-      if (container) {
+    Object.entries(broadCategories).forEach(([broadLabel, types]) => {
+      // Create a wrapper for each broad category
+      const wrapper = document.createElement("div");
+      wrapper.className = "card-row-wrapper";
+
+      // Optional heading
+      const heading = document.createElement("h3");
+      heading.textContent = broadLabel;
+      wrapper.appendChild(heading);
+
+      // Create the scrollable row
+      const row = document.createElement("div");
+      row.className = "card-row";
+      wrapper.appendChild(row);
+
+      // Find all cards that belong in this broad category
+      types.forEach(type => {
+        const cards = cardData[type];
+        if (!cards) return;
+
         cards.forEach(card => {
           const cardDiv = document.createElement("div");
-          cardDiv.className = "card";
+          cardDiv.className = `card the${type.replace(/\s/g, "")}`;
+          cardDiv.tabIndex = 0;
+
           cardDiv.innerHTML = `
-            <img src="${card.image}" alt="${card.country} - ${category}">
-            <h4>${card.country}</h4>
-            <h4>${card.category}</h4>
+            <div class="card-front">
+              <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
+              <h4>${card.country}</h4>
+              <h4>${type}</h4>
+            </div>
+            <div class="card-back">
+              <p>${card.country}</p>
+              <p>Additional info here</p>
+            </div>
           `;
 
-          cardDiv.addEventListener('click', () => {
-            cardDiv.classList.toggle('flipped');
+          cardDiv.addEventListener("click", () => {
+            cardDiv.classList.toggle("flipped");
           });
 
-          // Add keyboard accessibility for flipping the card
-          cardDiv.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-              event.preventDefault(); // Prevent scrolling when Space is pressed
-              cardDiv.classList.toggle('flipped');
+          cardDiv.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              cardDiv.classList.toggle("flipped");
             }
           });
-          
-          container.appendChild(cardDiv);
+
+          row.appendChild(cardDiv);
         });
-      }
+      });
+
+      cardContainer.appendChild(wrapper);
     });
   })
   .catch(error => console.error("Error loading JSON:", error));

@@ -1,9 +1,11 @@
 /* Global */
 body {
-    margin: 0;
-    background-color: #ebebf0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #4a4e57;
+  margin: 0;
+  background-color: #ebebf0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4a4e57;
+  line-height: 1.6;
+  text-align: center;
 }
 
 a {
@@ -11,13 +13,6 @@ a {
     cursor: none;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    height: 300px;
-    max-width: 1440px;
-}
 
 /* Section Divider */
 hr.solid {
@@ -122,12 +117,6 @@ footer a:hover {
     box-sizing: border-box;
   }
   
-  /* Body Styling */
-  body {
-    line-height: 1.6;
-    text-align: center;
-  }
-  
   /* Container for Rows of Cards */
   .card-container {
     display: flex;
@@ -211,7 +200,9 @@ footer a:hover {
   
   .card-back p {
     margin-bottom: 10px;
+    color: #333;
     font-size: 16px;
+    text-align: left;
   }
   
   .card-back ul {
@@ -233,14 +224,6 @@ footer a:hover {
     height: 20px;
     background-color: var(--category-color, #000); /* Dynamic category color */
     clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-  }
-  
-  /* Back Card Content */
-  .card-back p {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 16px;
-    text-align: left;
   }
   
   .card-front,
