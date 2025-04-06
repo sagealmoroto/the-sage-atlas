@@ -20,8 +20,24 @@
     <h2>See here for various destinations</h2>
   </header>
   <section class="card-section">
+    <!-- This is where your cards will be injected by card.js -->
     <div class="card-container"></div>
   </section>
+
+  <!-- Card template to structure each flippable card -->
+  <template id="card-template">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!-- Front content will be injected here -->
+        </div>
+        <div class="card-back">
+          <!-- Back content (additional info from JSON) will be injected here -->
+        </div>
+      </div>
+    </div>
+  </template>
+
   <script src="card.js"></script>
 </body>
 </html>
