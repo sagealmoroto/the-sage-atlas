@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="destinations.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="destinations.css" />
   <title>Where are you going?</title>
 </head>
 <body>
@@ -19,25 +19,13 @@
     <h1>Destinations</h1>
     <h2>See here for various destinations</h2>
   </header>
+
+  <!-- 💡 JavaScript will inject rows + cards into this container -->
   <section class="card-section">
-    <!-- This is where your cards will be injected by card.js -->
     <div class="card-container"></div>
   </section>
 
-  <!-- Card template to structure each flippable card -->
-  <template id="card-template">
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <!-- Front content will be injected here -->
-        </div>
-        <div class="card-back">
-          <!-- Back content (additional info from JSON) will be injected here -->
-        </div>
-      </div>
-    </div>
-  </template>
-
+  <!-- 💬 card.js script must be placed at the end so the DOM is ready -->
   <script src="card.js"></script>
 </body>
 </html>
