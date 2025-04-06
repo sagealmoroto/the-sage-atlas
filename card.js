@@ -37,22 +37,22 @@ fetch('cardData.json')
           cardDiv.tabIndex = 0;
 
           // Card inner HTML
-          cardDiv.innerHTML = `
-          <div class="card-front">
-            <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
-            <div class="card-text">
-              <div class="category-dot the${categoryClass}"></div>
-              <div>
-                <h4>${card.country}</h4>
-                <h4>${type}</h4>
-              </div>
-            </div>
-          </div>
-          <div class="card-back">
-            <p>${card.country}</p>
-            <p>Additional info here</p>
-          </div>
-        `;
+cardDiv.innerHTML = `
+  <div class="card-front">
+    <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
+    <div class="card-text">
+      <div class="category-dot the${categoryClass}"></div>
+      <div>
+        <h4>${card.country}</h4>
+        <h4>${type}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-back">
+    <p>${card.country}</p>
+    <p>Additional info here</p>
+  </div>
+`;
 
           // Flip on click
           cardDiv.addEventListener("click", () => {
