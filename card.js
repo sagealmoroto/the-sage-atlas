@@ -11,7 +11,7 @@ fetch('cardData.json')
     const cardContainer = document.querySelector(".card-container");
 
     Object.entries(broadCategories).forEach(([broadLabel, personalityTypes]) => {
-      // Create a wrapper per broad category
+      // Create a wrapper for each broad category
       const wrapper = document.createElement("div");
       wrapper.className = "card-row-wrapper";
 
@@ -20,19 +20,23 @@ fetch('cardData.json')
       heading.textContent = broadLabel;
       wrapper.appendChild(heading);
 
-      // Create the scrollable row
+      // Create the scrollable row for cards
       const row = document.createElement("div");
       row.className = "card-row";
       wrapper.appendChild(row);
 
-      // Loop through each vacation personality type in this group
+      // Loop through each personality type in this group
       personalityTypes.forEach(type => {
+        console.log("Processing type:", type);
         const cards = cardData[type];
-        if (!cards) return;
+        if (!cards) {
+          console.log("No cards found for", type);
+          return;
+        }
 
         cards.forEach(card => {
           const cardDiv = document.createElement("div");
-          const categoryClass = type.replace(/\s/g, ""); // remove spaces for class naming
+          const categoryClass = type.replace(/\s/g, ""); // Remove spaces for class naming
           cardDiv.className = `card the${categoryClass}`;
           cardDiv.tabIndex = 0;
 
@@ -67,7 +71,6 @@ fetch('cardData.json')
               `;
               break;
             case "The Wellness Devotee":
-              // Adjust the fields based on your JSON structure for Wellness Devotee
               backContent = `
                 <p><strong>Wellness Focus:</strong> ${card.wellness_focus || 'N/A'}</p>
               `;
@@ -79,13 +82,11 @@ fetch('cardData.json')
               `;
               break;
             case "The Explorer":
-              // Customize fields as needed for The Explorer
               backContent = `
                 <p><strong>Destinations:</strong> ${card.destinations ? card.destinations.join(', ') : 'N/A'}</p>
               `;
               break;
             case "The Partier":
-              // Customize fields as needed for The Partier
               backContent = `
                 <p><strong>Nightlife Spots:</strong> ${card.nightlife ? card.nightlife.join(', ') : 'N/A'}</p>
               `;
@@ -104,24 +105,26 @@ fetch('cardData.json')
               backContent = `<p>Additional info here</p>`;
           }
 
-          // Set up the inner HTML with a front and back for the flip effect
+          // Set up inner HTML for flip effect with front and back sides
           cardDiv.innerHTML = `
-            <div class="card-front">
-              <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
-              <div class="card-text">
-                <div class="category-dot the${categoryClass}"></div>
-                <div>
-                  <h4>${card.country}</h4>
-                  <h4>${type}</h4>
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
+                <div class="card-text">
+                  <div class="category-dot the${categoryClass}"></div>
+                  <div>
+                    <h4>${card.country}</h4>
+                    <h4>${type}</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-back">
-              ${backContent}
+              <div class="card-back">
+                ${backContent}
+              </div>
             </div>
           `;
 
-          // Add click and keyboard events to flip the card
+          // Add events to flip the card on click or keyboard
           cardDiv.addEventListener("click", () => {
             cardDiv.classList.toggle("flipped");
           });
