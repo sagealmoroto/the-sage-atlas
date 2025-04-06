@@ -1,6 +1,20 @@
 fetch('cardData.json')
   .then(response => response.json())
   .then(cardData => {
+    // 🔍 Map of extra fields per vacation personality type
+    const categoryDetails = {
+      "The Tourist": ["top_attractions", "most_popular_cities", "tipping_etiquette"],
+      "The Foodie": ["signature_dishes", "food_experiences", "beverages"],
+      "The Culture-Seeker": ["historical_landmarks", "local_traditions", "museums_and_arts"],
+      "The Relaxer": ["top_relaxation_spots", "activities"],
+      "The Adventurer": ["popular_destinations", "activities"],
+      "The Explorer": ["popular_destinations", "activities"],
+      "The Partier": ["party_cities", "nightlife_experiences", "alcoholic_drinks"],
+      "The Photographer": ["photo_spots", "lighting_tips", "gear_recommendations"],
+      "The Naturalist": ["natural_wonders", "eco_tours", "wildlife_encounters"],
+      "The Wellness Devotee": ["spa_destinations", "wellness_practices", "retreats"]
+    };
+
     const broadCategories = {
       "The Classics": ["The Tourist", "The Foodie", "The Culture-Seeker"],
       "The Bold": ["The Adventurer", "The Explorer", "The Partier"],
@@ -11,32 +25,59 @@ fetch('cardData.json')
     const cardContainer = document.querySelector(".card-container");
 
     Object.entries(broadCategories).forEach(([broadLabel, personalityTypes]) => {
-      // Create a wrapper per broad category
       const wrapper = document.createElement("div");
       wrapper.className = "card-row-wrapper";
 
-      // Optional: heading above each scrollable row
       const heading = document.createElement("h3");
       heading.textContent = broadLabel;
       wrapper.appendChild(heading);
 
-      // Create scrollable row container
       const row = document.createElement("div");
       row.className = "card-row";
       wrapper.appendChild(row);
 
-      // Loop through each category type in this group
       personalityTypes.forEach(type => {
         const cards = cardData[type];
         if (!cards) return;
 
         cards.forEach(card => {
+          const categoryClass = type.replace(/\s/g, "");
           const cardDiv = document.createElement("div");
-          const categoryClass = type.replace(/\s/g, ""); // e.g. "The Tourist" → "TheTourist"
           cardDiv.className = `card the${categoryClass}`;
           cardDiv.tabIndex = 0;
 
-          // Inject card HTML content
+          // 🧠 Build back content dynamically
+          let backHTML = `
+            <div class="card-back">
+              <p><strong>${card.country}</strong></p>
+              <p>Language: ${card.primary_language || "N/A"}</p>
+              <p>Currency: ${card.currency || "N/A"}</p>
+          `;
+
+          // ⏱ Only show duration for The Tourist
+          if (card.category === "The Tourist" && card.recommended_duration) {
+            backHTML += `<p>Recommended stay: ${card.recommended_duration}</p>`;
+          }
+
+          const details = categoryDetails[card.category];
+          if (details) {
+            details.forEach(field => {
+              const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+              if (Array.isArray(card[field])) {
+                backHTML += `<p><strong>${label}:</strong></p><ul>`;
+                card[field].forEach(item => {
+                  backHTML += `<li>${item}</li>`;
+                });
+                backHTML += `</ul>`;
+              } else if (card[field]) {
+                backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
+              }
+            });
+          }
+
+          backHTML += `</div>`;
+
+          // Inject front and back
           cardDiv.innerHTML = `
             <div class="card-front">
               <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
@@ -48,20 +89,14 @@ fetch('cardData.json')
                 </div>
               </div>
             </div>
-            <div class="card-back">
-              <p><strong>${card.country}</strong></p>
-              <p>Language: ${card.primary_language || 'N/A'}</p>
-              <p>Currency: ${card.currency || 'N/A'}</p>
-              <p>Duration: ${card.recommended_duration || 'N/A'}</p>
-            </div>
+            ${backHTML}
           `;
 
-          // Flip on click
+          // 🔄 Flip behavior
           cardDiv.addEventListener("click", () => {
             cardDiv.classList.toggle("flipped");
           });
 
-          // Flip on keyboard (Enter or Space)
           cardDiv.addEventListener("keydown", event => {
             if (event.key === "Enter" || event.key === " ") {
               event.preventDefault();
@@ -69,19 +104,15 @@ fetch('cardData.json')
             }
           });
 
-          // Add card to row
           row.appendChild(cardDiv);
         });
       });
 
-      // Add the full wrapper to the page
       cardContainer.appendChild(wrapper);
     });
   })
   .catch(error => {
     console.error("Error loading JSON:", error);
-
-    // Optional fallback message if JSON fails
     const fallback = document.createElement("p");
     fallback.textContent = "Oops! We couldn’t load the destination cards.";
     fallback.style.textAlign = "center";
