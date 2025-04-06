@@ -112,208 +112,225 @@ footer a:hover {
 
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
-  /* Container for Rows of Cards */
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  
-  /* Horizontal Scrolling Rows */
-  .card-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    gap: 20px;
-    scroll-behavior: smooth; /* Smooth scrolling for mouse interactions */
-    padding: 10px 20px;
-    position: relative;
-    border-bottom: 2px solid #ccc; /* Row divider */
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0)); /* WebKit support */
-  }
-  
-  /* Individual Card Styling */
-  .card {
-    width: 400px;
-    height: 500px;
-    perspective: 1000px; /* For 3D effects like flipping */
-    flex-shrink: 0; /* Prevents cards from shrinking in the row */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    background-color: white; /* Default background for all cards */
-  }
-  
-  /* Flip Effect for Cards */
-  .card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .card-front img {
-    width: 100%;
-    height: 75%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .card-front h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    text-align: center; /* Center text horizontally */
-    margin: 0;
-    padding: 10px;
-    background-color: transparent;
-    width: 100%; /* Ensure it spans the card width */
-  }
+/* Container for Rows of Cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
 
-  .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; /* Left-align text */
-    padding: 20px;
-    background-color: #f8f8f8;
-    color: black;
-    backface-visibility: hidden;
-    transform: rotateY(180deg); /* Hidden by default for flipping */
-  }
+/* Horizontal Scrolling Rows */
+.card-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 20px;
+  scroll-behavior: smooth; /* Smooth scrolling for mouse interactions */
+  padding: 10px 20px;
+  position: relative;
+  border-bottom: 2px solid #ccc; /* Row divider */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0)); /* WebKit support */
+}
   
-  .card-back p {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 16px;
-    text-align: left;
-  }
+/* Individual Card Styling */
+.card {
+  width: 400px;
+  height: 500px;
+  perspective: 1000px; /* For 3D effects like flipping */
+  flex-shrink: 0; /* Prevents cards from shrinking in the row */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-color: white; /* Default background for all cards */
+}
   
-  .card-back ul {
-    margin-left: 20px; /* Indent bullet points */
-  }
+/* Flip Effect for Cards */
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
   
-  .card-back ul li {
-    list-style-type: disc;
-    margin-bottom: 5px;
-  }
+.card-front img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  display: block;
+}
+  
+.card-text {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers both h4s vertically */
+  align-items: center;     /* centers them horizontally */
+  gap: 4px;                /* small space between lines */
+  padding: 0;
+}
+
+.card-front h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Left-align text */
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: black;
+  backface-visibility: hidden;
+  transform: rotateY(180deg); /* Hidden by default for flipping */
+}
+  
+.card-back p {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+  text-align: left;
+}
+  
+.card-back ul {
+  margin-left: 20px; /* Indent bullet points */
+}
+  
+.card-back ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+ }
   
   /* Ribbon in Top Right Corner */
-  .card-back::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 20px;
-    background-color: var(--category-color, #000); /* Dynamic category color */
-    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-  }
+.card-back::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 20px;
+  background-color: var(--category-color, #000); /* Dynamic category color */
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
   
-  .card-front,
-  .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s ease-in-out;
-    backface-visibility: hidden;
-  }
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  backface-visibility: hidden;
+}
   
-  .card.flipped .card-front {
-    transform: rotateY(180deg); /* Flip front out of view */
-  }
+.card.flipped .card-front {
+  transform: rotateY(180deg); /* Flip front out of view */
+}
   
-  .card.flipped .card-back {
-    transform: rotateY(0deg); /* Show back side */
-  }
+.card.flipped .card-back {
+  transform: rotateY(0deg); /* Show back side */
+}
 
-  .card-row-wrapper {
-    position: relative;
-  }
+.card-row-wrapper {
+  position: relative;
+}
   
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .arrow.left {
-    left: 10px;
-  }
+.arrow.left {
+  left: 10px;
+}
   
-  .arrow.right {
-    right: 10px;
-  }
+.arrow.right {
+  right: 10px;
+}
   
-  .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-  /* Unique Category Colors */
-  .ribbon {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin-right: 8px;
-    margin-top: 4px;
-    align-self: flex-start;
+/* Unique Category Colors */
+.ribbon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 4px;
+  align-self: flex-start;
   }
 
 /* Category-based ribbon colors */
 .ribbon.theTourist { 
   background-color: #F8E6B2; 
 }
+
 .ribbon.theFoodie { 
   background-color: #4A2D29; 
 }
+
 .ribbon.theCultureSeeker { 
   background-color: #E6AE6B; 
 }
+
 .ribbon.thePartier { 
   background-color: #2C0731; 
 }
+
 .ribbon.theAdventurer { 
   background-color: #070F31; 
 }
+
 .ribbon.theExplorer { 
   background-color: #310807; 
 }
+
 .ribbon.theRelaxer { 
   background-color: #5DA7CB; 
 }
+
 .ribbon.theWellnessDevotee { 
   background-color: #9294A1; 
 }
+
 .ribbon.thePhotographer { 
   background-color: #3F4655; 
 }
+
 .ribbon.theNaturalist { 
   background-color: #3A6034; 
 }
