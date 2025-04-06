@@ -277,45 +277,46 @@ footer a:hover {
   }
 
   /* Unique Category Colors */
-  .card.theTourist .card-front {
-    background-color: #F8E6B2;
+  .ribbon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 4px;
+    align-self: flex-start;
   }
-  
-  .card.theFoodie .card-front  {
-    background-color: #4A2D29;
-  }
-  
-  .card.theCultureSeeker .card-front {
-    background-color: #E6AE6B;
-  }
-  
-  .card.thePartier .card-front  {
-    background-color: #2C0731;
-  }
-  
-  .card.theAdventurer .card-front {
-    background-color: #070F31;
-  }
-  
-  .card.theExplorer .card-front {
-    background-color: #310807;
-  }
-  
-  .card.theRelaxer .card-front {
-    background-color: #5DA7CB;
-  }
-  
-  .card.theWellnessDevotee .card-front {
-    background-color: #9294A1;
-  }
-  
-  .card.thePhotographer .card-front {
-    background-color: #3F4655;
-  }
-  
-  .card.theNaturalist .card-front {
-    background-color: #3A6034;
-  }
+
+/* Category-based ribbon colors */
+.ribbon.theTourist { 
+  background-color: #F8E6B2; 
+}
+.ribbon.theFoodie { 
+  background-color: #4A2D29; 
+}
+.ribbon.theCultureSeeker { 
+  background-color: #E6AE6B; 
+}
+.ribbon.thePartier { 
+  background-color: #2C0731; 
+}
+.ribbon.theAdventurer { 
+  background-color: #070F31; 
+}
+.ribbon.theExplorer { 
+  background-color: #310807; 
+}
+.ribbon.theRelaxer { 
+  background-color: #5DA7CB; 
+}
+.ribbon.theWellnessDevotee { 
+  background-color: #9294A1; 
+}
+.ribbon.thePhotographer { 
+  background-color: #3F4655; 
+}
+.ribbon.theNaturalist { 
+  background-color: #3A6034; 
+}
   
   /* Focus Styles for Accessibility */
   .card:focus {
