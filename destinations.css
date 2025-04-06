@@ -153,14 +153,14 @@ footer a:hover {
 }
 
 .label-list {
-  text-align: left;
   margin-bottom: 10px;
+  text-align: left; /* Important! */
 }
 
 .label-list ul {
-  margin: 5px 0 0 20px;
+  margin: 6px 0 0 20px;
   padding: 0;
-  list-style: none;
+  list-style: none; /* Disable default bullet */
   text-align: left;
 }
 
@@ -170,6 +170,16 @@ footer a:hover {
   margin-bottom: 4px;
   line-height: 1.4;
   text-align: left;
+}
+
+.label-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4a4e57;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /* Flip Effect for Cards */
@@ -225,6 +235,7 @@ footer a:hover {
   color: black;
   backface-visibility: hidden;
   transform: rotateY(180deg); /* Hidden by default for flipping */
+  text-align: left;
 }
   
 .card-back p {
