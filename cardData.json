@@ -1,6 +1,4 @@
 {
-
-/* THE TOURIST */
   "The Tourist": [
     {
       "category": "The Tourist",
@@ -67,8 +65,6 @@
     }
   ],
 
-/* THE FOODIE */
-
   "The Foodie": [
     {
       "category": "The Foodie",
@@ -114,8 +110,6 @@
       "image": "cards/germany-foodie.jpg"
     }
   ],
-
-/* THE CULTURE-SEEKER */
 
   "The Culture-Seeker": [
     {
@@ -183,8 +177,6 @@
     }
   ],
 
-/* THE RELAXER */
-
   "The Relaxer": [
     {
       "category": "The Relaxer",
@@ -221,8 +213,6 @@
       "image": "cards/japan-relaxer.jpg"
     }
   ],
-
-/* THE ADVENTURER */
 
   "The Adventurer": [
     {
