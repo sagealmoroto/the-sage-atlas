@@ -1,9 +1,9 @@
 fetch('cardData.json')
   .then(response => response.json())
   .then(cardData => {
-    // 🔍 Map of extra fields per vacation personality type
+    // 🎯 Define which fields to show on each category's card back
     const categoryDetails = {
-      "The Tourist": ["top_attractions", "most_popular_cities", "tipping_etiquette"],
+      "The Tourist": ["top_attractions", "most_popular_cities"],
       "The Foodie": ["signature_dishes", "food_experiences", "beverages"],
       "The Culture-Seeker": ["historical_landmarks", "local_traditions", "museums_and_arts"],
       "The Relaxer": ["top_relaxation_spots", "activities"],
@@ -46,7 +46,7 @@ fetch('cardData.json')
           cardDiv.className = `card the${categoryClass}`;
           cardDiv.tabIndex = 0;
 
-          // 🧠 Build back content dynamically
+          // ✍️ Build back content
           let backHTML = `
             <div class="card-back">
               <p><strong>${card.country}</strong></p>
@@ -54,21 +54,23 @@ fetch('cardData.json')
               <p>Currency: ${card.currency || "N/A"}</p>
           `;
 
-          // ⏱ Only show duration for The Tourist
+          // 🕒 Tourist-only field
           if (card.category === "The Tourist" && card.recommended_duration) {
             backHTML += `<p>Recommended stay: ${card.recommended_duration}</p>`;
           }
 
-          const details = categoryDetails[card.category];
-          if (details) {
-            details.forEach(field => {
+          // 🎯 Dynamic fields per category
+          const fields = categoryDetails[card.category];
+          if (fields) {
+            fields.forEach(field => {
               const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+
               if (Array.isArray(card[field])) {
-                backHTML += `<p><strong>${label}:</strong></p><ul>`;
+                backHTML += `<div class="label-list"><strong>${label}:</strong><ul>`;
                 card[field].forEach(item => {
                   backHTML += `<li>${item}</li>`;
                 });
-                backHTML += `</ul>`;
+                backHTML += `</ul></div>`;
               } else if (card[field]) {
                 backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
               }
@@ -77,7 +79,7 @@ fetch('cardData.json')
 
           backHTML += `</div>`;
 
-          // Inject front and back
+          // 🧱 Build the full card
           cardDiv.innerHTML = `
             <div class="card-front">
               <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
@@ -92,11 +94,12 @@ fetch('cardData.json')
             ${backHTML}
           `;
 
-          // 🔄 Flip behavior
+          // 🔁 Flip on click
           cardDiv.addEventListener("click", () => {
             cardDiv.classList.toggle("flipped");
           });
 
+          // 🔁 Flip on keyboard
           cardDiv.addEventListener("keydown", event => {
             if (event.key === "Enter" || event.key === " ") {
               event.preventDefault();

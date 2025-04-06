@@ -151,7 +151,22 @@ footer a:hover {
   cursor: pointer;
   background-color: white; /* Default background for all cards */
 }
-  
+
+.label-list {
+  margin-bottom: 10px;
+}
+
+.label-list ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.label-list li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
 /* Flip Effect for Cards */
 .card-front {
   position: absolute;

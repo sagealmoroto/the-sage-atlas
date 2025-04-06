@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="destinations.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Where are you going?</title>
+
+  <!-- Your page's stylesheet -->
+  <link rel="stylesheet" href="destinations.css" />
 </head>
 <body>
+  <!-- 🧭 Top navigation bar -->
   <header>
     <div class="topnav">
       <a href="index.html">Home</a>
-      <a href="destinations.html">Destinations</a>
+      <a href="destinations.html" class="active">Destinations</a>
       <a href="experiences.html">Experiences</a>
       <a href="calendar.html">Calendar</a>
       <a href="resources.html">Travel Resources</a>
@@ -20,12 +23,12 @@
     <h2>See here for various destinations</h2>
   </header>
 
-  <!-- 💡 JavaScript will inject rows + cards into this container -->
+  <!-- 📦 Section where all destination cards will be dynamically added -->
   <section class="card-section">
     <div class="card-container"></div>
   </section>
 
-  <!-- 💬 card.js script must be placed at the end so the DOM is ready -->
+  <!-- 🧠 Your JavaScript that dynamically builds cards -->
   <script src="card.js"></script>
 </body>
 </html>
