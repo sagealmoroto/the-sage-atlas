@@ -159,8 +159,8 @@ footer a:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch; /* stretch ensures full width for children */
+    justify-content: space-between;
+    align-items: stretch;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
@@ -170,11 +170,7 @@ footer a:hover {
     width: 100%;
     height: 75%;
     object-fit: cover;
-    align-self: stretch;
-    margin: 0;
-    padding: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    display: block;
   }
   
   .card-front h4 {
