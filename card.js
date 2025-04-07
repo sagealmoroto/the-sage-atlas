@@ -1,7 +1,6 @@
 fetch('cardData.json')
   .then(response => response.json())
   .then(cardData => {
-    // 🎯 Define which fields to show on each category's card back
     const categoryDetails = {
       "The Tourist": ["top_attractions", "most_popular_cities"],
       "The Foodie": ["signature_dishes", "food_experiences", "beverages"],
@@ -54,12 +53,10 @@ fetch('cardData.json')
               <p>Currency: ${card.currency || "N/A"}</p>
           `;
 
-          // 🕒 Tourist-only field
           if (card.category === "The Tourist" && card.recommended_duration) {
             backHTML += `<p>Recommended stay: ${card.recommended_duration}</p>`;
           }
 
-          // 🎯 Dynamic fields per category
           const fields = categoryDetails[card.category];
           if (fields) {
             fields.forEach(field => {
@@ -84,7 +81,7 @@ fetch('cardData.json')
             <div class="card-front">
               <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
               <div class="card-text">
-                <div class="category-dot the${categoryClass}"></div>
+                <div class="category-dot"></div>
                 <div>
                   <h4>${card.country}</h4>
                   <h4>${type}</h4>

@@ -2,33 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Where are you going?</title>
 
-  <!-- Your page's stylesheet -->
+  <!-- Styles -->
   <link rel="stylesheet" href="destinations.css" />
 </head>
 <body>
-  <!-- 🧭 Top navigation bar -->
+  <!-- 🧭 Navigation -->
   <header>
-    <div class="topnav">
+    <nav class="topnav">
       <a href="index.html">Home</a>
       <a href="destinations.html" class="active">Destinations</a>
       <a href="experiences.html">Experiences</a>
       <a href="calendar.html">Calendar</a>
       <a href="resources.html">Travel Resources</a>
       <a href="about.html">About</a>
-    </div>
+    </nav>
     <h1>Destinations</h1>
     <h2>See here for various destinations</h2>
   </header>
 
-  <!-- 📦 Section where all destination cards will be dynamically added -->
-  <section class="card-section">
-    <div class="card-container"></div>
-  </section>
+  <!-- 📦 Destination cards will load here -->
+  <main>
+    <section class="card-section">
+      <div class="card-container"></div>
+    </section>
+  </main>
 
-  <!-- 🧠 Your JavaScript that dynamically builds cards -->
-  <script src="card.js"></script>
+  <!-- 🧠 Script that builds cards dynamically -->
+  <script src="card.js" defer></script>
 </body>
 </html>
