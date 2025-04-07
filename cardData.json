@@ -88,6 +88,66 @@
     },
     {
       "category": "The Foodie",
+      "country": "Mexico",
+      "primary_language": "Spanish",
+      "currency": "MXN",
+      "signature_dishes": ["Tacos al Pastor", "Mole", "Tamales", "Chiles en Nogada"],
+      "food_experiences": [
+        "Street food crawl in Mexico City",
+        "Traditional cooking class in Oaxaca",
+        "Mezcal tasting in Puebla",
+        "Local market tours (e.g., Mercado de San Juan)"
+      ],
+      "beverages": ["Horchata", "Mezcal", "Tequila", "Mexican Hot Chocolate"],
+      "image": "cards/mexico-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": ["Pizza Napoletana", "Pasta Carbonara", "Lasagna", "Risotto"],
+      "food_experiences": [
+        "Pasta-making classes in Bologna",
+        "Aperitivo culture in Milan",
+        "Truffle hunting in Piedmont",
+        "Wine and cheese tours in Tuscany"
+      ],
+      "beverages": ["Italian wine (Chianti, Barolo)", "Espresso", "Limoncello"],
+      "image": "cards/italy-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "signature_dishes": ["Coq au Vin", "Bouillabaisse", "Ratatouille", "Duck Confit"],
+      "food_experiences": [
+        "Bakery and pastry tours in Paris",
+        "Wine and cheese tastings in Bordeaux",
+        "Food markets in Provence",
+        "Michelin-star dining in Lyon"
+      ],
+      "beverages": ["French wine (Bordeaux, Burgundy)", "Champagne", "Café au lait", "Kir"],
+      "image": "cards/france-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "country": "China",
+      "primary_language": "Mandarin Chinese",
+      "currency": "CNY",
+      "signature_dishes": ["Peking Duck", "Dim Sum", "Mapo Tofu", "Xiaolongbao"],
+      "food_experiences": [
+        "Dumpling-making class in Xi’an or Shanghai",
+        "Night markets in Chengdu and Taipei",
+        "Hot pot dining in Chongqing",
+        "Regional cuisine sampling (e.g., Cantonese, Sichuan, Hunan)"
+      ],
+      "beverages": ["Chinese tea (jasmine, oolong)", "Baijiu", "Soy Milk", "Tsingtao beer"],
+      "image": "cards/china-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
       "country": "Germany",
       "primary_language": "German",
       "currency": "EUR",
