@@ -188,6 +188,11 @@
         "Metropolitan Museum of Art",
         "Country Music Hall of Fame"
       ],
+      "cultural_experiences": [
+        "Jazz in New Orleans",
+        "Native American heritage sites",
+        "Broadway shows in NYC"
+      ],
       "image": "cards/usa-culture.jpg"
     },
     {
@@ -208,6 +213,11 @@
         "Museum Island",
         "Bavarian State Opera",
         "Bauhaus Dessau"
+      ],
+      "cultural_experiences": [
+        "Medieval festivals",
+        "Beer hall music culture",
+        "Contemporary art in Berlin"
       ],
       "image": "cards/germany-culture.jpg"
     },
@@ -231,7 +241,117 @@
         "Studio Ghibli Museum",
         "National Museum of Kyoto"
       ],
+      "cultural_experiences": [
+        "Traditional theater (Noh, Kabuki)",
+        "Calligraphy workshops",
+        "Ryokan stays with kaiseki meals"
+      ],
       "image": "cards/japan-culture.jpg"
+    },
+    {
+      "category": "The Culture-Seeker",
+      "country": "India",
+      "primary_language": "Hindi, English",
+      "currency": "INR",
+      "historical_landmarks": [
+        "Taj Mahal",
+        "Qutub Minar",
+        "Hawa Mahal"
+      ],
+      "local_traditions": [
+        "Diwali festivals",
+        "Colorful Holi celebrations",
+        "Ayurvedic rituals"
+      ],
+      "museums_and_arts": [
+        "National Museum (Delhi)",
+        "City Palace Museum (Udaipur)",
+        "Indian Museum (Kolkata)"
+      ],
+      "cultural_experiences": [
+        "Bollywood dance classes",
+        "Temple ceremonies",
+        "Traditional Indian weddings (tourist-friendly)"
+      ],
+      "image": "cards/india-culture.jpg"
+    },
+    {
+      "category": "The Culture-Seeker",
+      "country": "Brazil",
+      "primary_language": "Portuguese",
+      "currency": "BRL",
+      "historical_landmarks": [
+        "Pelourinho (Salvador)",
+        "Christ the Redeemer",
+        "Ouro Preto colonial town"
+      ],
+      "local_traditions": [
+        "Candombl\u00e9 rituals",
+        "June Festivals (Festas Juninas)"
+      ],
+      "museums_and_arts": [
+        "S\u00e3o Paulo Museum of Art",
+        "Museum of Tomorrow (Rio)",
+        "Inhotim Contemporary Art Center"
+      ],
+      "cultural_experiences": [
+        "Afro-Brazilian dance and music",
+        "Capoeira demonstrations",
+        "Carnival in Salvador or Rio"
+      ],
+      "image": "cards/brazil-culture.jpg"
+    },
+    {
+      "category": "The Culture-Seeker",
+      "country": "Greece",
+      "primary_language": "Greek",
+      "currency": "EUR",
+      "historical_landmarks": [
+        "Acropolis of Athens",
+        "Delphi ruins",
+        "Palace of Knossos"
+      ],
+      "local_traditions": [
+        "Greek Orthodox Easter",
+        "Name day celebrations"
+      ],
+      "museums_and_arts": [
+        "Acropolis Museum",
+        "National Archaeological Museum",
+        "Byzantine and Christian Museum"
+      ],
+      "cultural_experiences": [
+        "Folk dance nights in tavernas",
+        "Island village feasts",
+        "Traditional music festivals"
+      ],
+      "image": "cards/greece-culture.jpg"
+    },
+    {
+      "category": "The Culture-Seeker",
+      "country": "Egypt",
+      "primary_language": "Arabic",
+      "currency": "EGP",
+      "historical_landmarks": [
+        "Pyramids of Giza",
+        "Karnak Temple",
+        "Valley of the Kings"
+      ],
+      "local_traditions": [
+        "Ramadan feasts",
+        "Coptic Christian holidays"
+      ],
+      "museums_and_arts": [
+        "Egyptian Museum (Cairo)",
+        "Grand Egyptian Museum",
+        "Nubian Museum (Aswan)"
+      ],
+      "cultural_experiences": [
+        "Nubian village visits",
+        "Sufi dance performances",
+        "Traditional felucca sailing on the Nile"
+      ],
+      "image": "cards/egypt-culture.jpg"
     }
   ],
   "The Relaxer": [
@@ -242,13 +362,15 @@
       "currency": "USD",
       "top_relaxation_spots": [
         "Hawaiian beaches",
-        "Sedona",
-        "Carmel-by-the-Sea"
+        "Sedona desert retreats",
+        "Carmel-by-the-Sea",
+        "Big Sur coastline"
       ],
       "activities": [
-        "Lounging by the beach",
-        "Scenic drives on Big Sur",
-        "Hot air ballooning in Napa Valley"
+        "Lounging on the beach in Maui",
+        "Scenic drives along Highway 1",
+        "Hot air ballooning in Napa Valley",
+        "Forest walks in the Pacific Northwest"
       ],
       "image": "cards/usa-relaxer.jpg"
     },
@@ -258,16 +380,94 @@
       "primary_language": "Japanese",
       "currency": "JPY",
       "top_relaxation_spots": [
-        "Hakone",
+        "Hakone hot springs",
         "Okinawa Islands",
-        "Arashiyama Bamboo Grove"
+        "Arashiyama Bamboo Grove",
+        "Kinosaki Onsen"
       ],
       "activities": [
-        "Soaking in onsen",
-        "Strolling in Zen gardens",
-        "Island hopping in Okinawa"
+        "Soaking in traditional onsen",
+        "Strolling through Zen gardens",
+        "Island hopping in Okinawa",
+        "Tea house experiences in Kyoto"
       ],
       "image": "cards/japan-relaxer.jpg"
+    },
+    {
+      "category": "The Relaxer",
+      "country": "French Polynesia",
+      "primary_language": "French, Tahitian",
+      "currency": "XPF",
+      "top_relaxation_spots": [
+        "Bora Bora",
+        "Moorea",
+        "Tahiti",
+        "Rangiroa Atoll"
+      ],
+      "activities": [
+        "Sunbathing in overwater bungalows",
+        "Spa treatments with ocean views",
+        "Snorkeling calm lagoons",
+        "Sunset cruises on traditional boats"
+      ],
+      "image": "cards/frenchpolynesia-relaxer.jpg"
+    },
+    {
+      "category": "The Relaxer",
+      "country": "Finland",
+      "primary_language": "Finnish, Swedish",
+      "currency": "EUR",
+      "top_relaxation_spots": [
+        "Finnish Lakeland",
+        "Rovaniemi in winter",
+        "Turku Archipelago",
+        "Nuuksio National Park"
+      ],
+      "activities": [
+        "Unwinding in a lakeside sauna",
+        "Forest bathing in summer",
+        "Snowy cabin stays with fireplaces",
+        "Northern lights watching in silence"
+      ],
+      "image": "cards/finland-relaxer.jpg"
+    },
+    {
+      "category": "The Relaxer",
+      "country": "Indonesia",
+      "primary_language": "Indonesian",
+      "currency": "IDR",
+      "top_relaxation_spots": [
+        "Ubud (Bali)",
+        "Gili Islands",
+        "Lombok",
+        "Komodo Islands"
+      ],
+      "activities": [
+        "Meditation retreats in rice fields",
+        "Floating breakfasts in private pools",
+        "Sunset beach lounging",
+        "Massage and spa rituals with essential oils"
+      ],
+      "image": "cards/indonesia-relaxer.jpg"
+    },
+    {
+      "category": "The Relaxer",
+      "country": "Portugal",
+      "primary_language": "Portuguese",
+      "currency": "EUR",
+      "top_relaxation_spots": [
+        "Algarve coast",
+        "Sintra hills",
+        "Madeira island",
+        "Alentejo countryside"
+      ],
+      "activities": [
+        "Cliffside walks by the ocean",
+        "Long caf\u00e9 breakfasts in old towns",
+        "Wine tastings in the Douro Valley",
+        "Beach days with golden sand and sea breeze"
+      ],
+      "image": "cards/portugal-relaxer.jpg"
     }
   ],
   "The Adventurer": [
