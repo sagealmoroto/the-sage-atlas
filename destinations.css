@@ -1,4 +1,12 @@
-/* Global */
+/* -----------------------------------
+   RESET & GLOBAL STYLES
+----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #ebebf0;
@@ -13,14 +21,15 @@ a {
   cursor: none;
 }
 
-/* Section Divider */
 hr.solid {
   border: none;
   border-top: 2px solid #a0a7b2;
   margin: 40px 0;
 }
 
-/* Top Navigation */
+/* -----------------------------------
+   NAVIGATION + HEADER
+----------------------------------- */
 .topnav {
   background-color: #CECDDB;
   display: flex;
@@ -36,7 +45,6 @@ hr.solid {
 .topnav a {
   display: inline-flex;
   justify-content: center;
-  text-decoration: none;
   font-size: 14px;
   color: #2e110d;
 }
@@ -56,10 +64,8 @@ hr.solid {
   text-decoration: underline;
 }
 
-/* Headers */
 h1 {
   color: #230d0a;
-  text-align: center;
   font-style: italic;
   font-size: 64px;
   font-weight: 100;
@@ -68,52 +74,12 @@ h1 {
 
 h2 {
   color: #230d0a;
-  text-align: center;
   font-size: 22px;
 }
 
-/* Footer */
-footer {
-  background-color: #CECDDB;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  padding: 0 20px;
-}
-
-footer a {
-  color: #2e110d;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-footer img {
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
-}
-
-footer a:visited {
-  color: #453737;
-}
-
-footer a:hover {
-  color: #a0a7b2;
-  text-decoration: underline;
-}
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Card Container */
+/* -----------------------------------
+   CARD LAYOUT: CONTAINERS & ROWS
+----------------------------------- */
 .card-container {
   display: flex;
   flex-direction: column;
@@ -121,7 +87,10 @@ footer a:hover {
   padding: 20px 0;
 }
 
-/* Horizontal Scrolling Rows */
+.card-row-wrapper {
+  position: relative;
+}
+
 .card-row {
   display: flex;
   flex-wrap: nowrap;
@@ -129,13 +98,14 @@ footer a:hover {
   gap: 20px;
   scroll-behavior: smooth;
   padding: 10px 20px;
-  position: relative;
   border-bottom: 2px solid #ccc;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
 }
 
-/* Card Styles */
+/* -----------------------------------
+   CARD CORE STYLES
+----------------------------------- */
 .card {
   width: 400px;
   height: 500px;
@@ -148,16 +118,30 @@ footer a:hover {
   background-color: white;
 }
 
-/* Front */
-.card-front {
+/* Flip Transitions */
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: transform 0.6s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card.flipped .card-front {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+/* FRONT */
+.card-front {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -177,7 +161,6 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  padding: 0;
 }
 
 .card-front h4 {
@@ -188,24 +171,8 @@ footer a:hover {
   margin: 0;
 }
 
-/* Dot on Card Front */
-.card-front .category-dot {
-  position: absolute;
-  bottom: 10%;
-  right: 12px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--category-color, #000);
-  z-index: 10;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* optional: makes it pop */
-}
-
-/* Back */
+/* BACK */
 .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -213,8 +180,25 @@ footer a:hover {
   padding: 20px;
   background-color: #f8f8f8;
   color: black;
-  backface-visibility: hidden;
   transform: rotateY(180deg);
+  text-align: left;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.card-back::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.card-back p {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -239,58 +223,34 @@ footer a:hover {
   text-align: left;
 }
 
-.card-back p {
-  margin-bottom: 10px;
-  color: #333;
-  font-size: 16px;
-  text-align: left;
+/* -----------------------------------
+   DECORATIONS: DOT + RIBBON + ARROWS
+----------------------------------- */
+.card-front .category-dot {
+  position: absolute;
+  bottom: 10%;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--category-color, #000);
+  z-index: 10;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
-.card-back ul {
-  margin-left: 20px;
-}
-
-.card-back ul li {
-  list-style-type: disc;
-  margin-bottom: 5px;
-}
-
-/* Bookmark Ribbon on Card Back */
 .card-back::before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 60px;
-  height: 100px; /* elongates downward from top */
+  height: 100px;
   background-color: var(--category-color, #000);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   z-index: 5;
 }
 
-/* Flip Transitions */
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s ease-in-out;
-  backface-visibility: hidden;
-}
-
-.card.flipped .card-front {
-  transform: rotateY(180deg);
-}
-
-.card.flipped .card-back {
-  transform: rotateY(0deg);
-}
-
-/* Navigation Arrows */
-.card-row-wrapper {
-  position: relative;
-}
-
+/* Navigation Arrows (future feature) */
 .arrow {
   position: absolute;
   top: 50%;
@@ -319,7 +279,9 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Category Variables */
+/* -----------------------------------
+   CATEGORY COLOR THEMES
+----------------------------------- */
 .card.TheTourist         { --category-color: #F9D98A; }
 .card.TheFoodie          { --category-color: #7B4B3A; }
 .card.TheCultureSeeker   { --category-color: #D08B5B; }
@@ -334,8 +296,9 @@ footer a:hover {
 .card.ThePhotographer    { --category-color: #606C76; }
 .card.TheNaturalist      { --category-color: #4C6A4D; }
 
-/* Accessibility Focus */
+/* -----------------------------------
+   ACCESSIBILITY
+----------------------------------- */
 .card:focus {
   outline: 3px solid #e0c3ff;
 }
-

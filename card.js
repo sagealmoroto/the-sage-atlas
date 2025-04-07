@@ -47,32 +47,26 @@ fetch('cardData.json')
 
           // ✍️ Build back content
           let backHTML = `
-            <div class="card-back">
-              <p><strong>${card.country}</strong></p>
-              <p>Language: ${card.primary_language || "N/A"}</p>
-              <p>Currency: ${card.currency || "N/A"}</p>
-          `;
-
-          if (card.category === "The Tourist" && card.recommended_duration) {
-            backHTML += `<p>Recommended stay: ${card.recommended_duration}</p>`;
-          }
-
-          const fields = categoryDetails[card.category];
-          if (fields) {
-            fields.forEach(field => {
-              const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
-
-              if (Array.isArray(card[field])) {
-                backHTML += `<div class="label-list"><strong>${label}:</strong><ul>`;
-                card[field].forEach(item => {
-                  backHTML += `<li>${item}</li>`;
-                });
-                backHTML += `</ul></div>`;
-              } else if (card[field]) {
-                backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
-              }
-            });
-          }
+          <div class="card-back">
+            <p><strong>${card.country}</strong></p>
+        `;
+        
+        const fields = categoryDetails[card.category];
+        if (fields) {
+          fields.forEach(field => {
+            const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+        
+            if (Array.isArray(card[field])) {
+              backHTML += `<div class="label-list"><strong>${label}:</strong><ul>`;
+              card[field].forEach(item => {
+                backHTML += `<li>${item}</li>`;
+              });
+              backHTML += `</ul></div>`;
+            } else if (card[field]) {
+              backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
+            }
+          });
+        }
 
           backHTML += `</div>`;
 
