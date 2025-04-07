@@ -320,16 +320,19 @@ footer a:hover {
 }
 
 /* Category Variables */
-.card.TheTourist       { --category-color: #F8E6B2; }
-.card.TheFoodie        { --category-color: #4A2D29; }
-.card.TheCultureSeeker { --category-color: #E6AE6B; }
-.card.ThePartier       { --category-color: #2C0731; }
-.card.TheAdventurer    { --category-color: #070F31; }
-.card.TheExplorer      { --category-color: #310807; }
-.card.TheRelaxer       { --category-color: #5DA7CB; }
-.card.TheWellnessDevotee { --category-color: #9294A1; }
-.card.ThePhotographer  { --category-color: #3F4655; }
-.card.TheNaturalist    { --category-color: #3A6034; }
+.card.TheTourist         { --category-color: #F9D98A; }
+.card.TheFoodie          { --category-color: #7B4B3A; }
+.card.TheCultureSeeker   { --category-color: #D08B5B; }
+
+.card.ThePartier         { --category-color: #8E3A80; }
+.card.TheAdventurer      { --category-color: #293B8C; }
+.card.TheExplorer        { --category-color: #B5432C; }
+
+.card.TheRelaxer         { --category-color: #A7C8DC; }
+.card.TheWellnessDevotee { --category-color: #C2C6D6; }
+
+.card.ThePhotographer    { --category-color: #606C76; }
+.card.TheNaturalist      { --category-color: #4C6A4D; }
 
 /* Accessibility Focus */
 .card:focus {
