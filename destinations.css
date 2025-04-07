@@ -282,9 +282,9 @@ h2 {
 /* -----------------------------------
    CATEGORY COLOR THEMES
 ----------------------------------- */
-.card.TheTourist         { --category-color: #F9D98A; }
-.card.TheFoodie          { --category-color: #7B4B3A; }
-.card.TheCultureSeeker   { --category-color: #D08B5B; }
+.card.TheTourist         { --category-color: #F3e5ab; }
+.card.TheFoodie          { --category-color: #a5441a; }
+.card.TheCultureSeeker   { --category-color: #cb8944; }
 
 .card.ThePartier         { --category-color: #8E3A80; }
 .card.TheAdventurer      { --category-color: #293B8C; }
