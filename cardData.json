@@ -887,6 +887,223 @@
       "image": "cards/kazakhstan-naturalist.jpg"
     }
   ],
+  "The Partier": [
+    {
+      "category": "The Partier",
+      "country": "Hungary",
+      "primary_language": "Hungarian",
+      "currency": "HUF",
+      "party_cities": [
+        "Budapest"
+      ],
+      "nightlife_experiences": [
+        "Ruin bars",
+        "Thermal bath parties",
+        "Riverside clubs"
+      ],
+      "alcoholic_drinks": [
+        "P\u00e1linka",
+        "Unicum",
+        "Hungarian wine"
+      ],
+      "image": "cards/hungary-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Croatia",
+      "primary_language": "Croatian",
+      "currency": "EUR",
+      "party_cities": [
+        "Split",
+        "Hvar",
+        "Zr\u0107e Beach (Pag Island)"
+      ],
+      "nightlife_experiences": [
+        "Yacht parties",
+        "Beach raves",
+        "Open-air festivals"
+      ],
+      "alcoholic_drinks": [
+        "Rakija",
+        "Croatian wine",
+        "Local beer"
+      ],
+      "image": "cards/croatia-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Spain",
+      "primary_language": "Spanish",
+      "currency": "EUR",
+      "party_cities": [
+        "Ibiza",
+        "Barcelona",
+        "Madrid"
+      ],
+      "nightlife_experiences": [
+        "Mega clubs",
+        "Tapas bar crawls",
+        "Beachside dance parties"
+      ],
+      "alcoholic_drinks": [
+        "Sangria",
+        "Cava",
+        "Tinto de Verano"
+      ],
+      "image": "cards/spain-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Germany",
+      "primary_language": "German",
+      "currency": "EUR",
+      "party_cities": [
+        "Berlin",
+        "Hamburg",
+        "Cologne"
+      ],
+      "nightlife_experiences": [
+        "Techno clubs",
+        "Underground raves",
+        "All-night dance halls"
+      ],
+      "alcoholic_drinks": [
+        "German beer",
+        "J\u00e4germeister",
+        "Schnapps"
+      ],
+      "image": "cards/germany-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Brazil",
+      "primary_language": "Portuguese",
+      "currency": "BRL",
+      "party_cities": [
+        "Rio de Janeiro",
+        "S\u00e3o Paulo",
+        "Salvador"
+      ],
+      "nightlife_experiences": [
+        "Carnival street parties",
+        "Samba clubs",
+        "Favela funk nights"
+      ],
+      "alcoholic_drinks": [
+        "Caipirinha",
+        "Cacha\u00e7a",
+        "Brazilian beer"
+      ],
+      "image": "cards/brazil-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Jamaica",
+      "primary_language": "English, Jamaican Patois",
+      "currency": "JMD",
+      "party_cities": [
+        "Montego Bay",
+        "Negril",
+        "Kingston"
+      ],
+      "nightlife_experiences": [
+        "Beach parties",
+        "Dancehall clubs",
+        "Reggae bars"
+      ],
+      "alcoholic_drinks": [
+        "Rum punch",
+        "Red Stripe beer",
+        "Jamaican rum"
+      ],
+      "image": "cards/jamaica-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "USA",
+      "primary_language": "English",
+      "currency": "USD",
+      "party_cities": [
+        "Las Vegas",
+        "Miami",
+        "New Orleans",
+        "Los Angeles"
+      ],
+      "nightlife_experiences": [
+        "Rooftop clubs",
+        "Beach parties",
+        "Live music bars",
+        "Festivals"
+      ],
+      "alcoholic_drinks": [
+        "Craft cocktails",
+        "Whiskey",
+        "Beer"
+      ],
+      "image": "cards/usa-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "South Korea",
+      "primary_language": "Korean",
+      "currency": "KRW",
+      "party_cities": [
+        "Seoul",
+        "Busan"
+      ],
+      "nightlife_experiences": [
+        "Karaoke rooms",
+        "Dance clubs in Hongdae and Itaewon",
+        "Late-night street food afterparties"
+      ],
+      "alcoholic_drinks": [
+        "Soju",
+        "Makgeolli",
+        "Korean beer"
+      ],
+      "image": "cards/southkorea-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "United Arab Emirates",
+      "primary_language": "Arabic",
+      "currency": "AED",
+      "party_cities": [
+        "Dubai"
+      ],
+      "nightlife_experiences": [
+        "Luxury beach clubs",
+        "High-rise lounges",
+        "Hotel bar scenes"
+      ],
+      "alcoholic_drinks": [
+        "Cocktails",
+        "Imported spirits",
+        "Champagne"
+      ],
+      "image": "cards/uae-partier.jpg"
+    },
+    {
+      "category": "The Partier",
+      "country": "Israel",
+      "primary_language": "Hebrew",
+      "currency": "ILS",
+      "party_cities": [
+        "Tel Aviv"
+      ],
+      "nightlife_experiences": [
+        "Beach raves",
+        "LGBTQ+ clubs",
+        "Electronic music festivals"
+      ],
+      "alcoholic_drinks": [
+        "Arak",
+        "Israeli wine",
+        "Craft beer"
+      ],
+      "image": "cards/israel-partier.jpg"
+    }
+  ],
     "The Adventurer": [
     {
       "category": "The Adventurer",
