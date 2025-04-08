@@ -9,7 +9,7 @@ fetch('cardData.json')
       "The Adventurer": ["popular_destinations", "thrill_activities", "terrain_types"],
       "The Explorer": ["remote_destinations", "exploration_styles", "unique_features"],
       "The Partier": ["party_cities", "nightlife_experiences", "alcoholic_drinks"],
-      "The Photographer": ["photo_spots", "lighting_tips", "gear_recommendations"],
+      "The Photographer": ["photography_styles", "photo_spots", "visual_characteristics"],
       "The Naturalist": ["natural_wonders", "eco_tours", "wildlife_encounters"],
       "The Wellness Devotee": ["wellness_traditions", "healing_experiences"]
     };
