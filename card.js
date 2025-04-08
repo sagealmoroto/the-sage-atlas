@@ -5,13 +5,13 @@ fetch('cardData.json')
       "The Tourist": ["top_attractions", "most_popular_cities"],
       "The Foodie": ["signature_dishes", "food_experiences", "beverages"],
       "The Culture-Seeker": ["historical_landmarks", "local_traditions", "museums_and_arts"],
-      "The Relaxer": ["top_relaxation_spots", "activities"],
-      "The Adventurer": ["popular_destinations", "activities"],
-      "The Explorer": ["popular_destinations", "activities"],
+      "The Relaxer": ["top_relaxation_spots", "leisure_activities"],
+      "The Adventurer": ["popular_destinations", "thrill_activities", "terrain_types"],
+      "The Explorer": ["remote_destinations", "exploration_styles", "unique_features"],
       "The Partier": ["party_cities", "nightlife_experiences", "alcoholic_drinks"],
       "The Photographer": ["photo_spots", "lighting_tips", "gear_recommendations"],
       "The Naturalist": ["natural_wonders", "eco_tours", "wildlife_encounters"],
-      "The Wellness Devotee": ["spa_destinations", "wellness_practices", "retreats"]
+      "The Wellness Devotee": ["wellness_traditions", "healing_experiences"]
     };
 
     const broadCategories = {
