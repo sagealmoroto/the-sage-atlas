@@ -366,7 +366,7 @@
         "Carmel-by-the-Sea",
         "Big Sur coastline"
       ],
-      "activities": [
+      "leisure_activities": [
         "Lounging on the beach in Maui",
         "Scenic drives along Highway 1",
         "Hot air ballooning in Napa Valley",
@@ -385,7 +385,7 @@
         "Arashiyama Bamboo Grove",
         "Kinosaki Onsen"
       ],
-      "activities": [
+      "leisure_activities": [
         "Soaking in traditional onsen",
         "Strolling through Zen gardens",
         "Island hopping in Okinawa",
@@ -404,7 +404,7 @@
         "Tahiti",
         "Rangiroa Atoll"
       ],
-      "activities": [
+      "leisure_activities": [
         "Sunbathing in overwater bungalows",
         "Spa treatments with ocean views",
         "Snorkeling calm lagoons",
@@ -423,7 +423,7 @@
         "Turku Archipelago",
         "Nuuksio National Park"
       ],
-      "activities": [
+      "leisure_activities": [
         "Unwinding in a lakeside sauna",
         "Forest bathing in summer",
         "Snowy cabin stays with fireplaces",
@@ -442,7 +442,7 @@
         "Lombok",
         "Komodo Islands"
       ],
-      "activities": [
+      "leisure_activities": [
         "Meditation retreats in rice fields",
         "Floating breakfasts in private pools",
         "Sunset beach lounging",
@@ -461,13 +461,178 @@
         "Madeira island",
         "Alentejo countryside"
       ],
-      "activities": [
+      "leisure_activities": [
         "Cliffside walks by the ocean",
         "Long caf\u00e9 breakfasts in old towns",
         "Wine tastings in the Douro Valley",
         "Beach days with golden sand and sea breeze"
       ],
       "image": "cards/portugal-relaxer.jpg"
+    }
+  ],
+  "The Wellness Devotee": [
+    {
+      "category": "The Wellness Devotee",
+      "country": "Japan",
+      "primary_language": "Japanese",
+      "currency": "JPY",
+      "wellness_traditions": [
+        "Forest bathing (Shinrin-yoku)",
+        "Onsen bathing",
+        "Zen meditation",
+        "Seasonal eating philosophy"
+      ],
+      "healing_experiences": [
+        "Soaking in hot springs at Kusatsu",
+        "Temple stays with meditation in Kyoto",
+        "Tea ceremony participation",
+        "Nature retreats in the Japanese Alps"
+      ],
+      "image": "cards/japan-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Turkey",
+      "primary_language": "Turkish",
+      "currency": "TRY",
+      "wellness_traditions": [
+        "Traditional Turkish hammam",
+        "Olive oil and herbal therapies",
+        "Thermal springs and mud baths"
+      ],
+      "healing_experiences": [
+        "Hammam rituals in Istanbul",
+        "Thermal spa visits in Pamukkale",
+        "Herbal steam baths in Bursa",
+        "Mud therapy in Dalyan"
+      ],
+      "image": "cards/turkey-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Peru",
+      "primary_language": "Spanish, Quechua",
+      "currency": "PEN",
+      "wellness_traditions": [
+        "Andean spiritual ceremonies",
+        "Coca leaf rituals",
+        "Natural hot springs"
+      ],
+      "healing_experiences": [
+        "Sacred Valley energy retreats",
+        "Sound healing in Cusco",
+        "Incan herbal medicine workshops",
+        "Soaking in Aguas Calientes"
+      ],
+      "image": "cards/peru-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Czech Republic",
+      "primary_language": "Czech",
+      "currency": "CZK",
+      "wellness_traditions": [
+        "Therapeutic mineral springs",
+        "European spa culture",
+        "Aromatherapy and mud wraps"
+      ],
+      "healing_experiences": [
+        "Spa therapy in Karlovy Vary",
+        "Mineral baths in Mari\u00e1nsk\u00e9 L\u00e1zn\u011b",
+        "Beer spas in Prague",
+        "Forest wellness walks in Bohemia"
+      ],
+      "image": "cards/czech-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Morocco",
+      "primary_language": "Arabic, Berber",
+      "currency": "MAD",
+      "wellness_traditions": [
+        "Traditional hammam cleansing",
+        "Argan oil therapy",
+        "Herbal steam and scrub rituals"
+      ],
+      "healing_experiences": [
+        "Moroccan hammams in Marrakech",
+        "Desert detox retreats",
+        "Herbal baths in traditional riads",
+        "Berber tea ceremonies"
+      ],
+      "image": "cards/morocco-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Indonesia",
+      "primary_language": "Indonesian",
+      "currency": "IDR",
+      "wellness_traditions": [
+        "Balinese massage",
+        "Energy healing and purification",
+        "Yoga and meditation practices"
+      ],
+      "healing_experiences": [
+        "Flower baths in Ubud",
+        "Chakra healing ceremonies",
+        "Jungle yoga retreats",
+        "Balinese spa rituals"
+      ],
+      "image": "cards/indonesia-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "India",
+      "primary_language": "Hindi, English",
+      "currency": "INR",
+      "wellness_traditions": [
+        "Ayurvedic medicine",
+        "Yoga philosophy",
+        "Panchakarma cleansing"
+      ],
+      "healing_experiences": [
+        "Ayurveda retreats in Kerala",
+        "Meditation in Rishikesh",
+        "Spiritual walks in Varanasi",
+        "Sound and breathwork in Dharamshala"
+      ],
+      "image": "cards/india-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "Guatemala",
+      "primary_language": "Spanish",
+      "currency": "GTQ",
+      "wellness_traditions": [
+        "Mayan healing ceremonies",
+        "Cacao rituals",
+        "Natural thermal pools"
+      ],
+      "healing_experiences": [
+        "Lakeside yoga in Lake Atitl\u00e1n",
+        "Mayan fire ceremonies",
+        "Cacao meditation circles",
+        "Hot springs in Quetzaltenango"
+      ],
+      "image": "cards/guatemala-wellness.jpg"
+    },
+    {
+      "category": "The Wellness Devotee",
+      "country": "South Africa",
+      "primary_language": "English, Afrikaans, Zulu (and others)",
+      "currency": "ZAR",
+      "wellness_traditions": [
+        "Traditional sangoma healing",
+        "Natural spa therapies",
+        "Holistic safari retreats"
+      ],
+      "healing_experiences": [
+        "Spa safaris in the Western Cape",
+        "Traditional healer consultations",
+        "Nature immersion in Drakensberg",
+        "Forest retreats in Knysna"
+      ],
+      "image": "cards/southafrica-wellness.jpg"
     }
   ],
   "The Adventurer": [
@@ -504,6 +669,200 @@
         "Paragliding over the Japanese Alps"
       ],
       "image": "cards/japan-adventurer.jpg"
+    }
+  ],
+  "The Explorer": [
+    {
+      "category": "The Explorer",
+      "country": "Peru",
+      "primary_language": "Spanish, Quechua",
+      "currency": "PEN",
+      "remote_destinations": [
+        "Sacred Valley",
+        "Amazon Basin",
+        "Choquequirao",
+        "Colca Canyon"
+      ],
+      "exploration_styles": [
+        "Trekking ancient Inca trails",
+        "Exploring jungle lodges",
+        "Boat travel on high-altitude lakes",
+        "Mountain village visits"
+      ],
+      "unique_features": [
+        "Hidden Incan ruins",
+        "Cloud forests and canyons",
+        "Local textile traditions"
+      ],
+      "image": "cards/peru-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Costa Rica",
+      "primary_language": "Spanish",
+      "currency": "CRC",
+      "remote_destinations": [
+        "Osa Peninsula",
+        "Monteverde Cloud Forest",
+        "Rinc\u00f3n de la Vieja",
+        "Tortuguero"
+      ],
+      "exploration_styles": [
+        "Jungle trekking",
+        "Kayaking through mangroves",
+        "Wildlife watching in remote reserves",
+        "Staying at eco-lodges"
+      ],
+      "unique_features": [
+        "Biodiverse ecosystems",
+        "Rainforest and cloud forest immersion",
+        "Community-based farming visits"
+      ],
+      "image": "cards/costarica-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Scotland",
+      "primary_language": "English, Scots Gaelic",
+      "currency": "GBP",
+      "remote_destinations": [
+        "Isle of Skye",
+        "Orkney Islands",
+        "Cairngorms",
+        "Outer Hebrides"
+      ],
+      "exploration_styles": [
+        "Hiking rugged highlands",
+        "Self-driving scenic routes",
+        "Boat trips to remote islands",
+        "Castle-to-castle journeys"
+      ],
+      "unique_features": [
+        "Neolithic ruins",
+        "Foggy moors and lochs",
+        "Cliffside castles"
+      ],
+      "image": "cards/scotland-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Uzbekistan",
+      "primary_language": "Uzbek",
+      "currency": "UZS",
+      "remote_destinations": [
+        "Khiva",
+        "Nukus",
+        "Nuratau Mountains",
+        "Kyzylkum Desert"
+      ],
+      "exploration_styles": [
+        "Following Silk Road caravan trails",
+        "Staying in desert yurts",
+        "Walking old medinas and bazaars",
+        "Exploring mudbrick fortresses"
+      ],
+      "unique_features": [
+        "Blue-domed mosques and minarets",
+        "Vast steppes and deserts",
+        "Cultural crossroads of Central Asia"
+      ],
+      "image": "cards/uzbekistan-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Cambodia",
+      "primary_language": "Khmer",
+      "currency": "KHR",
+      "remote_destinations": [
+        "Angkor Archaeological Park",
+        "Tonl\u00e9 Sap villages",
+        "Cardamom Mountains",
+        "Preah Vihear"
+      ],
+      "exploration_styles": [
+        "Exploring jungle-cloaked temples",
+        "Boat journeys along the Mekong",
+        "Hiking in rainforest regions",
+        "Visiting floating villages"
+      ],
+      "unique_features": [
+        "Ancient Khmer architecture",
+        "Living river cultures",
+        "Mystical temple ruins"
+      ],
+      "image": "cards/cambodia-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Mongolia",
+      "primary_language": "Mongolian",
+      "currency": "MNT",
+      "remote_destinations": [
+        "Gobi Desert",
+        "Khovsgol Lake",
+        "Orkhon Valley",
+        "Altai Mountains"
+      ],
+      "exploration_styles": [
+        "Horseback journeys across the steppe",
+        "Camel trekking in sand dunes",
+        "Sleeping in traditional gers",
+        "Climbing sacred peaks"
+      ],
+      "unique_features": [
+        "Nomadic lifestyle immersion",
+        "Expansive untouched landscapes",
+        "Eagle hunting and ancient traditions"
+      ],
+      "image": "cards/mongolia-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Madagascar",
+      "primary_language": "Malagasy, French",
+      "currency": "MGA",
+      "remote_destinations": [
+        "Tsingy de Bemaraha",
+        "Andringitra Mountains",
+        "Avenue of the Baobabs",
+        "Nosy Mangabe"
+      ],
+      "exploration_styles": [
+        "Trekking through unique limestone forests",
+        "Boat travel along the Pangalanes Canal",
+        "Wildlife tracking in reserves",
+        "Local village homestays"
+      ],
+      "unique_features": [
+        "Endemic wildlife and plants",
+        "Isolated cultural enclaves",
+        "Dramatic otherworldly landscapes"
+      ],
+      "image": "cards/madagascar-explorer.jpg"
+    },
+    {
+      "category": "The Explorer",
+      "country": "Ethiopia",
+      "primary_language": "Amharic",
+      "currency": "ETB",
+      "remote_destinations": [
+        "Simien Mountains",
+        "Omo Valley",
+        "Lalibela",
+        "Danakil Depression"
+      ],
+      "exploration_styles": [
+        "Hiking in dramatic highlands",
+        "Visiting tribal villages",
+        "Exploring ancient churches carved into stone",
+        "Crossing active volcanic regions"
+      ],
+      "unique_features": [
+        "Rich spiritual history",
+        "Extreme geologic diversity",
+        "Living indigenous cultures"
+      ],
+      "image": "cards/ethiopia-explorer.jpg"
     }
   ]
 }
