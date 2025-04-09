@@ -78,6 +78,75 @@ h2 {
 }
 
 /* -----------------------------------
+   HERO SECTION: QUIZ CONTAINER
+----------------------------------- */
+
+#quiz-hero {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 30px;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+  border-bottom: 2px solid #ccc;
+}
+
+.quiz-collapsed {
+  max-height: 60px;
+}
+
+.quiz-expanded {
+  max-height: 1000px;
+}
+
+.quiz-toggle {
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #f0f0f8;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.quiz-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.quiz-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.quiz-left {
+  width: 40%;
+  text-align: left;
+}
+
+.quiz-right {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.quiz-right button {
+  padding: 16px;
+  font-size: 16px;
+  width: 45%;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #e6e6f2;
+}
+
+.quiz-questions {
+  display: none;
+  margin-top: 20px;
+}
+
+/* -----------------------------------
    CARD LAYOUT: CONTAINERS & ROWS
 ----------------------------------- */
 .card-container {
