@@ -82,30 +82,73 @@ h2 {
 ----------------------------------- */
 
 #quiz-hero {
+  width: 100%;
   border: 2px solid #a0a7b2;
   border-radius: 8px;
-  margin: 20px;
-  padding: 15px;
+  margin: 40px auto;
+  padding: 0;
+  max-width: 960px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
 }
 
-.quiz-collapsed {
-  max-height: 60px;
+/* Collapsed/Expanded states */
+.quiz-collapsed .quiz-content {
+  display: none;
 }
 
-.quiz-expanded {
-  max-height: 1000px;
+.quiz-expanded .quiz-content {
+  display: block;
+  padding: 20px;
 }
 
 .quiz-toggle {
   font-weight: bold;
   font-size: 18px;
-  padding: 10px;
-  border: 2px dashed #b8b8c4;
+  padding: 14px 20px;
   background-color: #f5f5f9;
-  margin-bottom: 10px;
+  border-bottom: 2px dashed #b8b8c4;
   cursor: pointer;
+}
+
+/* Quiz Layout */
+.quiz-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quiz-left {
+  flex: 1 1 40%;
+  text-align: left;
+}
+
+.quiz-right {
+  flex: 1 1 55%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quiz-right button {
+  padding: 16px;
+  font-size: 16px;
+  width: 45%;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #e6e6f2;
+}
+
+.quiz-questions {
+  margin-top: 20px;
 }
 
 .quiz-form input[type="radio"] {
@@ -120,42 +163,7 @@ h2 {
 }
 
 .quiz-content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.quiz-intro {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-}
-
-.quiz-left {
-  width: 40%;
-  text-align: left;
-}
-
-.quiz-right {
-  width: 60%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.quiz-right button {
-  padding: 16px;
-  font-size: 16px;
-  width: 45%;
-  cursor: pointer;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-  background-color: #e6e6f2;
-}
-
-.quiz-questions {
-  display: none;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /* -----------------------------------
