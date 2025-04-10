@@ -156,9 +156,11 @@ function buildQuiz(mode) {
 function startQuiz(mode) {
   const questionsContainer = document.getElementById("quiz-questions");
   const intro = document.querySelector(".quiz-selection");
+  const overlay = document.getElementById("quiz-overlay");
 
   intro.style.display = "none";
   questionsContainer.style.display = "block";
+  overlay.classList.add("active");
 
   currentQuiz = buildQuiz(mode);
   currentQuestionIndex = 0;
@@ -207,7 +209,7 @@ function renderNextQuestion() {
 
   container.appendChild(qDiv);
 
-  // Restore previous answer
+  // Restore saved answer
   if (saved) {
     const selected = qDiv.querySelector(`input[value="${saved.value}"]`);
     if (selected) selected.checked = true;
@@ -237,7 +239,8 @@ function renderNextQuestion() {
   backBtn.addEventListener("click", () => {
     if (currentQuestionIndex === 0) {
       document.querySelector(".quiz-selection").style.display = "flex";
-      container.innerHTML = "";
+      document.getElementById("quiz-questions").innerHTML = "";
+      document.getElementById("quiz-overlay").classList.remove("active");
     } else {
       currentQuestionIndex--;
       renderNextQuestion();
@@ -278,6 +281,7 @@ function calculateResults() {
 
 function renderResults(results) {
   const container = document.getElementById("quiz-questions");
+  const overlay = document.getElementById("quiz-overlay");
   container.innerHTML = "<h2>Your Travel Type Results</h2>";
 
   const top3 = results.slice(0, 3).map(r => r.type);
@@ -289,10 +293,12 @@ function renderResults(results) {
     bar.className = "result-bar";
     if (top3.includes(type)) bar.classList.add("highlight");
 
+    const percent = (average / 5) * 100;
+
     bar.innerHTML = `
       <div class="bar-label">${type}</div>
-      <div class="bar-fill" style="width: ${average * 20}%;"></div>
-      <div class="bar-score">${average.toFixed(2)}</div>
+      <div class="bar-fill" style="width: ${percent}%;"></div>
+      <div class="bar-score">${percent.toFixed(0)}%</div>
     `;
 
     resultList.appendChild(bar);
@@ -305,18 +311,26 @@ function renderResults(results) {
   filterButton.className = "filter-btn";
   filterButton.addEventListener("click", () => {
     console.log("Filter logic to be added...");
-    // Store or act on top3 here when filtering is implemented
+    // Future: Apply filters based on top3
   });
 
   container.appendChild(filterButton);
+
+  // Clear the fog/blur overlay
+  overlay.classList.remove("active");
 }
 
 // ------------------------------
-// 🧭 TOGGLE EXPAND / COLLAPSE
+// 🧭 TOGGLE COLLAPSE
 // ------------------------------
 
 function toggleQuiz() {
   const section = document.getElementById("quiz-hero");
+  const overlay = document.getElementById("quiz-overlay");
+
   section.classList.toggle("quiz-collapsed");
   section.classList.toggle("quiz-expanded");
+
+  const isExpanded = section.classList.contains("quiz-expanded");
+  overlay.classList.toggle("active", isExpanded);
 }
