@@ -196,21 +196,23 @@ let responses = [];
     const qDiv = document.createElement("div");
     qDiv.className = "quiz-question";
     qDiv.innerHTML = `
-      <div class="question-wrapper">
-        <p><strong>Q${currentQuestionIndex + 1}</strong>: ${q.text}</p>
-        <form class="quiz-form">
-          <label><input type="radio" name="response" value="1"> Strongly Disagree</label>
-          <label><input type="radio" name="response" value="2"> Disagree</label>
-          <label><input type="radio" name="response" value="3"> Neutral</label>
-          <label><input type="radio" name="response" value="4"> Agree</label>
-          <label><input type="radio" name="response" value="5"> Strongly Agree</label>
-          <div class="nav-buttons">
-            <button type="button" id="backBtn">Back</button>
-            <button type="submit" id="nextBtn">Next</button>
-          </div>
-        </form>
+  <div class="question-wrapper">
+    <p><strong>Q${currentQuestionIndex + 1}</strong>: ${q.text}</p>
+    <form class="quiz-form">
+      <div class="likert-scale">
+        <label><input type="radio" name="response" value="1"> Strongly Disagree</label>
+        <label><input type="radio" name="response" value="2"> Disagree</label>
+        <label><input type="radio" name="response" value="3"> Neutral</label>
+        <label><input type="radio" name="response" value="4"> Agree</label>
+        <label><input type="radio" name="response" value="5"> Strongly Agree</label>
       </div>
-    `;
+      <div class="nav-buttons">
+        <button type="button" id="backBtn">Back</button>
+        <button type="submit" id="nextBtn">Next</button>
+      </div>
+    </form>
+  </div>
+`;
   
     container.appendChild(qDiv);
   
