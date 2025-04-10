@@ -107,6 +107,10 @@ const questionBank = {
   // 🎲 UTILITY FUNCTIONS
   // ------------------------------
   
+let currentQuiz = [];
+let currentQuestionIndex = 0;
+let responses = [];
+
   function getRandomSubset(array, n) {
     const copy = [...array];
     const result = [];
@@ -162,43 +166,91 @@ const questionBank = {
   // ------------------------------
   
   function startQuiz(mode) {
-    const intro = document.querySelector(".quiz-intro");
     const questionsContainer = document.getElementById("quiz-questions");
+    const intro = document.querySelector(".quiz-selection");
   
+    // Hide intro section
     intro.style.display = "none";
     questionsContainer.style.display = "block";
   
-    const quiz = buildQuiz(mode);
-    renderQuiz(quiz);
+    // Generate quiz
+    currentQuiz = buildQuiz(mode);
+    currentQuestionIndex = 0;
+    responses = new Array(currentQuiz.length).fill(null);
+  
+    renderNextQuestion();
   }
   
-  function renderQuiz(questions) {
+  function renderNextQuestion() {
     const container = document.getElementById("quiz-questions");
     container.innerHTML = "";
   
-    questions.forEach((q, i) => {
-      const qDiv = document.createElement("div");
-      qDiv.className = "quiz-question";
-      qDiv.innerHTML = `
-        <p><strong>Q${i + 1}</strong>: ${q.text}</p>
-        <div class="quiz-options">
-          <button data-type="${q.type}">Strongly Disagree</button>
-          <button data-type="${q.type}">Disagree</button>
-          <button data-type="${q.type}">Neutral</button>
-          <button data-type="${q.type}">Agree</button>
-          <button data-type="${q.type}">Strongly Agree</button>
-        </div>
-      `;
-      container.appendChild(qDiv);
+    if (currentQuestionIndex >= currentQuiz.length) {
+      container.innerHTML = `<p>All done! Results coming soon...</p>`;
+      return;
+    }
+  
+    const q = currentQuiz[currentQuestionIndex];
+    const saved = responses[currentQuestionIndex];
+  
+    const qDiv = document.createElement("div");
+    qDiv.className = "quiz-question";
+    qDiv.innerHTML = `
+      <div class="question-wrapper">
+        <p><strong>Q${currentQuestionIndex + 1}</strong>: ${q.text}</p>
+        <form class="quiz-form">
+          <label><input type="radio" name="response" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="response" value="2"> Disagree</label>
+          <label><input type="radio" name="response" value="3"> Neutral</label>
+          <label><input type="radio" name="response" value="4"> Agree</label>
+          <label><input type="radio" name="response" value="5"> Strongly Agree</label>
+          <div class="nav-buttons">
+            <button type="button" id="backBtn">Back</button>
+            <button type="submit" id="nextBtn">Next</button>
+          </div>
+        </form>
+      </div>
+    `;
+  
+    container.appendChild(qDiv);
+  
+    // Restore previously selected answer
+    if (saved) {
+      const selected = qDiv.querySelector(`input[value="${saved.value}"]`);
+      if (selected) selected.checked = true;
+    }
+  
+    // Form submission → next question
+    const form = qDiv.querySelector(".quiz-form");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const selected = form.querySelector("input[name='response']:checked");
+  
+      if (!selected) {
+        alert("Please select a response.");
+        return;
+      }
+  
+      responses[currentQuestionIndex] = {
+        question: q.text,
+        type: q.type,
+        value: Number(selected.value)
+      };
+  
+      currentQuestionIndex++;
+      renderNextQuestion();
     });
-  }
   
-  // ------------------------------
-  // 🧭 TOGGLE COLLAPSE
-  // ------------------------------
-  
-  function toggleQuiz() {
-    const section = document.getElementById("quiz-hero");
-    section.classList.toggle("quiz-collapsed");
-    section.classList.toggle("quiz-expanded");
+    // Back button
+    const backBtn = qDiv.querySelector("#backBtn");
+    backBtn.addEventListener("click", () => {
+      if (currentQuestionIndex === 0) {
+        // Return to mode selection
+        document.querySelector(".quiz-selection").style.display = "flex";
+        container.innerHTML = "";
+      } else {
+        currentQuestionIndex--;
+        renderNextQuestion();
+      }
+    });
   }
