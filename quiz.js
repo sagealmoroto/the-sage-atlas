@@ -209,6 +209,8 @@ function renderNextQuestion() {
 
   container.appendChild(qDiv);
 
+  let answerSelected = false;
+
   // Restore saved answer
   if (saved) {
     const selected = qDiv.querySelector(`input[value="${saved.value}"]`);
@@ -216,6 +218,30 @@ function renderNextQuestion() {
   }
 
   const form = qDiv.querySelector(".quiz-form");
+
+  // Auto-advance on input
+  const radioInputs = qDiv.querySelectorAll('input[name="response"]');
+  radioInputs.forEach(input => {
+    input.addEventListener("change", () => {
+      if (answerSelected) return; // prevent double progression
+
+      const value = Number(input.value);
+      responses[currentQuestionIndex] = {
+        question: q.text,
+        type: q.type,
+        value
+      };
+
+      answerSelected = true;
+
+      setTimeout(() => {
+        currentQuestionIndex++;
+        renderNextQuestion();
+      }, 250);
+    });
+  });
+
+  // Submit button fallback
   form.addEventListener("submit", e => {
     e.preventDefault();
     const selected = form.querySelector("input[name='response']:checked");
@@ -239,7 +265,7 @@ function renderNextQuestion() {
   backBtn.addEventListener("click", () => {
     if (currentQuestionIndex === 0) {
       document.querySelector(".quiz-selection").style.display = "flex";
-      document.getElementById("quiz-questions").innerHTML = "";
+      container.innerHTML = "";
       document.getElementById("quiz-overlay").classList.remove("active");
     } else {
       currentQuestionIndex--;
