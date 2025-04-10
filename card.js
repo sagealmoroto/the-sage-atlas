@@ -42,7 +42,7 @@ fetch('cardData.json')
         cards.forEach(card => {
           const categoryClass = type.replace(/\s/g, "");
           const cardDiv = document.createElement("div");
-          cardDiv.className = `card ${categoryClass}`; // ✅ fixed!
+          cardDiv.className = `card ${categoryClass}`; 
           cardDiv.tabIndex = 0;
 
           // ✍️ Build back content

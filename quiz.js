@@ -129,19 +129,31 @@ const questionBank = {
     const quiz = [];
   
     Object.entries(questionBank).forEach(([type, questions]) => {
+      let selectedQuestions = [...questions];
+  
+      // Always randomize questions per type
+      selectedQuestions = shuffle(selectedQuestions);
+  
       if (mode === "quick") {
-        const subset = getRandomSubset(questions, 3);
-        subset.forEach(q => quiz.push({ text: q, type }));
-      } else if (mode === "full") {
-        questions.forEach(q => quiz.push({ text: q, type }));
+        // Grab 3 random for Quick Quiz
+        selectedQuestions = selectedQuestions.slice(0, 3);
       }
+      // Full quiz uses all (randomized) — future-proofed for 6+
+  
+      selectedQuestions.forEach(text => {
+        quiz.push({ text, type });
+      });
     });
   
+    // Add distractors (full quiz only)
     if (mode === "full") {
-      const extras = getRandomSubset(distractorQuestions, 15);
-      extras.forEach(q => quiz.push({ text: q, type: "distractor" }));
+      const selectedDistractors = getRandomSubset(distractorQuestions, 15);
+      selectedDistractors.forEach(text => {
+        quiz.push({ text, type: "distractor" });
+      });
     }
   
+    // Final shuffle of the complete quiz array
     return shuffle(quiz);
   }
   
