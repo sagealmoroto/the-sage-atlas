@@ -161,10 +161,9 @@ h2 {
 
 .question-wrapper {
   width: 100%;
-  max-width: 700px; /* increase width from 600px */
+  max-width: 700px; 
   margin: 0 auto;
   text-align: center;
-  padding: 0 20px; /* add horizontal breathing room */
 }
 
 .quiz-question p {
