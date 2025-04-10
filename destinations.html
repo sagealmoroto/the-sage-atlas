@@ -31,14 +31,17 @@
       </div>
   
       <div class="quiz-content">
-        <div class="quiz-intro">
-          <div class="quiz-left">
-            <h3>Don’t know where to start?</h3>
-            <p>Take the quiz and let us guide your journey.</p>
+        <div class="quiz-selection">
+          <div class="quiz-option" onclick="startQuiz('quick')">
+            <h3>Quick Quiz</h3>
+            <p class="quiz-time">30 questions · ~5 minutes</p>
+            <p>Short, sweet, and surprisingly accurate.</p>
           </div>
-          <div class="quiz-right">
-            <button onclick="startQuiz('quick')">Quick Quiz<br><span>30 questions · ~5 min</span></button>
-            <button onclick="startQuiz('full')">Full Quiz<br><span>75 questions · ~10–15 min</span></button>
+        
+          <div class="quiz-option" onclick="startQuiz('full')">
+            <h3>Full Quiz</h3>
+            <p class="quiz-time">75 questions · ~10–15 minutes</p>
+            <p>More reflective, more accurate, more *you*.</p>
           </div>
         </div>
   
