@@ -254,3 +254,9 @@ let responses = [];
       }
     });
   }
+
+  function toggleQuiz() {
+    const section = document.getElementById("quiz-hero");
+    section.classList.toggle("quiz-collapsed");
+    section.classList.toggle("quiz-expanded");
+  }
