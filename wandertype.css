@@ -94,6 +94,9 @@ body {
     max-width: 90vw;
     overflow: hidden;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
   
   .dropdown-section {
@@ -124,28 +127,30 @@ body {
   }
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
   }
   
   @media (max-width: 768px) {
     .dropdown-content {
-      padding: 8px;
-    }
-  
-    .dropdown-section {
-      padding: 4px;
-      margin-bottom: 10px;
-    }
-  
-    .dropdown-section a {
+      padding: 6px;
       font-size: 13px;
     }
   
+    .dropdown-section {
+      padding: 3px;
+      margin-bottom: 8px;
+    }
+  
+    .dropdown-section a {
+      font-size: 12.5px;
+      padding: 3px 0;
+    }
+  
     .dropdown-section strong {
-      font-size: 14px;
+      font-size: 13.5px;
     }
   } 
-  
+
 /* -------------------- Category Sections -------------------- */
 .category {
     padding: 80px 0;
