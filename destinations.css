@@ -49,10 +49,6 @@ hr.solid {
   color: #2e110d;
 }
 
-.topnav a:visited {
-  color: #453737;
-}
-
 .topnav a:hover {
   color: #a0a7b2;
   text-decoration: underline;
