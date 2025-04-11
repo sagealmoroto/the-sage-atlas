@@ -219,3 +219,14 @@ header h2 {
         left: 10px;
     }
 }
+
+
+/* Ensure no extra margin at the bottom of card-content text */
+.card-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tighten up padding and remove white space */
+.card-content {
+  padding: 16px 12px 4px !important;
+}
