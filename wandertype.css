@@ -9,7 +9,7 @@ body {
 
 /* -------------------- Header & Navigation -------------------- */
 header {
-    padding: 0px 20px 20px 20px;
+    padding: 0;
     text-align: center;
 }
 
@@ -25,7 +25,7 @@ header h1 {
 header h2 {
     color: #230d0a;
     font-size: 26px;
-    padding: 0px 40px 30px 40px;
+    padding: 0 0 30px 0;
 }
 
 .topnav {
@@ -58,6 +58,12 @@ header h2 {
 /* -------------------- Category Sections -------------------- */
 .category {
     padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0;
+
     position: relative;
     text-align: center;
     width: 100%;
@@ -95,7 +101,7 @@ header h2 {
 .card {
     position: relative;
     width: 450px;
-    height: 750px;
+    height: 800px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
@@ -153,7 +159,7 @@ header h2 {
     bottom: 0;
     width: 100%;
     height: 0;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.985);
     overflow: hidden;
     transition: height 0.4s ease;
     z-index: 2;
@@ -190,4 +196,27 @@ header h2 {
     .category h3 {
         font-size: 60px;
     }
+}
+
+/* Optional image inside fast-facts area */
+.card-facts img.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Adjusted parent category label on the side */
+.category-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: left center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
 }
