@@ -28,7 +28,6 @@ header h2 {
     padding: 0px 40px 30px 40px;
 }
 
-/* You can reuse index.css's .topnav or create custom styling */
 .topnav {
     background-color: #CECDDB;
     display: flex;
@@ -73,26 +72,14 @@ header h2 {
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: 0;
+    pointer-events: none;
 }
 
-/* Category backgrounds */
-.classics {
-    background-color: #f9f6f2;
-}
-
-.bold {
-    background-color: #8E3A80;
-    color: #fff;
-}
-
-.rechargers {
-    background-color: #C2C6D6;
-}
-
-.viewfinders {
-    background-color: #4C6A4D;
-    color: #fff;
-}
+/* Category background colors */
+.classics { background-color: #f9f6f2; }
+.bold { background-color: #8E3A80; color: #fff; }
+.rechargers { background-color: #C2C6D6; }
+.viewfinders { background-color: #4C6A4D; color: #fff; }
 
 /* -------------------- Card Layout -------------------- */
 .card-container {
@@ -106,14 +93,15 @@ header h2 {
 
 .card {
     position: relative;
-    width: 300px;
-    height: 480px;
+    width: 400px;
+    height: 600px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
     cursor: pointer;
+    text-align: left;
 }
 
 .card:hover {
@@ -122,13 +110,24 @@ header h2 {
 
 .card img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 0;
 }
 
 .card-content {
     padding: 16px;
-    font-size: 16px;
+    height: 100px;
+}
+
+.card-content h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 4px 0 0 0;
 }
 
 .card-chevron {
@@ -150,26 +149,20 @@ header h2 {
     transition: height 0.4s ease;
     z-index: 2;
     padding: 0 16px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .card:hover .card-facts,
 .card.show-facts .card-facts {
-    height: 180px;
+    height: 200px;
     animation: bounce-up 0.4s ease;
 }
 
 @keyframes bounce-up {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    60% {
-        transform: translateY(-10px);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);
-    }
+    0% { transform: translateY(30px); opacity: 0; }
+    60% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0); }
 }
 
 /* -------------------- Responsive -------------------- */
