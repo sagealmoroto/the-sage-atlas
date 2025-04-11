@@ -70,11 +70,10 @@ header h2 {
 }
 
 .category-label {
-    position: absolute;
-    top: 0; /* anchor to top of the section */
-    left: 0;
+    position: relative; /* changed from absolute to stay inside section */
     width: 100%;
     text-align: center;
+    margin-bottom: -80px; /* pull up behind cards without overflowing */
     z-index: 0;
     pointer-events: none;
     user-select: none;
@@ -82,13 +81,13 @@ header h2 {
   
   .category-label h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 160px; /* larger than before */
-    color: rgba(0, 0, 0, 0.08);
+    font-size: 180px; /* more dramatic */
+    color: rgba(0, 0, 0, 0.12); /* more visible but still background */
     margin: 0;
     line-height: 1;
+    letter-spacing: 5px;
     position: relative;
-    top: -30px; /* raises the text visually */
-    letter-spacing: 4px; /* adds spacing for elegance */
+    top: -20px; /* slight vertical nudge */
     z-index: 0;
   }
 
