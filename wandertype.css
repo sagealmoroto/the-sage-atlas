@@ -1,0 +1,189 @@
+
+/* -------------------- Global Base Overrides -------------------- */
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4e57;
+}
+
+/* -------------------- Header & Navigation -------------------- */
+header {
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #230d0a;
+    font-style: italic;
+    font-size: 84px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+header h2 {
+    color: #230d0a;
+    font-size: 26px;
+    padding: 0px 40px 30px 40px;
+}
+
+/* You can reuse index.css's .topnav or create custom styling */
+.topnav {
+    background-color: #CECDDB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #2e110d;
+}
+
+.topnav a:visited {
+    color: #453737;
+}
+
+.topnav a:hover {
+    color: #a0a7b2;
+    text-decoration: underline;
+}
+
+/* -------------------- Category Sections -------------------- */
+.category {
+    padding: 80px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.category h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    opacity: 0.08;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 0;
+}
+
+/* Category backgrounds */
+.classics {
+    background-color: #f9f6f2;
+}
+
+.bold {
+    background-color: #8E3A80;
+    color: #fff;
+}
+
+.rechargers {
+    background-color: #C2C6D6;
+}
+
+.viewfinders {
+    background-color: #4C6A4D;
+    color: #fff;
+}
+
+/* -------------------- Card Layout -------------------- */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 480px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+    font-size: 16px;
+}
+
+.card-chevron {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+/* -------------------- Fast Facts Slide-Up -------------------- */
+.card-facts {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(255, 255, 255, 0.96);
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 2;
+    padding: 0 16px;
+}
+
+.card:hover .card-facts,
+.card.show-facts .card-facts {
+    height: 180px;
+    animation: bounce-up 0.4s ease;
+}
+
+@keyframes bounce-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .category h3 {
+        font-size: 48px;
+    }
+}
