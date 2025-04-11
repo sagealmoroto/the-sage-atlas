@@ -53,8 +53,7 @@ body {
     text-decoration: underline;
   }
   
-  .topnav a.active {
-    background-color: transparent;
+  .topnav a.link-text.active {
     color: black;
     text-decoration: underline;
   }
