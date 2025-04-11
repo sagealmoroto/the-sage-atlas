@@ -68,19 +68,13 @@ header h2 {
     position: relative;
 }
 
-.category-label {
-    position: absolute;
-    left: 25px;
-    top: 50%;
+/*.category-label {
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: left center;
     font-family: 'Dancing Script', cursive;
     font-size: 100px;
     color: rgba(0, 0, 0, 0.3);
-    z-index: 0;
-    pointer-events: none;
-    white-space: nowrap;
-}
+} */
 
 .classics { background-color: #e7d8c4; }
 .bold { background-color: #8E3A80; color: #fff; }
