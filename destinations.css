@@ -59,7 +59,6 @@ hr.solid {
 .topnav a.active {
   background-color: transparent;
   color: black;
-  text-decoration: underline;
 }
 
 h1 {
@@ -77,40 +76,59 @@ h2 {
 }
 
 /* -------------------- Dropdown Menu -------------------- */
+.dropdown-toggle.active .link-text {
+  text-decoration: underline;
+}
+
+.dropdown-toggle .arrow {
+  text-decoration: none !important;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ---------- Dropdown Structure ---------- */
 .dropdown {
   position: relative;
 }
 
 .dropdown-toggle {
   padding-right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* adds spacing between text and arrow */
 }
 
-.dropdown-toggle .arrow {
-  margin-left: 6px;
-  font-size: 10px;
-  text-decoration: none !important; /* prevent underline on arrow */
-}
-
+/* Dropdown menu hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
-  padding: 16px;
+  padding: clamp(6px, 2vw, 16px);
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 1001;
-  white-space: nowrap;
   font-size: 14px;
-  max-width: 90vw;
-  overflow-x: auto;
+  min-width: 300px;
+  max-width: min(90vw, 600px);
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
+/* Reveal dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* ---------- Dropdown Sections ---------- */
 .dropdown-section {
-  margin-bottom: 16px;
-  padding: 8px;
+  margin-bottom: 12px;
+  padding: 6px;
   border-radius: 6px;
 }
 
@@ -135,10 +153,27 @@ h2 {
   text-decoration: underline;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/* ---------- Mobile Tuning ---------- */
+@media (max-width: 768px) {
+  .dropdown-content {
+    padding: clamp(4px, 1.5vw, 12px);
+    font-size: 13px;
+  }
 
+  .dropdown-section {
+    padding: 3px;
+    margin-bottom: 8px;
+  }
+
+  .dropdown-section a {
+    font-size: 12.5px;
+    padding: 3px 0;
+  }
+
+  .dropdown-section strong {
+    font-size: 13.5px;
+  }
+}
 /* -----------------------------------
    HERO SECTION: QUIZ CONTAINER
 ----------------------------------- */
