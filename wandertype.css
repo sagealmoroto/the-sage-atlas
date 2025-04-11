@@ -175,7 +175,7 @@ header h2 {
     z-index: 2;
     transition: height 0.4s ease;
     background: rgba(255, 255, 255, 0.985);
-    padding: 16px;
+    padding: 0px 16px 0px 16px;
     font-size: 16px;
     line-height: 1.6;
     color: black;
@@ -194,7 +194,7 @@ header h2 {
 
 .card:hover .card-facts,
 .card.show-facts .card-facts {
-    height: 370px;
+    height: 320px;
     animation: bounce-up 0.4s ease;
 }
 
