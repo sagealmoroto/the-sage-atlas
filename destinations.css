@@ -100,7 +100,7 @@ h2 {
 
 /* Dropdown menu hidden by default */
 .dropdown-content {
-  display: none;
+  display: none; /* ✅ Start hidden */
   position: absolute;
   top: 100%;
   left: 50%;
@@ -115,7 +115,6 @@ h2 {
   max-width: min(90vw, 600px);
   overflow: hidden;
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   gap: 8px;
 }
