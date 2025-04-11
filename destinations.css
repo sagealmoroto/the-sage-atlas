@@ -76,6 +76,69 @@ h2 {
   font-size: 22px;
 }
 
+/* -------------------- Dropdown Menu -------------------- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding-right: 12px;
+}
+
+.dropdown-toggle .arrow {
+  margin-left: 6px;
+  font-size: 10px;
+  text-decoration: none !important; /* prevent underline on arrow */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  white-space: nowrap;
+  font-size: 14px;
+  max-width: 90vw;
+  overflow-x: auto;
+}
+
+.dropdown-section {
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.dropdown-section strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.dropdown-section.classics { background-color: #f3e9da; }
+.dropdown-section.bold { background-color: #d8a9d8; }
+.dropdown-section.rechargers { background-color: #dbe4f2; }
+.dropdown-section.viewfinders { background-color: #c1d5c1; }
+
+.dropdown-section a {
+  display: block;
+  color: #2e110d;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+.dropdown-section a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* -----------------------------------
    HERO SECTION: QUIZ CONTAINER
 ----------------------------------- */
