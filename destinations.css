@@ -18,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  cursor: none;
+  cursor: pointer;
 }
 
 hr.solid {
