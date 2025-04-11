@@ -56,6 +56,23 @@ hr.solid {
     color: black;
     text-decoration: underline;
   }
+  
+h1 {
+    color: #230d0a;
+    text-align: center;
+    font-style: italic;
+    font-size: 84px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0px 10px 0px;
+}
+
+h2 {
+    color: #230d0a;
+    text-align: center;
+    font-size: 26px;
+    padding: 0px 40px 30px 40px;
+}
 
   /* -------------------- Dropdown Menu -------------------- */
   .dropdown {
@@ -146,24 +163,7 @@ hr.solid {
     .dropdown-section strong {
       font-size: 13.5px;
     }
-
-/* Headers */
-h1 {
-    color: #230d0a;
-    text-align: center;
-    font-style: italic;
-    font-size: 84px;
-    font-weight: 100;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px 0px 10px 0px;
-}
-
-h2 {
-    color: #230d0a;
-    text-align: center;
-    font-size: 26px;
-    padding: 0px 40px 30px 40px;
-}
+  } 
 
 /* Grid Containers */
 .grid-container {
