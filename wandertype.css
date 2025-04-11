@@ -58,28 +58,27 @@ header h2 {
 /* -------------------- Category Sections -------------------- */
 .category {
     padding: 80px 0;
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 0;
-
-    position: relative;
-    text-align: center;
-    width: 100%;
 }
 
-.category h3 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 120px;
-    opacity: 0.08;
+/* Category label (large, rotated left) */
+.category-label {
     position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    left: 25px;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: left center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.3);
     z-index: 0;
     pointer-events: none;
+    white-space: nowrap;
 }
 
 /* Category background colors */
@@ -124,22 +123,29 @@ header h2 {
     border-radius: 0;
 }
 
+/* Per-category color overlays */
+.classics .card-content { background-color: rgba(231, 216, 196, 0.35); }
+.bold .card-content { background-color: rgba(142, 58, 128, 0.35); }
+.rechargers .card-content { background-color: rgba(194, 198, 214, 0.35); }
+.viewfinders .card-content { background-color: rgba(76, 106, 77, 0.35); }
+
 .card-content {
-    padding: 12px;
-    height: 75px;
+    padding: 16px 12px 24px;
+    height: auto;
+    min-height: 100px;
     color: black;
 }
 
 .card-content h4 {
     font-size: 26px;
-    margin: 0;
+    margin: 0 0 8px 0;
     color: black;
     text-decoration: none;
 }
 
 .card-content p {
     font-size: 18px;
-    margin: 6px 0 0 0;
+    margin: 0;
     color: black;
     text-decoration: none;
 }
@@ -168,6 +174,16 @@ header h2 {
     line-height: 1.6;
     color: black;
     text-align: left;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.card-facts em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 12px;
 }
 
 .card:hover .card-facts,
@@ -193,36 +209,8 @@ header h2 {
         width: 90%;
     }
 
-    .category h3 {
+    .category-label {
         font-size: 60px;
+        left: 10px;
     }
-}
-
-/* Optional image inside fast-facts area */
-.card-facts img.icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-/* Adjusted parent category label on the side */
-.category-label {
-    left: 100px;
-    top: 50%;
-    transform: rotate(-90deg) translateY(-50%);
-    font-size: 100px;
-    color: rgba(0, 0, 0, 0.2);
-
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: rotate(-90deg) translateY(-50%);
-    transform-origin: left center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 72px;
-    color: rgba(0, 0, 0, 0.1);
-    z-index: 0;
-    pointer-events: none;
-    white-space: nowrap;
 }
