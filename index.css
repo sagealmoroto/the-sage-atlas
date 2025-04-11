@@ -57,15 +57,15 @@ hr.solid {
     text-decoration: underline;
   }
 
-/* -------------------- Dropdown Menu -------------------- */
-.dropdown {
+ /* -------------------- Dropdown Menu -------------------- */
+ .dropdown {
     position: relative;
   }
   
   .dropdown-toggle {
+    padding-right: 12px;
     display: flex;
     align-items: center;
-    padding-right: 12px;
   }
   
   .dropdown-toggle .arrow {
@@ -77,7 +77,7 @@ hr.solid {
   }
   
   .dropdown-content {
-    display: none; /* hidden by default */
+    display: none;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -96,11 +96,6 @@ hr.solid {
     gap: 8px;
   }
   
-  .dropdown:hover .dropdown-content {
-    display: flex;
-  }
-  
-  /* Dropdown section grouping */
   .dropdown-section {
     margin-bottom: 12px;
     padding: 6px;
@@ -127,7 +122,11 @@ hr.solid {
   .dropdown-section a:hover {
     text-decoration: underline;
   }
-
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
   @media (max-width: 768px) {
     .dropdown-content {
       padding: 6px;
