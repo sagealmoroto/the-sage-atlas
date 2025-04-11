@@ -57,8 +57,8 @@ hr.solid {
     text-decoration: underline;
   }
 
- /* -------------------- Dropdown Menu -------------------- */
- .dropdown {
+  /* -------------------- Dropdown Menu -------------------- */
+  .dropdown {
     position: relative;
   }
   
@@ -146,7 +146,6 @@ hr.solid {
     .dropdown-section strong {
       font-size: 13.5px;
     }
-  } 
 
 /* Headers */
 h1 {
