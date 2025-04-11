@@ -1,3 +1,4 @@
+/* -------------------- Global Base Overrides -------------------- */
 body {
     margin: 0;
     background-color: #f8f8f8;
@@ -69,6 +70,7 @@ body {
   .dropdown-toggle .arrow {
     margin-left: 6px;
     font-size: 10px;
+    text-decoration: none !important; /* prevent underline on arrow */
   }
   
   .dropdown-content {
