@@ -76,16 +76,6 @@ h2 {
 }
 
 /* -------------------- Dropdown Menu -------------------- */
-.dropdown-toggle.active .link-text {
-  text-decoration: underline;
-}
-
-.dropdown-toggle .arrow {
-  text-decoration: none !important;
-  pointer-events: none;
-  user-select: none;
-}
-
 .dropdown {
   position: relative;
 }
@@ -93,24 +83,31 @@ h2 {
 .dropdown-toggle {
   display: flex;
   align-items: center;
-  gap: 4px;
   padding-right: 12px;
 }
 
+.dropdown-toggle .arrow {
+  margin-left: 6px;
+  font-size: 10px;
+  text-decoration: none !important;
+  pointer-events: none;
+  user-select: none;
+}
+
 .dropdown-content {
-  display: none;
+  display: none; /* hidden by default */
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
-  padding: clamp(6px, 2vw, 16px);
+  padding: 12px;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 1001;
   font-size: 14px;
   min-width: 300px;
-  max-width: min(90vw, 600px);
+  max-width: 90vw;
   overflow: hidden;
   box-sizing: border-box;
   flex-direction: column;
@@ -121,13 +118,7 @@ h2 {
   display: flex;
 }
 
-.arrow {
-  font-size: 10px;
-  text-decoration: none !important;
-  pointer-events: none;
-  user-select: none;
-}
-
+/* Dropdown section grouping */
 .dropdown-section {
   margin-bottom: 12px;
   padding: 6px;
@@ -155,10 +146,9 @@ h2 {
   text-decoration: underline;
 }
 
-/* ---------- Mobile Tuning ---------- */
 @media (max-width: 768px) {
   .dropdown-content {
-    padding: clamp(4px, 1.5vw, 12px);
+    padding: 6px;
     font-size: 13px;
   }
 
@@ -175,7 +165,8 @@ h2 {
   .dropdown-section strong {
     font-size: 13.5px;
   }
-}
+} 
+
 /* -----------------------------------
    HERO SECTION: QUIZ CONTAINER
 ----------------------------------- */
