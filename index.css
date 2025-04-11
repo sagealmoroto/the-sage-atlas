@@ -151,7 +151,6 @@ h2 {
     border-radius: 50%;
     font-size: 18px;
     padding: 10px 20px;
-    cursor:url('path-to-plane-image.png'), auto;;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -186,7 +185,6 @@ h2 {
     border-style: solid;
     border-color: black;
     border-radius: 12px;
-    cursor:url('path-to-plane-image.png'), auto;
 }
 
 .carousel-start-exploring:hover {
