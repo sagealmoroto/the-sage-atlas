@@ -1,33 +1,31 @@
-
-/* -------------------- Global Base Overrides -------------------- */
 body {
     margin: 0;
     background-color: #f8f8f8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4a4e57;
-}
-
-header {
+  }
+  
+  header {
     padding: 0;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     color: #230d0a;
     font-style: italic;
     font-size: 84px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 10px;
-}
-
-header h2 {
+  }
+  
+  header h2 {
     color: #230d0a;
     font-size: 26px;
     padding: 0 0 30px 0;
-}
-
-.topnav {
+  }
+  
+  .topnav {
     background-color: #CECDDB;
     display: flex;
     justify-content: space-around;
@@ -45,6 +43,7 @@ header h2 {
     font-size: 14px;
     color: #2e110d;
     text-decoration: none;
+    position: relative;
   }
   
   .topnav a:hover {
@@ -57,7 +56,67 @@ header h2 {
     color: black;
     text-decoration: underline;
   }
-
+  
+  /* -------------------- Dropdown Menu -------------------- */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    padding-right: 12px;
+  }
+  
+  .dropdown-toggle .arrow {
+    margin-left: 6px;
+    font-size: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 260px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .dropdown-section {
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .dropdown-section strong {
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .dropdown-section.classics { background-color: #f3e9da; }
+  .dropdown-section.bold { background-color: #f6e0f6; }
+  .dropdown-section.rechargers { background-color: #dbe4f2; }
+  .dropdown-section.viewfinders { background-color: #dde8dd; }
+  
+  .dropdown-section a {
+    display: block;
+    color: #2e110d;
+    padding: 4px 0;
+    text-decoration: none;
+  }
+  
+  .dropdown-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
 /* -------------------- Category Sections -------------------- */
 .category {
     padding: 80px 0;
