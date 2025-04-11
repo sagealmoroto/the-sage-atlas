@@ -35,21 +35,27 @@ header h2 {
     position: sticky;
     top: 0;
     height: 60px;
-    padding: 0;
+    padding: 0 20px;
     z-index: 1000;
-}
-
-.topnav a {
-    text-decoration: none;
+  }
+  
+  .topnav a {
+    display: inline-flex;
+    justify-content: center;
     font-size: 14px;
     color: #2e110d;
-}
-
-
-.topnav a:hover {
+  }
+  
+  .topnav a:hover {
     color: #a0a7b2;
     text-decoration: underline;
-}
+  }
+  
+  .topnav a.active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+  }
 
 /* -------------------- Category Sections -------------------- */
 .category {
