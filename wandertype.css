@@ -44,6 +44,7 @@ header h2 {
     justify-content: center;
     font-size: 14px;
     color: #2e110d;
+    text-decoration: none;
   }
   
   .topnav a:hover {
@@ -55,7 +56,7 @@ header h2 {
     background-color: transparent;
     color: black;
     text-decoration: underline;
-  }  
+  }
 
 /* -------------------- Category Sections -------------------- */
 .category {
