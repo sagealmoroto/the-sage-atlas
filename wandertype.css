@@ -36,6 +36,7 @@ body {
     height: 60px;
     padding: 0 20px;
     z-index: 1000;
+    flex-wrap: wrap;
   }
   
   .topnav a {
@@ -59,7 +60,7 @@ body {
   }
   
   /* -------------------- Dropdown Menu -------------------- */
-.dropdown {
+  .dropdown {
     position: relative;
   }
   
@@ -78,16 +79,15 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
     background-color: white;
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     z-index: 1001;
-    white-space: nowrap;
     font-size: 14px;
-    max-width: 90vw;
-    overflow-x: auto;
+    min-width: 300px;
+    max-width: 600px;
+    overflow: hidden;
   }
   
   .dropdown-section {
@@ -120,6 +120,7 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
   
 /* -------------------- Category Sections -------------------- */
 .category {
