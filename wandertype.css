@@ -41,14 +41,14 @@ body {
     position: relative; /* changed from absolute to stay inside section */
     width: 100%;
     text-align: center;
-    margin-bottom: -80px; /* pull up behind cards without overflowing */
+    margin-bottom: -60px; /* pull up behind cards without overflowing */
     z-index: 0;
     pointer-events: none;
     user-select: none;
   }
   
   .category-label h3 {
-    font-family: cursive;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     font-size: 180px; 
     color: rgba(0, 0, 0, 0.12); 
     margin: 0;
