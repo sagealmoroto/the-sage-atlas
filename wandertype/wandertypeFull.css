@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* ========== GLOBAL STYLES ========== */
 
 body {
   margin: 0;
@@ -25,50 +25,23 @@ hr.solid {
   margin: 40px 0;
 }
 
-h1, h2, h3, p {
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* Remove generic global font overrides for h1–p and let scoped content take over */
 
-h1 {
-  color: #230d0a;
-  font-style: italic;
-  font-size: 84px;
-  font-weight: 100;
-  padding: 10px 0;
-}
 
-h2 {
-  color: #230d0a;
-  font-size: 26px;
-  padding: 0 40px 30px 40px;
-}
+/* ========== CONTENT WRAPPER ========== */
 
-h3 {
-  color: #230d0a;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 100;
-  padding: 10px 0;
-}
-
-p {
-  color: #230d0a;
-  font-size: 16px;
-}
-
-/* ✨ NEW: Consistent centered column for all page content */
 .content-wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* HERO SECTION WITH THEMEABLE VARIABLES */
+
+/* ========== HERO SECTION ========== */
 
 .wandertype-hero {
   --hero-bg-color: #F3e5ab;
-  --hero-name-color: #e6d496;
+  --hero-name-color: rgba(230, 213, 150, 0.3);
   --hero-subtitle-color: #ffffff;
 
   background-color: var(--hero-bg-color);
@@ -81,8 +54,6 @@ p {
   z-index: 1;
   padding-bottom: 100px;
 }
-
-/* FLEX-CENTERED TEXT LAYOUT */
 
 .overlay-text {
   position: relative;
@@ -110,7 +81,7 @@ p {
 
 .hero-subtitle {
   position: absolute;
-  top: 48%; /* ✨ Centering nudge */
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(25px, 2vw, 50px);
@@ -128,7 +99,8 @@ p {
   justify-content: center;
 }
 
-/* IMAGE SECTION UNDER HERO */
+
+/* ========== HERO IMAGE SECTION ========== */
 
 .hero-image-wrapper {
   display: flex;
@@ -144,65 +116,140 @@ p {
 
 .hero-image-wrapper img {
   width: 100%;
-  max-width: 1300px; /* ✨ Your updated image width */
+  max-width: 1300px;
   height: auto;
   margin: 0 auto;
   display: block;
   border-radius: 0;
 }
 
-/* CATEGORY-SPECIFIC THEMES */
+
+/* ========== MAIN PAGE CONTENT (WanderType Body) ========== */
+
+.wander-content {
+  margin-top: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #230d0a;
+}
+
+.wander-content h3 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #2a2a2a;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wander-content h3 + p {
+  margin-top: -8px; /* tighter spacing between h3 and first paragraph */
+}
+
+.wander-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  color: #333333;
+  text-align: left;
+}
+
+.fast-facts ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-bottom: 40px;
+}
+
+.fast-facts li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+
+/* ========== BLOCKQUOTE (Pull Quote) ========== */
+
+.wander-content blockquote {
+  font-style: italic;
+  font-size: 22px;
+  color: #555;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wander-content blockquote::before,
+.wander-content blockquote::after {
+  content: "—";
+  color: #ccc;
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+/* ========== CATEGORY-SPECIFIC THEMES ========== */
 
 .tourist-page {
   --hero-bg-color: #F3e5ab;
-  --hero-name-color: #e6d496;
-  --hero-subtitle-color: #ffffff;
-}
-
-.explorer-page {
-  --hero-bg-color: #B5432C;
-  --hero-name-color: #ffffff;
-  --hero-subtitle-color: #ffece6;
-}
-
-.photographer-page {
-  --hero-bg-color: #606C76;
-  --hero-name-color: #dcdfe2;
+  --hero-name-color: rgba(230, 213, 150, 0.3);
   --hero-subtitle-color: #ffffff;
 }
 
 .foodie-page {
-  background-color: #a5441a;
+  --hero-bg-color: #a5441a;
+  --hero-name-color: rgba(165, 68, 26, 0.3);
+  --hero-subtitle-color: #ffe4d6;
 }
 
 .culture-page {
-  background-color: #cb8944;
+  --hero-bg-color: #cb8944;
+  --hero-name-color: rgba(203, 138, 68, 0.3);
+  --hero-subtitle-color: #fff3e0;
 }
 
 .partier-page {
-  background-color: #8E3A80;
+  --hero-bg-color: #8E3A80;
+  --hero-name-color: rgba(255, 255, 255, 0.3);
+  --hero-subtitle-color: #f8e3f7;
 }
 
 .adventurer-page {
-  background-color: #293B8C;
+  --hero-bg-color: #293B8C;
+  --hero-name-color: rgba(41, 59, 140, 0.3);
+  --hero-subtitle-color: #cdd8ff;
 }
 
 .explorer-page {
-  background-color: #B5432C;
+  --hero-bg-color: #B5432C;
+  --hero-name-color: rgba(255, 255, 255, 0.3);
+  --hero-subtitle-color: #ffece6;
 }
 
 .relaxer-page {
-  background-color: #A7C8DC;
+  --hero-bg-color: #A7C8DC;
+  --hero-name-color: rgba(167, 200, 220, 0.3);
+  --hero-subtitle-color: #eaf5fa;
 }
 
 .devotee-page {
-  background-color: #C2C6D6;
+  --hero-bg-color: #C2C6D6;
+  --hero-name-color: rgba(194, 198, 214, 0.3);
+  --hero-subtitle-color: #f1f2f5;
 }
 
 .photographer-page {
-  background-color: #606C76;
+  --hero-bg-color: #606C76;
+  --hero-name-color: rgba(96, 108, 118, 0.3);
+  --hero-subtitle-color: #ffffff;
 }
 
 .naturalist-page {
-  background-color: #4C6A4D;
+  --hero-bg-color: #4C6A4D;
+  --hero-name-color: rgba(76, 106, 77, 0.3);
+  --hero-subtitle-color: #e3f1e3;
 }
