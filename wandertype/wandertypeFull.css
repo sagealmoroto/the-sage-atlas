@@ -1,3 +1,75 @@
+body {
+    margin: 0;
+    background-color: #ebebf0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4e57;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 300px;
+    max-width: 1440px;
+}
+
+hr.solid {
+    border: none;
+    border-top: 2px solid #a0a7b2;
+    margin: 40px 0;
+}
+
+h1 {
+    color: #230d0a;
+    text-align: center;
+    font-style: italic;
+    font-size: 84px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0px 10px 0px;
+}
+
+h2 {
+    color: #230d0a;
+    text-align: center;
+    font-size: 26px;
+    padding: 0px 40px 30px 40px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    justify-self: center;
+}
+
+.intro-container {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    font-size: 16px;
+    padding: 40px 0;
+    text-align: justify;
+}
+
+.main-container div {
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px 0px #C9CCD1; 
+    background-color: white;
+}
+
+.main-container p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #453737;
+    text-align: center; 
+}
+
 .wander-hero {
     display: flex;
     align-items: center;
