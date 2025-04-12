@@ -1,4 +1,4 @@
-/* Global */
+/* GLOBAL STYLES */
 
 body {
   margin: 0;
@@ -15,111 +15,160 @@ a {
 img {
   width: 100%;
   object-fit: cover;
-  border-radius: 15px;
   height: 300px;
   max-width: 1440px;
 }
 
-/* Section Divider */
 hr.solid {
   border: none;
   border-top: 2px solid #a0a7b2;
   margin: 40px 0;
 }
 
+h1, h2, h3, p {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
   color: #230d0a;
-  text-align: center;
   font-style: italic;
   font-size: 84px;
   font-weight: 100;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0;
 }
 
 h2 {
   color: #230d0a;
-  text-align: center;
   font-size: 26px;
-  padding: 0px 40px 30px 40px;
+  padding: 0 40px 30px 40px;
 }
 
 h3 {
   color: #230d0a;
-  text-align: center;
   font-style: italic;
   font-size: 20px;
   font-weight: 100;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0;
 }
 
 p {
   color: #230d0a;
-  text-align: center;
   font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Color block for each WanderType page */
+/* ✨ NEW: Consistent centered column for all page content */
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO SECTION WITH THEMEABLE VARIABLES */
+
 .wandertype-hero {
+  --hero-bg-color: #F3e5ab;
+  --hero-name-color: #e6d496;
+  --hero-subtitle-color: #ffffff;
+
+  background-color: var(--hero-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: clamp(300px, 60vh, 600px);
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
 }
 
+/* FLEX-CENTERED TEXT LAYOUT */
+
 .overlay-text {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
+.hero-name-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
 .hero-name {
-  font-size: 100px;
-  font-family: 'Dancing Script', cursive;
-  color: rgba(255, 255, 255, 0.15);
+  font-size: clamp(150px, 15vw, 400px);
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  color: var(--hero-name-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   margin: 0;
   line-height: 1;
 }
 
 .hero-subtitle {
-  margin-top: -40px;
-  font-size: 26px;
-  color: #fff;
+  position: absolute;
+  top: 48%; /* ✨ Centering nudge */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(25px, 2vw, 50px);
+  color: var(--hero-subtitle-color);
   font-weight: 600;
-  text-shadow: 0 0 6px rgba(0,0,0,0.3);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  white-space: nowrap;
 }
 
-.hero-background-img {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+/* IMAGE SECTION UNDER HERO */
 
 .hero-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0; /* Optional: Add top padding if image feels too tight */
+  padding: 0;
   overflow: hidden;
+  margin-top: -200px;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-image-wrapper img {
   width: 100%;
-  max-width: 1537px;
+  max-width: 1300px; /* ✨ Your updated image width */
   height: auto;
   margin: 0 auto;
   display: block;
+  border-radius: 0;
 }
 
-/* Category color blocks for WanderTypes */
+/* CATEGORY-SPECIFIC THEMES */
+
 .tourist-page {
-  background-color: #F3e5ab;
+  --hero-bg-color: #F3e5ab;
+  --hero-name-color: #e6d496;
+  --hero-subtitle-color: #ffffff;
+}
+
+.explorer-page {
+  --hero-bg-color: #B5432C;
+  --hero-name-color: #ffffff;
+  --hero-subtitle-color: #ffece6;
+}
+
+.photographer-page {
+  --hero-bg-color: #606C76;
+  --hero-name-color: #dcdfe2;
+  --hero-subtitle-color: #ffffff;
 }
 
 .foodie-page {
