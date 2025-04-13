@@ -9,9 +9,9 @@
 
 body {
   margin: 0;
-  background-color: #ebebf0;
+  background-color: #f5f5f5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #4a4e57;
+  color: #272727;
   line-height: 1.6;
   text-align: center;
 }
@@ -51,13 +51,13 @@ h2 {
 
 #quiz-hero {
   width: 100%;
-  border: 2px solid #a0a7b2;
-  border-radius: 8px;
+  max-width: 960px;
   margin: 10px auto;
   padding: 0;
-  max-width: 960px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #ffffff; /* Clean white base */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: max-height 0.5s ease, padding 0.3s ease;
   overflow: hidden;
   position: relative;
@@ -78,8 +78,9 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   padding: 14px 20px;
-  background-color: #f5f5f9;
-  border: 2px dashed #b8b8c4;
+  background-color: #f9f9f9;
+  border: 2px dashed #333;
+  color: #000;
   border-radius: 6px;
   cursor: pointer;
   margin: 10px;
@@ -97,6 +98,7 @@ h2 {
 .quiz-left {
   flex: 1 1 40%;
   text-align: left;
+  color: #222;
 }
 
 .quiz-right {
@@ -112,10 +114,17 @@ h2 {
   font-size: 16px;
   width: 45%;
   cursor: pointer;
-  border: 1px solid #aaa;
+  border: 1px solid #999;
   border-radius: 8px;
-  background-color: #e6e6f2;
+  background-color: #f2f2f2;
+  color: #000;
+  transition: background 0.2s ease;
 }
+
+.quiz-right button:hover {
+  background-color: #d0d9b3; /* Sage accent on hover */
+}
+
 
 .quiz-questions {
   margin-top: 20px;
@@ -128,9 +137,10 @@ h2 {
 
 .question-wrapper {
   width: 100%;
-  max-width: 700px; 
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  color: #222;
 }
 
 .quiz-question p {
@@ -151,7 +161,7 @@ h2 {
 }
 
 .likert-scale input[type="radio"]:checked ~ label {
-  background-color: #d0d0ec;
+  background-color: #d0d9b3;
   font-weight: bold;
 }
 
@@ -160,16 +170,17 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   padding: 10px 16px;
-  background-color: #f0f0f6;
+  background-color: #f6f6f6;
   border-radius: 20px;
   margin: 6px 0;
   transition: background 0.2s ease;
-  white-space: normal; /* allow line wraps when needed */
+  white-space: normal;
   word-break: break-word;
+  color: #000;
 }
 
 .quiz-form label:hover {
-  background-color: #e6e6f2;
+  background-color: #e0e0e0;
 }
 
 .quiz-content {
@@ -222,16 +233,21 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 40px; /* was 20px */
+  margin-top: 40px;
 }
 
 .nav-buttons button {
   padding: 10px 20px;
   font-size: 16px;
-  background: #e6e6f2;
-  border: 1px solid #aaa;
+  background: #d0d9b3;
+  border: 1px solid #333;
   border-radius: 6px;
+  color: #000;
   cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #c0c9a0;
 }
 
 .likert-scale {
@@ -239,30 +255,25 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 .likert-scale label {
-  display: flex;
-  align-items: center;
   font-size: 15px;
   padding: 6px 10px;
-  background-color: #f0f0f6;
+  background-color: #f0f0f0;
   border-radius: 20px;
   cursor: pointer;
-  white-space: nowrap;
-  transition: background 0.2s ease;
+  color: #000;
 }
 
 .likert-scale label:hover {
-  background-color: #e6e6f2;
+  background-color: #d0d9b3; /* Accent on hover */
 }
 
 .likert-scale input[type="radio"] {
   margin-right: 8px;
-  accent-color: #5a5a9e;
+  accent-color: #000; /* Black dot for clarity */
 }
 
 /* -----------------------------------
@@ -546,14 +557,14 @@ h2 {
 .result-bar {
   display: flex;
   align-items: center;
-  background: #f0f0f6;
+  background: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
 }
 
 .result-bar.highlight {
-  background: #dfe3fa;
+  background: #d0d9b3; 
   font-weight: bold;
 }
 
@@ -565,11 +576,10 @@ h2 {
 
 .bar-fill {
   height: 100%;
-  background: #5a5a9e;
+  background: #d0d9b3; 
   flex-grow: 1;
   transition: width 0.4s ease;
 }
-
 .bar-score {
   flex: 0 0 60px;
   text-align: right;
@@ -581,10 +591,15 @@ h2 {
   padding: 12px 24px;
   font-size: 16px;
   border: none;
-  background: #5a5a9e;
+  background: #78866b; /* ✅ olive green */
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #4d5d53; /* ✅ slightly deeper olive for hover */
 }
 
 /* -----------------------------------

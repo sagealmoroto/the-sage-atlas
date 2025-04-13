@@ -1,5 +1,5 @@
 .topnav {
-    background-color: #CECDDB;
+    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,7 +15,7 @@
     display: inline-flex;
     justify-content: center;
     font-size: 14px;
-    color: #2e110d;
+    color: #ffffff;
     text-decoration: none;
     position: relative;
   }
@@ -24,9 +24,17 @@
     color: #a0a7b2;
     text-decoration: underline;
   }
+
+  .topnav a.active {
+    color: rgb(233, 252, 255);
+    text-decoration: underline;
+    text-decoration-color: #ffffff; /* or a color with better contrast */
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
   
   .topnav a.link-text.active {
-    color: black;
+    color: rgb(233, 252, 255);
     text-decoration: underline;
   }
 
@@ -88,7 +96,7 @@
   
   .dropdown-section a {
     display: block;
-    color: #2e110d;
+    color: #000000;
     padding: 4px 0;
     text-decoration: none;
   }
