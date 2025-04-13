@@ -1,7 +1,7 @@
 # sirens-odyssey
 
 ## Description
-**A personal coding journey in progress** — *Siren's Odyssey* is an evolving personal project as I learn front-end development skills.
+**A personal coding journey in progress** — *The Sage Atlas* is an evolving personal project as I learn front-end development skills.
 
 ## Features (Current and Planned)
 ### Current Features:
@@ -32,4 +32,4 @@ This project reflects my coding journey, from learning the basics to tackling ad
 
 ---
 
-Feel free to explore and follow along as *Sirens Odyssey* evolves!
+Feel free to explore and follow along as *The Sage Atlas* evolves!
