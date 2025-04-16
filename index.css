@@ -164,7 +164,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #CECDDB;
+    background-color: #000000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -174,7 +174,7 @@ footer {
 }
 
 footer a {
-    color: #2e110d;
+    color: #ffffff;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -187,12 +187,8 @@ footer img {
     margin-right: 8px;
 }
 
-footer a:visited {
-    color: #453737;
-}
-
 footer a:hover {
-    color: #a0a7b2;
+    color: a0a7b2;
     text-decoration: underline;
 }
 
