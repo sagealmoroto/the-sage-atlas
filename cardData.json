@@ -63,6 +63,384 @@
       "recommended_duration": "2 weeks",
       "image": "cards/japan-tourist.jpg"
     }
+    {
+      "category": "The Tourist",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Rome",
+        "Venice",
+        "Florence",
+        "Milan"
+      ],
+      "tipping_etiquette": "Optional but appreciated (round up or 5\u201310%)",
+      "top_attractions": [
+        "Colosseum",
+        "Vatican City",
+        "Leaning Tower of Pisa",
+        "Venice Canals"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/italy-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Greece",
+      "primary_language": "Greek",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Athens",
+        "Santorini",
+        "Mykonos",
+        "Thessaloniki"
+      ],
+      "tipping_etiquette": "Rounding up is common (5\u201310%)",
+      "top_attractions": [
+        "Acropolis",
+        "Santorini Cliffs",
+        "Delphi",
+        "Mykonos Beaches"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/greece-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Paris",
+        "Nice",
+        "Lyon",
+        "Marseille"
+      ],
+      "tipping_etiquette": "Optional but appreciated (round up or 5\u201310%)",
+      "top_attractions": [
+        "Eiffel Tower",
+        "Louvre Museum",
+        "Versailles",
+        "Mont Saint-Michel"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/france-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Spain",
+      "primary_language": "Spanish",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Barcelona",
+        "Madrid",
+        "Seville",
+        "Valencia"
+      ],
+      "tipping_etiquette": "Rounding up or 5\u201310% in restaurants",
+      "top_attractions": [
+        "Sagrada Fam\u00edlia",
+        "Alhambra",
+        "Park G\u00fcell",
+        "La Rambla"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/spain-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Turkey",
+      "primary_language": "Turkish",
+      "currency": "TRY",
+      "most_popular_cities": [
+        "Istanbul",
+        "Cappadocia",
+        "Antalya",
+        "Izmir"
+      ],
+      "tipping_etiquette": "5\u201310% in restaurants and cafes",
+      "top_attractions": [
+        "Hagia Sophia",
+        "Blue Mosque",
+        "Pamukkale",
+        "Ephesus"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/turkey-tourist.jpg"
+    }
+    {
+      "category": "The Tourist",
+      "country": "Australia",
+      "primary_language": "English",
+      "currency": "AUD",
+      "most_popular_cities": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Perth"
+      ],
+      "tipping_etiquette": "Not customary but appreciated (round up for exceptional service)",
+      "top_attractions": [
+        "Sydney Opera House",
+        "Great Barrier Reef",
+        "Uluru",
+        "Bondi Beach"
+      ],
+      "recommended_duration": "2 weeks",
+      "image": "cards/australia-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "United Kingdom",
+      "primary_language": "English",
+      "currency": "GBP",
+      "most_popular_cities": [
+        "London",
+        "Edinburgh",
+        "Manchester",
+        "Bath"
+      ],
+      "tipping_etiquette": "10\u201315% in restaurants",
+      "top_attractions": [
+        "Big Ben",
+        "Tower of London",
+        "Stonehenge",
+        "Edinburgh Castle"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/uk-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Canada",
+      "primary_language": "English, French",
+      "currency": "CAD",
+      "most_popular_cities": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary"
+      ],
+      "tipping_etiquette": "15\u201320% in restaurants",
+      "top_attractions": [
+        "Niagara Falls",
+        "Banff National Park",
+        "CN Tower",
+        "Old Quebec"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/canada-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Egypt",
+      "primary_language": "Arabic",
+      "currency": "EGP",
+      "most_popular_cities": [
+        "Cairo",
+        "Luxor",
+        "Aswan",
+        "Alexandria"
+      ],
+      "tipping_etiquette": "10\u201315% in restaurants and for services",
+      "top_attractions": [
+        "Pyramids of Giza",
+        "Valley of the Kings",
+        "Nile Cruise",
+        "Karnak Temple"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/egypt-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "China",
+      "primary_language": "Mandarin Chinese",
+      "currency": "CNY",
+      "most_popular_cities": [
+        "Beijing",
+        "Shanghai",
+        "Xi'an",
+        "Guangzhou"
+      ],
+      "tipping_etiquette": "Not customary but becoming more common in major cities",
+      "top_attractions": [
+        "Great Wall of China",
+        "Forbidden City",
+        "Terracotta Army",
+        "Zhangjiajie National Forest"
+      ],
+      "recommended_duration": "2 weeks",
+      "image": "cards/china-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Thailand",
+      "primary_language": "Thai",
+      "currency": "THB",
+      "most_popular_cities": [
+        "Bangkok",
+        "Chiang Mai",
+        "Phuket",
+        "Pattaya"
+      ],
+      "tipping_etiquette": "Not customary but appreciated (5\u201310% for exceptional service)",
+      "top_attractions": [
+        "Grand Palace",
+        "Phi Phi Islands",
+        "Ayutthaya",
+        "Doi Inthanon National Park"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/thailand-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "United Arab Emirates",
+      "primary_language": "Arabic",
+      "currency": "AED",
+      "most_popular_cities": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah",
+        "Al Ain"
+      ],
+      "tipping_etiquette": "10\u201315% in restaurants and taxis",
+      "top_attractions": [
+        "Burj Khalifa",
+        "Sheikh Zayed Grand Mosque",
+        "Palm Jumeirah",
+        "Desert Safari"
+      ],
+      "recommended_duration": "1 week",
+      "image": "cards/uae-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Brazil",
+      "primary_language": "Portuguese",
+      "currency": "BRL",
+      "most_popular_cities": [
+        "Rio de Janeiro",
+        "S\u00e3o Paulo",
+        "Salvador",
+        "Bras\u00edlia"
+      ],
+      "tipping_etiquette": "10% in restaurants",
+      "top_attractions": [
+        "Christ the Redeemer",
+        "Sugarloaf Mountain",
+        "Igua\u00e7u Falls",
+        "Copacabana Beach"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/brazil-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "South Africa",
+      "primary_language": "English, Afrikaans, Zulu (and others)",
+      "currency": "ZAR",
+      "most_popular_cities": [
+        "Cape Town",
+        "Johannesburg",
+        "Durban",
+        "Pretoria"
+      ],
+      "tipping_etiquette": "10\u201315% in restaurants",
+      "top_attractions": [
+        "Table Mountain",
+        "Kruger National Park",
+        "Robben Island",
+        "Cape Winelands"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/southafrica-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Austria",
+      "primary_language": "German",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Vienna",
+        "Salzburg",
+        "Innsbruck",
+        "Graz"
+      ],
+      "tipping_etiquette": "5\u201310% in restaurants",
+      "top_attractions": [
+        "Sch\u00f6nbrunn Palace",
+        "Hallstatt",
+        "Hofburg Palace",
+        "Sound of Music Tour"
+      ],
+      "recommended_duration": "1 week",
+      "image": "cards/austria-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Czech Republic",
+      "primary_language": "Czech",
+      "currency": "CZK",
+      "most_popular_cities": [
+        "Prague",
+        "Brno",
+        "\u010cesk\u00fd Krumlov",
+        "Karlovy Vary"
+      ],
+      "tipping_etiquette": "5\u201310% in restaurants",
+      "top_attractions": [
+        "Prague Castle",
+        "Charles Bridge",
+        "Old Town Square",
+        "Astronomical Clock"
+      ],
+      "recommended_duration": "1 week",
+      "image": "cards/czech-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Netherlands",
+      "primary_language": "Dutch",
+      "currency": "EUR",
+      "most_popular_cities": [
+        "Amsterdam",
+        "Rotterdam",
+        "Utrecht",
+        "The Hague"
+      ],
+      "tipping_etiquette": "5\u201310% in restaurants and cafes",
+      "top_attractions": [
+        "Canal Belt",
+        "Van Gogh Museum",
+        "Keukenhof Gardens",
+        "Zaanse Schans"
+      ],
+      "recommended_duration": "1 week",
+      "image": "cards/netherlands-tourist.jpg"
+    },
+    {
+      "category": "The Tourist",
+      "country": "Indonesia",
+      "primary_language": "Indonesian",
+      "currency": "IDR",
+      "most_popular_cities": [
+        "Bali",
+        "Jakarta",
+        "Yogyakarta",
+        "Ubud"
+      ],
+      "tipping_etiquette": "Not required but appreciated (5\u201310%)",
+      "top_attractions": [
+        "Borobudur Temple",
+        "Bali Rice Terraces",
+        "Tanah Lot",
+        "Komodo National Park"
+      ],
+      "recommended_duration": "1\u20132 weeks",
+      "image": "cards/indonesia-tourist.jpg"
+    }
   ],
   "The Foodie": [
     {
