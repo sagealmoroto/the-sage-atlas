@@ -32,3 +32,11 @@ This project reflects my coding journey, from learning the basics to tackling ad
 ---
 
 Feel free to explore and follow along as *The Sage Atlas* evolves!
+
+
+NOTES TO SELF:
+- Add "To Top" button on necessary pages
+- Create filter feature on destinations page
+- Link "See recommended destinations" on the bottom of the WanderType pages
+- Potentially add additional "subtypes?" for the WanderTypes
+

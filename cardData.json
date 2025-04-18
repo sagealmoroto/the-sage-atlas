@@ -503,7 +503,9 @@
       "where_to_eat": [
         "Central",
         "Maido",
-        "Surquillo Market"
+        "Café Neira",
+        "Siete",
+        "La Piquanteria"
       ],
       "beverages": [
         "Pisco Sour",
@@ -626,6 +628,466 @@
         "Portuguese Coffee"
       ],
       "image": "cards/foodie/lisbon-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Chicago, USA",
+      "country": "USA",
+      "primary_language": "English",
+      "currency": "USD",
+      "signature_dishes": [
+        "Deep-Dish Pizza",
+        "Italian Beef Sandwich",
+        "Chicago Hot Dog"
+      ],
+      "where_to_eat": [
+        "Lou Malnati’s",
+        "Portillo’s",
+        "Alinea"
+      ],
+      "beverages": [
+        "Craft Beer",
+        "Old Fashioned",
+        "Malört"
+      ],
+      "image": "cards/foodie/chicago-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Houston, USA",
+      "country": "USA",
+      "primary_language": "English",
+      "currency": "USD",
+      "signature_dishes": [
+        "Tex-Mex Tacos",
+        "Vietnamese Crawfish",
+        "BBQ Brisket"
+      ],
+      "where_to_eat": [
+        "Himalaya",
+        "Killen’s BBQ",
+        "Ninfa’s"
+      ],
+      "beverages": [
+        "Margaritas",
+        "Sweet Tea",
+        "Craft Beer"
+      ],
+      "image": "cards/foodie/houston-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Fukuoka, Japan",
+      "country": "Japan",
+      "primary_language": "Japanese",
+      "currency": "JPY",
+      "signature_dishes": [
+        "Hakata Ramen",
+        "Mentaiko",
+        "Gyoza"
+      ],
+      "where_to_eat": [
+        "Yatai Stalls",
+        "Ichiran Ramen",
+        "Ganso Hakata Mentaiju"
+      ],
+      "beverages": [
+        "Sake",
+        "Umeshu",
+        "Japanese Beer"
+      ],
+      "image": "cards/foodie/fukuoka-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Sapporo, Japan",
+      "country": "Japan",
+      "primary_language": "Japanese",
+      "currency": "JPY",
+      "signature_dishes": [
+        "Miso Ramen",
+        "Jingisukan (grilled mutton)",
+        "Soup Curry"
+      ],
+      "where_to_eat": [
+        "Ramen Alley",
+        "Sapporo Beer Garden",
+        "Suage+ Curry"
+      ],
+      "beverages": [
+        "Sapporo Beer",
+        "Hot Sake",
+        "Milk Tea"
+      ],
+      "image": "cards/foodie/sapporo-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Lagos, Nigeria",
+      "country": "Nigeria",
+      "primary_language": "English",
+      "currency": "NGN",
+      "signature_dishes": [
+        "Jollof Rice",
+        "Suya",
+        "Egusi Soup"
+      ],
+      "where_to_eat": [
+        "Yellow Chilli",
+        "Bungalow Restaurant",
+        "Terra Kulture"
+      ],
+      "beverages": [
+        "Zobo Drink",
+        "Palm Wine",
+        "Chapman"
+      ],
+      "image": "cards/foodie/lagos-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Chengdu, China",
+      "country": "China",
+      "primary_language": "Mandarin Chinese",
+      "currency": "CNY",
+      "signature_dishes": [
+        "Mapo Tofu",
+        "Hot Pot",
+        "Kung Pao Chicken"
+      ],
+      "where_to_eat": [
+        "Huangcheng Laoma",
+        "Chen Mapo Tofu",
+        "Shujiuxiang Hot Pot"
+      ],
+      "beverages": [
+        "Jasmine Tea",
+        "Plum Juice",
+        "Baijiu"
+      ],
+      "image": "cards/foodie/chengdu-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Xi'an, China",
+      "country": "China",
+      "primary_language": "Mandarin Chinese",
+      "currency": "CNY",
+      "signature_dishes": [
+        "Biang Biang Noodles",
+        "Roujiamo",
+        "Yangrou Paomo"
+      ],
+      "where_to_eat": [
+        "Muslim Quarter",
+        "First Noodle Under The Sun",
+        "Xi’an Restaurant"
+      ],
+      "beverages": [
+        "Soy Milk",
+        "Chinese Herbal Tea",
+        "Beer"
+      ],
+      "image": "cards/foodie/xian-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Chongqing, China",
+      "country": "China",
+      "primary_language": "Mandarin Chinese",
+      "currency": "CNY",
+      "signature_dishes": [
+        "Chongqing Hot Pot",
+        "Xiaomian",
+        "Spicy Chicken"
+      ],
+      "where_to_eat": [
+        "Lao Ma Tou",
+        "Wu Ji Lao Hot Pot",
+        "Xiaomian Street Vendors"
+      ],
+      "beverages": [
+        "Tea with Goji",
+        "Beer",
+        "Sweet Rice Wine"
+      ],
+      "image": "cards/foodie/chongqing-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Naples, Italy",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Pizza Napoletana",
+        "Spaghetti alle Vongole",
+        "Sfogliatella"
+      ],
+      "where_to_eat": [
+        "L’Antica Pizzeria da Michele",
+        "Trattoria da Nennella",
+        "Pignasecca Market"
+      ],
+      "beverages": [
+        "Limoncello",
+        "Italian Red Wine",
+        "Espresso"
+      ],
+      "image": "cards/foodie/naples-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Bologna, Italy",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Tagliatelle al Ragù",
+        "Tortellini in Brodo",
+        "Mortadella"
+      ],
+      "where_to_eat": [
+        "Osteria dell'Orsa",
+        "Trattoria Anna Maria",
+        "Mercato di Mezzo"
+      ],
+      "beverages": [
+        "Lambrusco",
+        "Espresso",
+        "Italian Aperitifs"
+      ],
+      "image": "cards/foodie/bologna-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Palermo, Italy",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Arancini",
+        "Pane con la Milza",
+        "Cannoli"
+      ],
+      "where_to_eat": [
+        "Ballarò Market",
+        "Antica Focacceria San Francesco",
+        "Pani Cà Meusa Porta Carbone"
+      ],
+      "beverages": [
+        "Marsala Wine",
+        "Granita",
+        "Lemon Soda"
+      ],
+      "image": "cards/foodie/palermo-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Cagliari, Italy",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Malloreddus",
+        "Fregola with Clams",
+        "Seadas"
+      ],
+      "where_to_eat": [
+        "Trattoria Lillicu",
+        "Antica Hostaria",
+        "Mercato di San Benedetto"
+      ],
+      "beverages": [
+        "Cannonau Wine",
+        "Mirto",
+        "Espresso"
+      ],
+      "image": "cards/foodie/cagliari-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Sorrento, Italy",
+      "country": "Italy",
+      "primary_language": "Italian",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Gnocchi alla Sorrentina",
+        "Delizia al Limone",
+        "Seafood Risotto"
+      ],
+      "where_to_eat": [
+        "Ristorante L'Antica Trattoria",
+        "O'Parrucchiano",
+        "Tasso Ristorante"
+      ],
+      "beverages": [
+        "Limoncello",
+        "White Wine",
+        "Espresso"
+      ],
+      "image": "cards/foodie/sorrento-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Dijon, France",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Boeuf Bourguignon",
+        "Escargots de Bourgogne",
+        "Pain d'épices"
+      ],
+      "where_to_eat": [
+        "Chez Léon",
+        "La Maison des Cariatides",
+        "Les Halles Market"
+      ],
+      "beverages": [
+        "Burgundy Wine",
+        "Kir",
+        "Crème de Cassis"
+      ],
+      "image": "cards/foodie/dijon-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Toulouse, France",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Cassoulet",
+        "Foie Gras",
+        "Saucisse de Toulouse"
+      ],
+      "where_to_eat": [
+        "Marché Victor Hugo",
+        "Le Bibent",
+        "L’Entrecôte"
+      ],
+      "beverages": [
+        "Red Wine",
+        "Armagnac",
+        "Pastis"
+      ],
+      "image": "cards/foodie/toulouse-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Bordeaux, France",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Entrecôte à la Bordelaise",
+        "Canelés",
+        "Magret de Canard"
+      ],
+      "where_to_eat": [
+        "Marché des Capucins",
+        "La Tupina",
+        "Le Quatrième Mur"
+      ],
+      "beverages": [
+        "Bordeaux Wine",
+        "Lillets",
+        "Coffee"
+      ],
+      "image": "cards/foodie/bordeaux-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Lyon, France",
+      "country": "France",
+      "primary_language": "French",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Quenelles",
+        "Salade Lyonnaise",
+        "Andouillette"
+      ],
+      "where_to_eat": [
+        "Les Halles de Lyon",
+        "Le Bouchon des Filles",
+        "Daniel et Denise"
+      ],
+      "beverages": [
+        "Beaujolais",
+        "Wine",
+        "Cassis"
+      ],
+      "image": "cards/foodie/lyon-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "San Sebastián, Spain",
+      "country": "Spain",
+      "primary_language": "Spanish",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Pintxos",
+        "Txuleta",
+        "Tarta de Queso"
+      ],
+      "where_to_eat": [
+        "Old Town Pintxo Bars",
+        "Akelarre",
+        "Bar Nestor"
+      ],
+      "beverages": [
+        "Txakoli Wine",
+        "Cider",
+        "Spanish Beer"
+      ],
+      "image": "cards/foodie/sansebastian-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Bilbao, Spain",
+      "country": "Spain",
+      "primary_language": "Spanish",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Bacalao al Pil-Pil",
+        "Marmitako",
+        "Pintxos"
+      ],
+      "where_to_eat": [
+        "La Ribera Market",
+        "Gure Toki",
+        "Café Iruña"
+      ],
+      "beverages": [
+        "Basque Cider",
+        "Txakoli",
+        "Red Wine"
+      ],
+      "image": "cards/foodie/bilbao-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Ronda, Spain",
+      "country": "Spain",
+      "primary_language": "Spanish",
+      "currency": "EUR",
+      "signature_dishes": [
+        "Rabo de Toro",
+        "Gazpacho Andaluz",
+        "Churros con Chocolate"
+      ],
+      "where_to_eat": [
+        "Casa María",
+        "De Locos Tapas",
+        "Pedro Romero"
+      ],
+      "beverages": [
+        "Sherry",
+        "Andalusian Wine",
+        "Tinto de Verano"
+      ],
+      "image": "cards/foodie/ronda-foodie.jpg"
     }
   ],
   "The Culture-Seeker": [
