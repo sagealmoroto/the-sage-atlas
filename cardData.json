@@ -40,7 +40,7 @@
         "Berlin Wall Memorial"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/germany-tourist.jpg"
+      "image": "cards/tourist/germany-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -61,7 +61,7 @@
         "Hiroshima Peace Memorial Park"
       ],
       "recommended_duration": "2 weeks",
-      "image": "cards/japan-tourist.jpg"
+      "image": "cards/tourist/japan-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -82,7 +82,7 @@
         "Venice Canals"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/italy-tourist.jpg"
+      "image": "cards/tourist/italy-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -103,7 +103,7 @@
         "Mykonos Beaches"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/greece-tourist.jpg"
+      "image": "cards/tourist/greece-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -124,7 +124,7 @@
         "Mont Saint-Michel"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/france-tourist.jpg"
+      "image": "cards/tourist/france-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -145,7 +145,7 @@
         "La Rambla"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/spain-tourist.jpg"
+      "image": "cards/tourist/spain-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -166,7 +166,7 @@
         "Ephesus"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/turkey-tourist.jpg"
+      "image": "cards/tourist/turkey-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -187,7 +187,7 @@
         "Bondi Beach"
       ],
       "recommended_duration": "2 weeks",
-      "image": "cards/australia-tourist.jpg"
+      "image": "cards/tourist/australia-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -208,7 +208,7 @@
         "Edinburgh Castle"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/uk-tourist.jpg"
+      "image": "cards/tourist/uk-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -229,7 +229,7 @@
         "Old Quebec"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/canada-tourist.jpg"
+      "image": "cards/tourist/canada-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -250,7 +250,7 @@
         "Karnak Temple"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/egypt-tourist.jpg"
+      "image": "cards/tourist/egypt-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -271,7 +271,7 @@
         "Zhangjiajie National Forest"
       ],
       "recommended_duration": "2 weeks",
-      "image": "cards/china-tourist.jpg"
+      "image": "cards/tourist/china-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -292,7 +292,7 @@
         "Doi Inthanon National Park"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/thailand-tourist.jpg"
+      "image": "cards/tourist/thailand-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -313,7 +313,7 @@
         "Desert Safari"
       ],
       "recommended_duration": "1 week",
-      "image": "cards/uae-tourist.jpg"
+      "image": "cards/tourist/uae-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -334,7 +334,7 @@
         "Copacabana Beach"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/brazil-tourist.jpg"
+      "image": "cards/tourist/brazil-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -355,7 +355,7 @@
         "Cape Winelands"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/southafrica-tourist.jpg"
+      "image": "cards/tourist/southafrica-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -376,7 +376,7 @@
         "Sound of Music Tour"
       ],
       "recommended_duration": "1 week",
-      "image": "cards/austria-tourist.jpg"
+      "image": "cards/tourist/austria-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -397,7 +397,7 @@
         "Astronomical Clock"
       ],
       "recommended_duration": "1 week",
-      "image": "cards/czech-tourist.jpg"
+      "image": "cards/tourist/czech-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -418,7 +418,7 @@
         "Zaanse Schans"
       ],
       "recommended_duration": "1 week",
-      "image": "cards/netherlands-tourist.jpg"
+      "image": "cards/tourist/netherlands-tourist.jpg"
     },
     {
       "category": "The Tourist",
@@ -439,7 +439,7 @@
         "Komodo National Park"
       ],
       "recommended_duration": "1\u20132 weeks",
-      "image": "cards/indonesia-tourist.jpg"
+      "image": "cards/tourist/indonesia-tourist.jpg"
     }
   ],
   "The Foodie": [
