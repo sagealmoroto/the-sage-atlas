@@ -3,7 +3,7 @@ fetch('cardData.json')
   .then(cardData => {
     const categoryDetails = {
       "The Tourist": ["top_attractions", "most_popular_cities"],
-      "The Foodie": ["signature_dishes", "food_experiences", "beverages"],
+      "The Foodie": ["signature_dishes", "where_to_eat", "beverages"],
       "The Culture-Seeker": ["historical_landmarks", "local_traditions", "museums_and_arts"],
       "The Relaxer": ["top_relaxation_spots", "leisure_activities"],
       "The Adventurer": ["popular_destinations", "thrill_activities", "terrain_types"],
@@ -42,42 +42,42 @@ fetch('cardData.json')
         cards.forEach(card => {
           const categoryClass = type.replace(/\s/g, "");
           const cardDiv = document.createElement("div");
-          cardDiv.className = `card ${categoryClass}`; 
+          cardDiv.className = `card ${categoryClass}`;
           cardDiv.tabIndex = 0;
 
           // ✍️ Build back content
           let backHTML = `
-          <div class="card-back">
-            <p><strong>${card.country}</strong></p>
-        `;
-        
-        const fields = categoryDetails[card.category];
-        if (fields) {
-          fields.forEach(field => {
-            const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
-        
-            if (Array.isArray(card[field])) {
-              backHTML += `<div class="label-list"><strong>${label}:</strong><ul>`;
-              card[field].forEach(item => {
-                backHTML += `<li>${item}</li>`;
-              });
-              backHTML += `</ul></div>`;
-            } else if (card[field]) {
-              backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
-            }
-          });
-        }
+            <div class="card-back">
+              <p><strong>${card.location}</strong></p>
+          `;
+
+          const fields = categoryDetails[card.category];
+          if (fields) {
+            fields.forEach(field => {
+              const label = field.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+
+              if (Array.isArray(card[field])) {
+                backHTML += `<div class="label-list"><strong>${label}:</strong><ul>`;
+                card[field].forEach(item => {
+                  backHTML += `<li>${item}</li>`;
+                });
+                backHTML += `</ul></div>`;
+              } else if (card[field]) {
+                backHTML += `<p><strong>${label}:</strong> ${card[field]}</p>`;
+              }
+            });
+          }
 
           backHTML += `</div>`;
 
           // 🧱 Build the full card
           cardDiv.innerHTML = `
             <div class="card-front">
-              <img src="${card.image}" alt="${card.country} - ${type}" loading="lazy">
+              <img src="${card.image}" alt="${card.location} - ${type}" loading="lazy">
               <div class="card-text">
                 <div class="category-dot"></div>
                 <div>
-                  <h4>${card.country}</h4>
+                  <h4>${card.location}</h4>
                   <h4>${type}</h4>
                 </div>
               </div>

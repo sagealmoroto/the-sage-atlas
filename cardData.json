@@ -2,7 +2,7 @@
   "The Tourist": [
     {
       "category": "The Tourist",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "most_popular_cities": [
@@ -23,7 +23,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Germany",
+      "location": "Germany",
       "primary_language": "German",
       "currency": "EUR",
       "most_popular_cities": [
@@ -44,7 +44,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Japan",
+      "location": "Japan",
       "primary_language": "Japanese",
       "currency": "JPY",
       "most_popular_cities": [
@@ -65,7 +65,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Italy",
+      "location": "Italy",
       "primary_language": "Italian",
       "currency": "EUR",
       "most_popular_cities": [
@@ -86,7 +86,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Greece",
+      "location": "Greece",
       "primary_language": "Greek",
       "currency": "EUR",
       "most_popular_cities": [
@@ -107,7 +107,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "France",
+      "location": "France",
       "primary_language": "French",
       "currency": "EUR",
       "most_popular_cities": [
@@ -128,7 +128,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Spain",
+      "location": "Spain",
       "primary_language": "Spanish",
       "currency": "EUR",
       "most_popular_cities": [
@@ -149,7 +149,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Turkey",
+      "location": "Turkey",
       "primary_language": "Turkish",
       "currency": "TRY",
       "most_popular_cities": [
@@ -170,7 +170,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Australia",
+      "location": "Australia",
       "primary_language": "English",
       "currency": "AUD",
       "most_popular_cities": [
@@ -191,7 +191,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "United Kingdom",
+      "location": "United Kingdom",
       "primary_language": "English",
       "currency": "GBP",
       "most_popular_cities": [
@@ -212,7 +212,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Canada",
+      "location": "Canada",
       "primary_language": "English, French",
       "currency": "CAD",
       "most_popular_cities": [
@@ -233,7 +233,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Egypt",
+      "location": "Egypt",
       "primary_language": "Arabic",
       "currency": "EGP",
       "most_popular_cities": [
@@ -254,7 +254,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "China",
+      "location": "China",
       "primary_language": "Mandarin Chinese",
       "currency": "CNY",
       "most_popular_cities": [
@@ -275,7 +275,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Thailand",
+      "location": "Thailand",
       "primary_language": "Thai",
       "currency": "THB",
       "most_popular_cities": [
@@ -296,7 +296,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "United Arab Emirates",
+      "location": "United Arab Emirates",
       "primary_language": "Arabic",
       "currency": "AED",
       "most_popular_cities": [
@@ -317,7 +317,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Brazil",
+      "location": "Brazil",
       "primary_language": "Portuguese",
       "currency": "BRL",
       "most_popular_cities": [
@@ -338,7 +338,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "South Africa",
+      "location": "South Africa",
       "primary_language": "English, Afrikaans, Zulu (and others)",
       "currency": "ZAR",
       "most_popular_cities": [
@@ -359,7 +359,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Austria",
+      "location": "Austria",
       "primary_language": "German",
       "currency": "EUR",
       "most_popular_cities": [
@@ -380,7 +380,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Czech Republic",
+      "location": "Czech Republic",
       "primary_language": "Czech",
       "currency": "CZK",
       "most_popular_cities": [
@@ -401,7 +401,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Netherlands",
+      "location": "Netherlands",
       "primary_language": "Dutch",
       "currency": "EUR",
       "most_popular_cities": [
@@ -422,7 +422,7 @@
     },
     {
       "category": "The Tourist",
-      "country": "Indonesia",
+      "location": "Indonesia",
       "primary_language": "Indonesian",
       "currency": "IDR",
       "most_popular_cities": [
@@ -445,7 +445,7 @@
   "The Foodie": [
     {
       "category": "The Foodie",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "signature_dishes": [
@@ -466,7 +466,7 @@
     },
     {
       "category": "The Foodie",
-      "country": "Mexico",
+      "location": "Mexico",
       "primary_language": "Spanish",
       "currency": "MXN",
       "signature_dishes": ["Tacos al Pastor", "Mole", "Tamales", "Chiles en Nogada"],
@@ -481,7 +481,7 @@
     },
     {
       "category": "The Foodie",
-      "country": "Italy",
+      "location": "Italy",
       "primary_language": "Italian",
       "currency": "EUR",
       "signature_dishes": ["Pizza Napoletana", "Pasta Carbonara", "Lasagna", "Risotto"],
@@ -496,7 +496,7 @@
     },
     {
       "category": "The Foodie",
-      "country": "France",
+      "location": "France",
       "primary_language": "French",
       "currency": "EUR",
       "signature_dishes": ["Coq au Vin", "Bouillabaisse", "Ratatouille", "Duck Confit"],
@@ -511,7 +511,7 @@
     },
     {
       "category": "The Foodie",
-      "country": "China",
+      "location": "China",
       "primary_language": "Mandarin Chinese",
       "currency": "CNY",
       "signature_dishes": ["Peking Duck", "Dim Sum", "Mapo Tofu", "Xiaolongbao"],
@@ -526,7 +526,7 @@
     },
     {
       "category": "The Foodie",
-      "country": "Germany",
+      "location": "Germany",
       "primary_language": "German",
       "currency": "EUR",
       "signature_dishes": [
@@ -550,7 +550,7 @@
   "The Culture-Seeker": [
     {
       "category": "The Culture-Seeker",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "historical_landmarks": [
@@ -564,7 +564,7 @@
       ],
       "museums_and_arts": [
         "Metropolitan Museum of Art",
-        "Country Music Hall of Fame"
+        "location Music Hall of Fame"
       ],
       "cultural_experiences": [
         "Jazz in New Orleans",
@@ -575,7 +575,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "Germany",
+      "location": "Germany",
       "primary_language": "German",
       "currency": "EUR",
       "historical_landmarks": [
@@ -601,7 +601,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "Japan",
+      "location": "Japan",
       "primary_language": "Japanese",
       "currency": "JPY",
       "historical_landmarks": [
@@ -628,7 +628,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "India",
+      "location": "India",
       "primary_language": "Hindi, English",
       "currency": "INR",
       "historical_landmarks": [
@@ -655,7 +655,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "Brazil",
+      "location": "Brazil",
       "primary_language": "Portuguese",
       "currency": "BRL",
       "historical_landmarks": [
@@ -681,7 +681,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "Greece",
+      "location": "Greece",
       "primary_language": "Greek",
       "currency": "EUR",
       "historical_landmarks": [
@@ -707,7 +707,7 @@
     },
     {
       "category": "The Culture-Seeker",
-      "country": "Egypt",
+      "location": "Egypt",
       "primary_language": "Arabic",
       "currency": "EGP",
       "historical_landmarks": [
@@ -735,7 +735,7 @@
   "The Relaxer": [
     {
       "category": "The Relaxer",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "top_relaxation_spots": [
@@ -754,7 +754,7 @@
     },
     {
       "category": "The Relaxer",
-      "country": "Japan",
+      "location": "Japan",
       "primary_language": "Japanese",
       "currency": "JPY",
       "top_relaxation_spots": [
@@ -773,7 +773,7 @@
     },
     {
       "category": "The Relaxer",
-      "country": "French Polynesia",
+      "location": "French Polynesia",
       "primary_language": "French, Tahitian",
       "currency": "XPF",
       "top_relaxation_spots": [
@@ -792,7 +792,7 @@
     },
     {
       "category": "The Relaxer",
-      "country": "Finland",
+      "location": "Finland",
       "primary_language": "Finnish, Swedish",
       "currency": "EUR",
       "top_relaxation_spots": [
@@ -811,7 +811,7 @@
     },
     {
       "category": "The Relaxer",
-      "country": "Indonesia",
+      "location": "Indonesia",
       "primary_language": "Indonesian",
       "currency": "IDR",
       "top_relaxation_spots": [
@@ -830,7 +830,7 @@
     },
     {
       "category": "The Relaxer",
-      "country": "Portugal",
+      "location": "Portugal",
       "primary_language": "Portuguese",
       "currency": "EUR",
       "top_relaxation_spots": [
@@ -851,7 +851,7 @@
   "The Wellness Devotee": [
     {
       "category": "The Wellness Devotee",
-      "country": "Japan",
+      "location": "Japan",
       "primary_language": "Japanese",
       "currency": "JPY",
       "wellness_traditions": [
@@ -870,7 +870,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Turkey",
+      "location": "Turkey",
       "primary_language": "Turkish",
       "currency": "TRY",
       "wellness_traditions": [
@@ -888,7 +888,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Peru",
+      "location": "Peru",
       "primary_language": "Spanish, Quechua",
       "currency": "PEN",
       "wellness_traditions": [
@@ -906,7 +906,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Czech Republic",
+      "location": "Czech Republic",
       "primary_language": "Czech",
       "currency": "CZK",
       "wellness_traditions": [
@@ -924,7 +924,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Morocco",
+      "location": "Morocco",
       "primary_language": "Arabic, Berber",
       "currency": "MAD",
       "wellness_traditions": [
@@ -942,7 +942,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Indonesia",
+      "location": "Indonesia",
       "primary_language": "Indonesian",
       "currency": "IDR",
       "wellness_traditions": [
@@ -960,7 +960,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "India",
+      "location": "India",
       "primary_language": "Hindi, English",
       "currency": "INR",
       "wellness_traditions": [
@@ -978,7 +978,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "Guatemala",
+      "location": "Guatemala",
       "primary_language": "Spanish",
       "currency": "GTQ",
       "wellness_traditions": [
@@ -996,7 +996,7 @@
     },
     {
       "category": "The Wellness Devotee",
-      "country": "South Africa",
+      "location": "South Africa",
       "primary_language": "English, Afrikaans, Zulu (and others)",
       "currency": "ZAR",
       "wellness_traditions": [
@@ -1016,7 +1016,7 @@
   "The Naturalist": [
     {
       "category": "The Naturalist",
-      "country": "Norway",
+      "location": "Norway",
       "primary_language": "Norwegian",
       "currency": "NOK",
       "natural_wonders": [
@@ -1041,7 +1041,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Iceland",
+      "location": "Iceland",
       "primary_language": "Icelandic",
       "currency": "ISK",
       "natural_wonders": [
@@ -1066,7 +1066,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Switzerland",
+      "location": "Switzerland",
       "primary_language": "German, French, Italian, Romansh",
       "currency": "CHF",
       "natural_wonders": [
@@ -1091,7 +1091,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "New Zealand",
+      "location": "New Zealand",
       "primary_language": "English, M\u0101ori",
       "currency": "NZD",
       "natural_wonders": [
@@ -1116,7 +1116,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Slovenia",
+      "location": "Slovenia",
       "primary_language": "Slovene",
       "currency": "EUR",
       "natural_wonders": [
@@ -1141,7 +1141,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Vietnam",
+      "location": "Vietnam",
       "primary_language": "Vietnamese",
       "currency": "VND",
       "natural_wonders": [
@@ -1166,7 +1166,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Bhutan",
+      "location": "Bhutan",
       "primary_language": "Dzongkha",
       "currency": "BTN",
       "natural_wonders": [
@@ -1191,7 +1191,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Oman",
+      "location": "Oman",
       "primary_language": "Arabic",
       "currency": "OMR",
       "natural_wonders": [
@@ -1216,7 +1216,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Australia",
+      "location": "Australia",
       "primary_language": "English",
       "currency": "AUD",
       "natural_wonders": [
@@ -1241,7 +1241,7 @@
     },
     {
       "category": "The Naturalist",
-      "country": "Kazakhstan",
+      "location": "Kazakhstan",
       "primary_language": "Kazakh, Russian",
       "currency": "KZT",
       "natural_wonders": [
@@ -1268,7 +1268,7 @@
   "The Partier": [
     {
       "category": "The Partier",
-      "country": "Hungary",
+      "location": "Hungary",
       "primary_language": "Hungarian",
       "currency": "HUF",
       "party_cities": [
@@ -1288,7 +1288,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Croatia",
+      "location": "Croatia",
       "primary_language": "Croatian",
       "currency": "EUR",
       "party_cities": [
@@ -1310,7 +1310,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Spain",
+      "location": "Spain",
       "primary_language": "Spanish",
       "currency": "EUR",
       "party_cities": [
@@ -1332,7 +1332,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Germany",
+      "location": "Germany",
       "primary_language": "German",
       "currency": "EUR",
       "party_cities": [
@@ -1354,7 +1354,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Brazil",
+      "location": "Brazil",
       "primary_language": "Portuguese",
       "currency": "BRL",
       "party_cities": [
@@ -1376,7 +1376,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Jamaica",
+      "location": "Jamaica",
       "primary_language": "English, Jamaican Patois",
       "currency": "JMD",
       "party_cities": [
@@ -1398,7 +1398,7 @@
     },
     {
       "category": "The Partier",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "party_cities": [
@@ -1422,7 +1422,7 @@
     },
     {
       "category": "The Partier",
-      "country": "South Korea",
+      "location": "South Korea",
       "primary_language": "Korean",
       "currency": "KRW",
       "party_cities": [
@@ -1443,7 +1443,7 @@
     },
     {
       "category": "The Partier",
-      "country": "United Arab Emirates",
+      "location": "United Arab Emirates",
       "primary_language": "Arabic",
       "currency": "AED",
       "party_cities": [
@@ -1463,7 +1463,7 @@
     },
     {
       "category": "The Partier",
-      "country": "Israel",
+      "location": "Israel",
       "primary_language": "Hebrew",
       "currency": "ILS",
       "party_cities": [
@@ -1485,7 +1485,7 @@
     "The Adventurer": [
     {
       "category": "The Adventurer",
-      "country": "New Zealand",
+      "location": "New Zealand",
       "primary_language": "English, M\u0101ori",
       "currency": "NZD",
       "popular_destinations": [
@@ -1510,7 +1510,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Nepal",
+      "location": "Nepal",
       "primary_language": "Nepali",
       "currency": "NPR",
       "popular_destinations": [
@@ -1535,7 +1535,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Argentina",
+      "location": "Argentina",
       "primary_language": "Spanish",
       "currency": "ARS",
       "popular_destinations": [
@@ -1560,7 +1560,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "South Africa",
+      "location": "South Africa",
       "primary_language": "English, Afrikaans, Zulu (and others)",
       "currency": "ZAR",
       "popular_destinations": [
@@ -1585,7 +1585,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Switzerland",
+      "location": "Switzerland",
       "primary_language": "German, French, Italian, Romansh",
       "currency": "CHF",
       "popular_destinations": [
@@ -1610,7 +1610,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Norway",
+      "location": "Norway",
       "primary_language": "Norwegian",
       "currency": "NOK",
       "popular_destinations": [
@@ -1635,7 +1635,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Romania",
+      "location": "Romania",
       "primary_language": "Romanian",
       "currency": "RON",
       "popular_destinations": [
@@ -1660,7 +1660,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "Bulgaria",
+      "location": "Bulgaria",
       "primary_language": "Bulgarian",
       "currency": "BGN",
       "popular_destinations": [
@@ -1685,7 +1685,7 @@
     },
     {
       "category": "The Adventurer",
-      "country": "USA",
+      "location": "USA",
       "primary_language": "English",
       "currency": "USD",
       "popular_destinations": [
@@ -1709,7 +1709,7 @@
   "The Explorer": [
     {
       "category": "The Explorer",
-      "country": "Peru",
+      "location": "Peru",
       "primary_language": "Spanish, Quechua",
       "currency": "PEN",
       "remote_destinations": [
@@ -1733,7 +1733,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Costa Rica",
+      "location": "Costa Rica",
       "primary_language": "Spanish",
       "currency": "CRC",
       "remote_destinations": [
@@ -1757,7 +1757,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Scotland",
+      "location": "Scotland",
       "primary_language": "English, Scots Gaelic",
       "currency": "GBP",
       "remote_destinations": [
@@ -1781,7 +1781,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Uzbekistan",
+      "location": "Uzbekistan",
       "primary_language": "Uzbek",
       "currency": "UZS",
       "remote_destinations": [
@@ -1805,7 +1805,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Cambodia",
+      "location": "Cambodia",
       "primary_language": "Khmer",
       "currency": "KHR",
       "remote_destinations": [
@@ -1829,7 +1829,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Mongolia",
+      "location": "Mongolia",
       "primary_language": "Mongolian",
       "currency": "MNT",
       "remote_destinations": [
@@ -1853,7 +1853,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Madagascar",
+      "location": "Madagascar",
       "primary_language": "Malagasy, French",
       "currency": "MGA",
       "remote_destinations": [
@@ -1877,7 +1877,7 @@
     },
     {
       "category": "The Explorer",
-      "country": "Ethiopia",
+      "location": "Ethiopia",
       "primary_language": "Amharic",
       "currency": "ETB",
       "remote_destinations": [
@@ -1903,7 +1903,7 @@
   "The Photographer": [
     {
       "category": "The Photographer",
-      "country": "Finland",
+      "location": "Finland",
       "primary_language": "Finnish, Swedish",
       "currency": "EUR",
       "photography_styles": [
@@ -1924,7 +1924,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Namibia",
+      "location": "Namibia",
       "primary_language": "English",
       "currency": "NAD",
       "photography_styles": [
@@ -1946,7 +1946,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Jordan",
+      "location": "Jordan",
       "primary_language": "Arabic",
       "currency": "JOD",
       "photography_styles": [
@@ -1968,7 +1968,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Nepal",
+      "location": "Nepal",
       "primary_language": "Nepali",
       "currency": "NPR",
       "photography_styles": [
@@ -1990,7 +1990,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Kenya",
+      "location": "Kenya",
       "primary_language": "Swahili, English",
       "currency": "KES",
       "photography_styles": [
@@ -2012,7 +2012,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Cuba",
+      "location": "Cuba",
       "primary_language": "Spanish",
       "currency": "CUP",
       "photography_styles": [
@@ -2034,7 +2034,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Egypt",
+      "location": "Egypt",
       "primary_language": "Arabic",
       "currency": "EGP",
       "photography_styles": [
@@ -2056,7 +2056,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Greece",
+      "location": "Greece",
       "primary_language": "Greek",
       "currency": "EUR",
       "photography_styles": [
@@ -2078,7 +2078,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Vietnam",
+      "location": "Vietnam",
       "primary_language": "Vietnamese",
       "currency": "VND",
       "photography_styles": [
@@ -2100,7 +2100,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Ireland",
+      "location": "Ireland",
       "primary_language": "English, Irish",
       "currency": "EUR",
       "photography_styles": [
@@ -2122,7 +2122,7 @@
     },
     {
       "category": "The Photographer",
-      "country": "Iceland",
+      "location": "Iceland",
       "primary_language": "Icelandic",
       "currency": "ISK",
       "photography_styles": [
