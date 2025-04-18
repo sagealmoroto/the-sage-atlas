@@ -1,4 +1,3 @@
-# sirens-odyssey
 
 ## Description
 **A personal coding journey in progress** — *The Sage Atlas* is an evolving personal project as I learn front-end development skills.
