@@ -1037,7 +1037,7 @@
         "Sea eagles",
         "Whales"
       ],
-      "image": "cards/norway-naturalist.jpg"
+      "image": "cards/naturalist/norway-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1062,7 +1062,7 @@
         "Whales",
         "Seals"
       ],
-      "image": "cards/iceland-naturalist.jpg"
+      "image": "cards/naturalist/iceland-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1087,7 +1087,7 @@
         "Golden eagles",
         "Red deer"
       ],
-      "image": "cards/switzerland-naturalist.jpg"
+      "image": "cards/naturalist/switzerland-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1112,7 +1112,7 @@
         "Sea lions",
         "Penguins"
       ],
-      "image": "cards/newzealand-naturalist.jpg"
+      "image": "cards/naturalist/newzealand-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1137,7 +1137,7 @@
         "Eagles",
         "Salmon"
       ],
-      "image": "cards/slovenia-naturalist.jpg"
+      "image": "cards/naturalist/slovenia-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1162,7 +1162,7 @@
         "Water buffalo",
         "Butterflies"
       ],
-      "image": "cards/vietnam-naturalist.jpg"
+      "image": "cards/naturalist/vietnam-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1187,7 +1187,7 @@
         "Red pandas",
         "Himalayan blue sheep"
       ],
-      "image": "cards/bhutan-naturalist.jpg"
+      "image": "cards/naturalist/bhutan-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1212,7 +1212,7 @@
         "Falcons",
         "Camels"
       ],
-      "image": "cards/oman-naturalist.jpg"
+      "image": "cards/naturalist/oman-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1237,7 +1237,7 @@
         "Cassowaries",
         "Dingoes"
       ],
-      "image": "cards/australia-naturalist.jpg"
+      "image": "cards/naturalist/australia-naturalist.jpg"
     },
     {
       "category": "The Naturalist",
@@ -1262,7 +1262,7 @@
         "Wolves",
         "Snow leopards (rare)"
       ],
-      "image": "cards/kazakhstan-naturalist.jpg"
+      "image": "cards/naturalist/kazakhstan-naturalist.jpg"
     }
   ],
   "The Partier": [
