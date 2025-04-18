@@ -462,7 +462,7 @@
         "Craft beer",
         "Bourbon"
       ],
-      "image": "cards/usa-foodie.jpg"
+      "image": "cards/foodie/usa-foodie.jpg"
     },
     {
       "category": "The Foodie",
@@ -477,7 +477,7 @@
         "Local market tours (e.g., Mercado de San Juan)"
       ],
       "beverages": ["Horchata", "Mezcal", "Tequila", "Mexican Hot Chocolate"],
-      "image": "cards/mexico-foodie.jpg"
+      "image": "cards/foodie/mexico-foodie.jpg"
     },
     {
       "category": "The Foodie",
@@ -492,7 +492,7 @@
         "Wine and cheese tours in Tuscany"
       ],
       "beverages": ["Italian wine (Chianti, Barolo)", "Espresso", "Limoncello"],
-      "image": "cards/italy-foodie.jpg"
+      "image": "cards/foodie/italy-foodie.jpg"
     },
     {
       "category": "The Foodie",
@@ -507,7 +507,7 @@
         "Michelin-star dining in Lyon"
       ],
       "beverages": ["French wine (Bordeaux, Burgundy)", "Champagne", "Café au lait", "Kir"],
-      "image": "cards/france-foodie.jpg"
+      "image": "cards/foodie/france-foodie.jpg"
     },
     {
       "category": "The Foodie",
@@ -522,7 +522,7 @@
         "Regional cuisine sampling (e.g., Cantonese, Sichuan, Hunan)"
       ],
       "beverages": ["Chinese tea (jasmine, oolong)", "Baijiu", "Soy Milk", "Tsingtao beer"],
-      "image": "cards/china-foodie.jpg"
+      "image": "cards/foodie/china-foodie.jpg"
     },
     {
       "category": "The Foodie",
@@ -544,7 +544,7 @@
         "German beer",
         "Riesling wine"
       ],
-      "image": "cards/germany-foodie.jpg"
+      "image": "cards/foodie/germany-foodie.jpg"
     }
   ],
   "The Culture-Seeker": [
@@ -750,7 +750,7 @@
         "Hot air ballooning in Napa Valley",
         "Forest walks in the Pacific Northwest"
       ],
-      "image": "cards/usa-relaxer.jpg"
+      "image": "cards/relaxer/usa-relaxer.jpg"
     },
     {
       "category": "The Relaxer",
@@ -769,7 +769,7 @@
         "Island hopping in Okinawa",
         "Tea house experiences in Kyoto"
       ],
-      "image": "cards/japan-relaxer.jpg"
+      "image": "cards/relaxer/japan-relaxer.jpg"
     },
     {
       "category": "The Relaxer",
@@ -788,7 +788,7 @@
         "Snorkeling calm lagoons",
         "Sunset cruises on traditional boats"
       ],
-      "image": "cards/frenchpolynesia-relaxer.jpg"
+      "image": "cards/relaxer/frenchpolynesia-relaxer.jpg"
     },
     {
       "category": "The Relaxer",
@@ -807,7 +807,7 @@
         "Snowy cabin stays with fireplaces",
         "Northern lights watching in silence"
       ],
-      "image": "cards/finland-relaxer.jpg"
+      "image": "cards/relaxer/finland-relaxer.jpg"
     },
     {
       "category": "The Relaxer",
@@ -826,7 +826,7 @@
         "Sunset beach lounging",
         "Massage and spa rituals with essential oils"
       ],
-      "image": "cards/indonesia-relaxer.jpg"
+      "image": "cards/relaxer/indonesia-relaxer.jpg"
     },
     {
       "category": "The Relaxer",
@@ -845,7 +845,7 @@
         "Wine tastings in the Douro Valley",
         "Beach days with golden sand and sea breeze"
       ],
-      "image": "cards/portugal-relaxer.jpg"
+      "image": "cards/relaxer/portugal-relaxer.jpg"
     }
   ],
   "The Wellness Devotee": [
