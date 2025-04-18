@@ -571,7 +571,7 @@
         "Native American heritage sites",
         "Broadway shows in NYC"
       ],
-      "image": "cards/usa-culture.jpg"
+      "image": "cards/culture/usa-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -597,7 +597,7 @@
         "Beer hall music culture",
         "Contemporary art in Berlin"
       ],
-      "image": "cards/germany-culture.jpg"
+      "image": "cards/culture/germany-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -624,7 +624,7 @@
         "Calligraphy workshops",
         "Ryokan stays with kaiseki meals"
       ],
-      "image": "cards/japan-culture.jpg"
+      "image": "cards/culture/japan-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -651,7 +651,7 @@
         "Temple ceremonies",
         "Traditional Indian weddings (tourist-friendly)"
       ],
-      "image": "cards/india-culture.jpg"
+      "image": "cards/culture/india-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -677,7 +677,7 @@
         "Capoeira demonstrations",
         "Carnival in Salvador or Rio"
       ],
-      "image": "cards/brazil-culture.jpg"
+      "image": "cards/culture/brazil-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -703,7 +703,7 @@
         "Island village feasts",
         "Traditional music festivals"
       ],
-      "image": "cards/greece-culture.jpg"
+      "image": "cards/culture/greece-culture.jpg"
     },
     {
       "category": "The Culture-Seeker",
@@ -729,7 +729,7 @@
         "Sufi dance performances",
         "Traditional felucca sailing on the Nile"
       ],
-      "image": "cards/egypt-culture.jpg"
+      "image": "cards/culture/egypt-culture.jpg"
     }
   ],
   "The Relaxer": [
