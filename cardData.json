@@ -866,7 +866,7 @@
         "Tea ceremony participation",
         "Nature retreats in the Japanese Alps"
       ],
-      "image": "cards/japan-wellness.jpg"
+      "image": "cards/wellness/japan-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -884,7 +884,7 @@
         "Herbal steam baths in Bursa",
         "Mud therapy in Dalyan"
       ],
-      "image": "cards/turkey-wellness.jpg"
+      "image": "cards/wellness/turkey-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -902,7 +902,7 @@
         "Incan herbal medicine workshops",
         "Soaking in Aguas Calientes"
       ],
-      "image": "cards/peru-wellness.jpg"
+      "image": "cards/wellness/peru-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -920,7 +920,7 @@
         "Beer spas in Prague",
         "Forest wellness walks in Bohemia"
       ],
-      "image": "cards/czech-wellness.jpg"
+      "image": "cards/wellness/czech-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -938,7 +938,7 @@
         "Herbal baths in traditional riads",
         "Berber tea ceremonies"
       ],
-      "image": "cards/morocco-wellness.jpg"
+      "image": "cards/wellness/morocco-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -956,7 +956,7 @@
         "Jungle yoga retreats",
         "Balinese spa rituals"
       ],
-      "image": "cards/indonesia-wellness.jpg"
+      "image": "cards/wellness/indonesia-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -974,7 +974,7 @@
         "Spiritual walks in Varanasi",
         "Sound and breathwork in Dharamshala"
       ],
-      "image": "cards/india-wellness.jpg"
+      "image": "cards/wellness/india-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -992,7 +992,7 @@
         "Cacao meditation circles",
         "Hot springs in Quetzaltenango"
       ],
-      "image": "cards/guatemala-wellness.jpg"
+      "image": "cards/wellness/guatemala-wellness.jpg"
     },
     {
       "category": "The Wellness Devotee",
@@ -1010,7 +1010,7 @@
         "Nature immersion in Drakensberg",
         "Forest retreats in Knysna"
       ],
-      "image": "cards/southafrica-wellness.jpg"
+      "image": "cards/wellness/southafrica-wellness.jpg"
     }
   ],
   "The Naturalist": [
@@ -1920,7 +1920,7 @@
         "Snow-covered forests",
         "Blue twilight skies"
       ],
-      "image": "cards/finland-photographer.jpg"
+      "image": "cards/photographer/finland-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -1942,7 +1942,7 @@
         "Skeleton trees",
         "Golden light and harsh shadows"
       ],
-      "image": "cards/namibia-photographer.jpg"
+      "image": "cards/photographer/namibia-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -1964,7 +1964,7 @@
         "Canyons and carvings",
         "Sunset-lit deserts"
       ],
-      "image": "cards/jordan-photographer.jpg"
+      "image": "cards/photographer/jordan-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -1986,7 +1986,7 @@
         "Colorful prayer flags",
         "Golden temples"
       ],
-      "image": "cards/nepal-photographer.jpg"
+      "image": "cards/photographer/nepal-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2008,7 +2008,7 @@
         "Animal silhouettes at sunset",
         "Traditional attire"
       ],
-      "image": "cards/kenya-photographer.jpg"
+      "image": "cards/photographer/kenya-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2030,7 +2030,7 @@
         "Classic cars",
         "Vintage textures"
       ],
-      "image": "cards/cuba-photographer.jpg"
+      "image": "cards/photographer/cuba-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2052,7 +2052,7 @@
         "Symmetry and shadow",
         "Golden desert light"
       ],
-      "image": "cards/egypt-photographer.jpg"
+      "image": "cards/photographer/egypt-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2074,7 +2074,7 @@
         "Sunset coastlines",
         "Stone alleys and domes"
       ],
-      "image": "cards/greece-photographer.jpg"
+      "image": "cards/photographer/greece-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2096,7 +2096,7 @@
         "Lush greens",
         "Lantern-lit streets"
       ],
-      "image": "cards/vietnam-photographer.jpg"
+      "image": "cards/photographer/vietnam-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2118,7 +2118,7 @@
         "Fog and clouds",
         "Medieval stonework"
       ],
-      "image": "cards/ireland-photographer.jpg"
+      "image": "cards/photographer/ireland-photographer.jpg"
     },
     {
       "category": "The Photographer",
@@ -2140,7 +2140,7 @@
         "Ice and water contrasts",
         "Wide open landscapes"
       ],
-      "image": "cards/iceland-photographer.jpg"
+      "image": "cards/photographer/iceland-photographer.jpg"
     }
   ]
 }
