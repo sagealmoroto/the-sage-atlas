@@ -1729,7 +1729,7 @@
         "Cloud forests and canyons",
         "Local textile traditions"
       ],
-      "image": "cards/peru-explorer.jpg"
+      "image": "cards/explorer/peru-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1753,7 +1753,7 @@
         "Rainforest and cloud forest immersion",
         "Community-based farming visits"
       ],
-      "image": "cards/costarica-explorer.jpg"
+      "image": "cards/explorer/costarica-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1777,7 +1777,7 @@
         "Foggy moors and lochs",
         "Cliffside castles"
       ],
-      "image": "cards/scotland-explorer.jpg"
+      "image": "cards/explorer/scotland-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1801,7 +1801,7 @@
         "Vast steppes and deserts",
         "Cultural crossroads of Central Asia"
       ],
-      "image": "cards/uzbekistan-explorer.jpg"
+      "image": "cards/explorer/uzbekistan-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1825,7 +1825,7 @@
         "Living river cultures",
         "Mystical temple ruins"
       ],
-      "image": "cards/cambodia-explorer.jpg"
+      "image": "cards/explorer/cambodia-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1849,7 +1849,7 @@
         "Expansive untouched landscapes",
         "Eagle hunting and ancient traditions"
       ],
-      "image": "cards/mongolia-explorer.jpg"
+      "image": "cards/explorer/mongolia-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1873,7 +1873,7 @@
         "Isolated cultural enclaves",
         "Dramatic otherworldly landscapes"
       ],
-      "image": "cards/madagascar-explorer.jpg"
+      "image": "cards/explorer/madagascar-explorer.jpg"
     },
     {
       "category": "The Explorer",
@@ -1897,7 +1897,7 @@
         "Extreme geologic diversity",
         "Living indigenous cultures"
       ],
-      "image": "cards/ethiopia-explorer.jpg"
+      "image": "cards/explorer/ethiopia-explorer.jpg"
     }
   ],
   "The Photographer": [
