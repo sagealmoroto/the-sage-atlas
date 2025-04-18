@@ -445,106 +445,187 @@
   "The Foodie": [
     {
       "category": "The Foodie",
-      "location": "USA",
+      "location": "San Francisco, USA",
+      "country": "USA",
       "primary_language": "English",
       "currency": "USD",
       "signature_dishes": [
-        "BBQ",
-        "Deep-Dish Pizza",
-        "Lobster Rolls"
+        "Mission-style Burrito",
+        "Cioppino",
+        "Sourdough Bread"
       ],
-      "food_experiences": [
-        "Southern food tours in new orleans",
-        "Nyc street food",
-        "Wine tasting in napa valley"
+      "where_to_eat": [
+        "Ferry Building Marketplace",
+        "La Taqueria",
+        "Zuni Caf\u00e9"
       ],
       "beverages": [
-        "Craft beer",
-        "Bourbon"
+        "Napa Valley Wine",
+        "Craft Beer",
+        "Cold Brew Coffee"
       ],
-      "image": "cards/foodie/usa-foodie.jpg"
+      "image": "cards/foodie/sanfrancisco-foodie.jpg"
     },
     {
       "category": "The Foodie",
-      "location": "Mexico",
+      "location": "New Orleans, USA",
+      "country": "USA",
+      "primary_language": "English",
+      "currency": "USD",
+      "signature_dishes": [
+        "Gumbo",
+        "Jambalaya",
+        "Beignets"
+      ],
+      "where_to_eat": [
+        "Caf\u00e9 du Monde",
+        "Commander\u2019s Palace",
+        "French Market"
+      ],
+      "beverages": [
+        "Sazerac",
+        "Hurricane",
+        "Chicory Coffee"
+      ],
+      "image": "cards/foodie/neworleans-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Lima, Peru",
+      "country": "Peru",
       "primary_language": "Spanish",
-      "currency": "MXN",
-      "signature_dishes": ["Tacos al Pastor", "Mole", "Tamales", "Chiles en Nogada"],
-      "food_experiences": [
-        "Street food crawl in Mexico City",
-        "Traditional cooking class in Oaxaca",
-        "Mezcal tasting in Puebla",
-        "Local market tours (e.g., Mercado de San Juan)"
+      "currency": "PEN",
+      "signature_dishes": [
+        "Ceviche",
+        "Lomo Saltado",
+        "Anticuchos"
       ],
-      "beverages": ["Horchata", "Mezcal", "Tequila", "Mexican Hot Chocolate"],
-      "image": "cards/foodie/mexico-foodie.jpg"
+      "where_to_eat": [
+        "Central",
+        "Maido",
+        "Surquillo Market"
+      ],
+      "beverages": [
+        "Pisco Sour",
+        "Chicha Morada",
+        "Inca Kola"
+      ],
+      "image": "cards/foodie/lima-foodie.jpg"
     },
     {
       "category": "The Foodie",
-      "location": "Italy",
-      "primary_language": "Italian",
-      "currency": "EUR",
-      "signature_dishes": ["Pizza Napoletana", "Pasta Carbonara", "Lasagna", "Risotto"],
-      "food_experiences": [
-        "Pasta-making classes in Bologna",
-        "Aperitivo culture in Milan",
-        "Truffle hunting in Piedmont",
-        "Wine and cheese tours in Tuscany"
+      "location": "Buenos Aires, Argentina",
+      "country": "Argentina",
+      "primary_language": "Spanish",
+      "currency": "ARS",
+      "signature_dishes": [
+        "Asado",
+        "Empanadas",
+        "Milanesa"
       ],
-      "beverages": ["Italian wine (Chianti, Barolo)", "Espresso", "Limoncello"],
-      "image": "cards/foodie/italy-foodie.jpg"
+      "where_to_eat": [
+        "Don Julio",
+        "San Telmo Market",
+        "El Preferido de Palermo"
+      ],
+      "beverages": [
+        "Malbec Wine",
+        "Fernet & Coke",
+        "Yerba Mate"
+      ],
+      "image": "cards/foodie/buenosaires-foodie.jpg"
     },
     {
       "category": "The Foodie",
-      "location": "France",
-      "primary_language": "French",
-      "currency": "EUR",
-      "signature_dishes": ["Coq au Vin", "Bouillabaisse", "Ratatouille", "Duck Confit"],
-      "food_experiences": [
-        "Bakery and pastry tours in Paris",
-        "Wine and cheese tastings in Bordeaux",
-        "Food markets in Provence",
-        "Michelin-star dining in Lyon"
+      "location": "Kyoto, Japan",
+      "country": "Japan",
+      "primary_language": "Japanese",
+      "currency": "JPY",
+      "signature_dishes": [
+        "Kaiseki",
+        "Yudofu",
+        "Matcha Sweets"
       ],
-      "beverages": ["French wine (Bordeaux, Burgundy)", "Champagne", "Café au lait", "Kir"],
-      "image": "cards/foodie/france-foodie.jpg"
+      "where_to_eat": [
+        "Gion Omakase",
+        "Nishiki Market",
+        "Michelin-starred Kikunoi"
+      ],
+      "beverages": [
+        "Matcha",
+        "Sake",
+        "Plum Wine"
+      ],
+      "image": "cards/foodie/kyoto-foodie.jpg"
     },
     {
       "category": "The Foodie",
-      "location": "China",
-      "primary_language": "Mandarin Chinese",
-      "currency": "CNY",
-      "signature_dishes": ["Peking Duck", "Dim Sum", "Mapo Tofu", "Xiaolongbao"],
-      "food_experiences": [
-        "Dumpling-making class in Xi’an or Shanghai",
-        "Night markets in Chengdu and Taipei",
-        "Hot pot dining in Chongqing",
-        "Regional cuisine sampling (e.g., Cantonese, Sichuan, Hunan)"
+      "location": "Bogot\u00e1, Colombia",
+      "country": "Colombia",
+      "primary_language": "Spanish",
+      "currency": "COP",
+      "signature_dishes": [
+        "Ajiaco",
+        "Arepas",
+        "Empanadas"
       ],
-      "beverages": ["Chinese tea (jasmine, oolong)", "Baijiu", "Soy Milk", "Tsingtao beer"],
-      "image": "cards/foodie/china-foodie.jpg"
+      "where_to_eat": [
+        "La Puerta Falsa",
+        "Andr\u00e9s Carne de Res",
+        "Usaqu\u00e9n Market"
+      ],
+      "beverages": [
+        "Aguardiente",
+        "Canelazo",
+        "Colombian Coffee"
+      ],
+      "image": "cards/foodie/bogota-foodie.jpg"
     },
     {
       "category": "The Foodie",
-      "location": "Germany",
-      "primary_language": "German",
+      "location": "George Town, Malaysia",
+      "country": "Malaysia",
+      "primary_language": "Malay",
+      "currency": "MYR",
+      "signature_dishes": [
+        "Char Kway Teow",
+        "Penang Laksa",
+        "Nasi Kandar"
+      ],
+      "where_to_eat": [
+        "Gurney Drive Hawker Centre",
+        "Penang Street Food Stalls",
+        "Chulia Street Night Market"
+      ],
+      "beverages": [
+        "Teh Tarik",
+        "White Coffee",
+        "Sugarcane Juice"
+      ],
+      "image": "cards/foodie/georgetown-foodie.jpg"
+    },
+    {
+      "category": "The Foodie",
+      "location": "Lisbon, Portugal",
+      "country": "Portugal",
+      "primary_language": "Portuguese",
       "currency": "EUR",
       "signature_dishes": [
-        "Bratwurst",
-        "Schnitzel",
-        "Sauerbraten",
-        "Pretzels"
+        "Bacalhau \u00e0 Br\u00e1s",
+        "Sardinhas Assadas",
+        "Past\u00e9is de Nata"
       ],
-      "food_experiences": [
-        "Oktoberfest in munich",
-        "Christmas markets",
-        "Sausage tours in nuremberg"
+      "where_to_eat": [
+        "Time Out Market",
+        "Cervejaria Ramiro",
+        "A Cevicheria"
       ],
       "beverages": [
-        "German beer",
-        "Riesling wine"
+        "Ginja",
+        "Vinho Verde",
+        "Portuguese Coffee"
       ],
-      "image": "cards/foodie/germany-foodie.jpg"
+      "image": "cards/foodie/lisbon-foodie.jpg"
     }
   ],
   "The Culture-Seeker": [
