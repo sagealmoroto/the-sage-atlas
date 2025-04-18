@@ -1284,7 +1284,7 @@
         "Unicum",
         "Hungarian wine"
       ],
-      "image": "cards/hungary-partier.jpg"
+      "image": "cards/partier/hungary-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1306,7 +1306,7 @@
         "Croatian wine",
         "Local beer"
       ],
-      "image": "cards/croatia-partier.jpg"
+      "image": "cards/partier/croatia-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1328,7 +1328,7 @@
         "Cava",
         "Tinto de Verano"
       ],
-      "image": "cards/spain-partier.jpg"
+      "image": "cards/partier/spain-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1350,7 +1350,7 @@
         "J\u00e4germeister",
         "Schnapps"
       ],
-      "image": "cards/germany-partier.jpg"
+      "image": "cards/partier/germany-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1372,7 +1372,7 @@
         "Cacha\u00e7a",
         "Brazilian beer"
       ],
-      "image": "cards/brazil-partier.jpg"
+      "image": "cards/partier/brazil-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1394,7 +1394,7 @@
         "Red Stripe beer",
         "Jamaican rum"
       ],
-      "image": "cards/jamaica-partier.jpg"
+      "image": "cards/partier/jamaica-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1418,7 +1418,7 @@
         "Whiskey",
         "Beer"
       ],
-      "image": "cards/usa-partier.jpg"
+      "image": "cards/partier/usa-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1439,7 +1439,7 @@
         "Makgeolli",
         "Korean beer"
       ],
-      "image": "cards/southkorea-partier.jpg"
+      "image": "cards/partier/southkorea-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1459,7 +1459,7 @@
         "Imported spirits",
         "Champagne"
       ],
-      "image": "cards/uae-partier.jpg"
+      "image": "cards/partier/uae-partier.jpg"
     },
     {
       "category": "The Partier",
@@ -1479,7 +1479,7 @@
         "Israeli wine",
         "Craft beer"
       ],
-      "image": "cards/israel-partier.jpg"
+      "image": "cards/partier/israel-partier.jpg"
     }
   ],
     "The Adventurer": [
